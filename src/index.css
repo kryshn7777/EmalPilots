@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #070c18;
+  --color-navy: #0b1226;
+  --color-blue: #1466ff;
+  --color-blue-600: #0f55e0;
+  --color-blue-700: #0c46bd;
+  --color-blue-soft: #eaf1ff;
+  --color-orange: #ff6a1a;
+  --color-orange-600: #ec5a0c;
+  --color-orange-soft: #fff1e8;
+  --color-slate-ink: #3a4358;
+  --color-slate-mute: #697086;
+  --color-slate-line: #e7eaf2;
+  --color-slate-wash: #f5f7fc;
+
+  --font-display: 'Outfit', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --shadow-card: 0 1px 2px rgba(11,18,38,.04), 0 12px 32px -12px rgba(11,18,38,.12);
+  --shadow-lift: 0 24px 60px -22px rgba(11,18,38,.30);
+  --shadow-glow: 0 24px 70px -24px rgba(20,102,255,.55);
+
+  --color-primary: hsl(215, 100%, 50%);
+  --color-primary-foreground: #ffffff;
+  --color-border: hsl(214.3, 31.8%, 91.4%);
+  --color-muted: hsl(210, 40%, 96.1%);
+  --color-muted-foreground: hsl(215.4, 16.3%, 46.9%);
+  --color-card: #ffffff;
+  --color-background: #ffffff;
+  --color-foreground: hsl(222.2, 84%, 4.9%);
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 215 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: auto !important; /* Managed by Lenis */
+    -webkit-text-size-adjust: 100%;
+  }
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+  body {
+    @apply font-sans antialiased;
+    background-color: #ffffff;
+    color: #070c18;
+  }
+  ::selection { 
+    background: #1466ff; 
+    color: #fff; 
+  }
+}
+
+/* Utilities */
+@utility grid-paper {
+  background-image: linear-gradient(#0b122608 1px, transparent 1px), linear-gradient(90deg, #0b122608 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+@utility dash-path {
+  background-image: repeating-linear-gradient(90deg, currentColor 0 8px, transparent 8px 16px);
+}
+
+@utility pricing-perf {
+  -webkit-mask-image: radial-gradient(circle at 0 0, transparent 9px, #000 9px);
+  mask-image: radial-gradient(circle at 0 0, transparent 9px, #000 9px);
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.6; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+@keyframes dash-move {
+  to { background-position: 200px 0; }
+}
+
+.animate-float-y {
+  animation: float-y 5s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 1.8s ease-out infinite;
+}
+
+.animate-dash-move {
+  animation: dash-move 6s linear infinite;
+}
