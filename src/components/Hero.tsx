@@ -47,8 +47,8 @@ export function Hero() {
           </motion.p>
 
           <motion.div variants={itemVariants} className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <a href="#pricing" className="group inline-flex items-center justify-center gap-2 rounded-xl bg-blue px-6 py-4 text-[16px] font-semibold text-white shadow-glow transition-all duration-300 hover:bg-blue-600 active:scale-95">
-              Start sending — €1.99/week
+            <a href="#waitlist" className="group inline-flex items-center justify-center gap-2 rounded-xl bg-blue px-6 py-4 text-[16px] font-semibold text-white shadow-glow transition-all duration-300 hover:bg-blue-600 active:scale-95">
+              Join the Early Access Waitlist
               <svg viewBox="0 0 24 24" className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
             </a>
             <a href="#how" className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-line bg-white px-6 py-4 text-[16px] font-semibold text-ink transition-all duration-300 hover:border-ink/30 hover:shadow-card active:scale-95">

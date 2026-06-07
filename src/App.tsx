@@ -10,7 +10,7 @@ import { HowItWorks } from './components/HowItWorks'
 import { Deliverability } from './components/Deliverability'
 import CapabilitiesUI from './components/CapabilitiesUI'
 import { WhoItsFor } from './components/WhoItsFor'
-import { Pricing } from './components/Pricing'
+import { Waitlist } from './components/Waitlist'
 import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
 import MultiAccountSupport from './components/MultiAccountSupport'
@@ -50,17 +50,47 @@ function App() {
 
         <div className="relative z-10">
           <Header />
-        <main className="overflow-clip">
+        <main className="overflow-clip relative">
           <div className="relative z-20"><Hero /></div>
           <div className="relative z-20"><Comparison /></div>
-          <div className="relative z-10"><DontBcc /></div>
-          <div className="relative z-20"><HowItWorks /></div>
-          <div className="relative z-20"><Deliverability /></div>
-          <div className="relative z-20"><CapabilitiesUI /></div>
+          
+          <div className="relative z-10">
+            {/* Fog block 1: Fades in at top, fades out at bottom */}
+            <div 
+              className="absolute inset-x-0 -top-[250px] -bottom-[250px] pointer-events-none -z-10 backdrop-blur-[2px]" 
+              style={{ 
+                background: 'linear-gradient(to bottom, transparent 0px, rgba(255,255,255,0.3) 100px, rgba(255,255,255,0.85) 250px, rgba(255,255,255,0.9) 350px, rgba(255,255,255,0.9) calc(100% - 350px), rgba(255,255,255,0.85) calc(100% - 250px), rgba(255,255,255,0.3) calc(100% - 100px), transparent 100%)', 
+                maskImage: 'linear-gradient(to bottom, transparent 0px, rgba(0,0,0,0.3) 100px, black 250px, black calc(100% - 250px), rgba(0,0,0,0.3) calc(100% - 100px), transparent 100%)', 
+                WebkitMaskImage: 'linear-gradient(to bottom, transparent 0px, rgba(0,0,0,0.3) 100px, black 250px, black calc(100% - 250px), rgba(0,0,0,0.3) calc(100% - 100px), transparent 100%)' 
+              }} 
+            />
+            <div className="relative z-10"><DontBcc /></div>
+            <div className="relative z-20"><HowItWorks /></div>
+            <div className="relative z-20"><Deliverability /></div>
+            <div className="relative z-20"><CapabilitiesUI /></div>
+          </div>
+
           <div className="relative z-20"><MultiAccountSupport /></div>
-          <div className="relative z-20"><WhoItsFor /></div>
-          <div className="relative z-20"><Pricing /></div>
-          <div className="relative z-20"><FAQ /></div>
+
+          <div className="relative z-10">
+            {/* Fog block 2: Fades in at top, hits Waitlist at bottom */}
+            <div 
+              className="absolute inset-x-0 -top-[250px] bottom-0 pointer-events-none -z-10 backdrop-blur-[2px]" 
+              style={{ background: 'linear-gradient(to bottom, transparent 0px, rgba(255,255,255,0.3) 100px, rgba(255,255,255,0.85) 250px, rgba(255,255,255,0.9) 100%)', maskImage: 'linear-gradient(to bottom, transparent 0px, rgba(0,0,0,0.3) 100px, black 250px, black 100%)', WebkitMaskImage: 'linear-gradient(to bottom, transparent 0px, rgba(0,0,0,0.3) 100px, black 250px, black 100%)' }} 
+            />
+            <div className="relative z-20"><WhoItsFor /></div>
+          </div>
+
+          <div className="relative z-20"><Waitlist /></div>
+          
+          <div className="relative z-10">
+            {/* Fog background for FAQ, fading out at the bottom to show the footer/rockets */}
+            <div 
+              className="absolute inset-x-0 top-0 -bottom-[250px] pointer-events-none -z-10 backdrop-blur-[2px]" 
+              style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.9) 0px, rgba(255,255,255,0.85) calc(100% - 250px), rgba(255,255,255,0.3) calc(100% - 100px), transparent 100%)', maskImage: 'linear-gradient(to bottom, black 0px, black calc(100% - 250px), rgba(0,0,0,0.3) calc(100% - 100px), transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 0px, black calc(100% - 250px), rgba(0,0,0,0.3) calc(100% - 100px), transparent 100%)' }} 
+            />
+            <div className="relative z-20"><FAQ /></div>
+          </div>
         </main>
         <Footer />
         </div>
