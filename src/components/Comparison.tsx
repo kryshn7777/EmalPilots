@@ -37,8 +37,8 @@ export function Comparison() {
           className="mx-auto mt-12 max-w-3xl space-y-3.5"
         >
           {/* rows */}
-          <motion.div variants={itemVariants} className="group flex items-center gap-4">
-            <div className="w-36 shrink-0 text-right text-[14px] font-semibold text-slate-ink sm:w-44">LinkedIn Recruiter</div>
+          <motion.div variants={itemVariants} className="group flex items-center gap-2 sm:gap-4">
+            <div className="w-24 shrink-0 text-right text-[12px] sm:text-[14px] font-semibold text-slate-ink sm:w-44 leading-tight">LinkedIn Recruiter</div>
             <div className="relative h-11 flex-1 overflow-hidden rounded-xl bg-slate-200/70">
               <motion.div 
                 initial={{ width: 0 }}
@@ -51,8 +51,8 @@ export function Comparison() {
             </div>
           </motion.div>
           
-          <motion.div variants={itemVariants} className="flex items-center gap-4">
-            <div className="w-36 shrink-0 text-right text-[14px] font-semibold text-slate-ink sm:w-44">Hiring a VA</div>
+          <motion.div variants={itemVariants} className="flex items-center gap-2 sm:gap-4">
+            <div className="w-24 shrink-0 text-right text-[12px] sm:text-[14px] font-semibold text-slate-ink sm:w-44 leading-tight">Hiring a VA</div>
             <div className="relative h-11 flex-1 overflow-hidden rounded-xl bg-slate-200/70">
               <motion.div 
                 initial={{ width: 0 }}
@@ -65,8 +65,8 @@ export function Comparison() {
             </div>
           </motion.div>
           
-          <motion.div variants={itemVariants} className="flex items-center gap-4">
-            <div className="w-36 shrink-0 text-right text-[14px] font-semibold text-slate-ink sm:w-44">Cold-email SaaS</div>
+          <motion.div variants={itemVariants} className="flex items-center gap-2 sm:gap-4">
+            <div className="w-24 shrink-0 text-right text-[12px] sm:text-[14px] font-semibold text-slate-ink sm:w-44 leading-tight">Cold-email SaaS</div>
             <div className="relative h-11 flex-1 overflow-hidden rounded-xl bg-slate-200/70">
               <motion.div 
                 initial={{ width: 0 }}
@@ -79,8 +79,8 @@ export function Comparison() {
             </div>
           </motion.div>
           
-          <motion.div variants={itemVariants} className="flex items-center gap-4">
-            <div className="w-36 shrink-0 text-right text-[14px] font-semibold text-slate-ink sm:w-44">Doing it by hand</div>
+          <motion.div variants={itemVariants} className="flex items-center gap-2 sm:gap-4">
+            <div className="w-24 shrink-0 text-right text-[12px] sm:text-[14px] font-semibold text-slate-ink sm:w-44 leading-tight">Doing it by hand</div>
             <div className="relative h-11 flex-1 overflow-hidden rounded-xl bg-slate-200/70">
               <motion.div 
                 initial={{ width: 0 }}
@@ -94,8 +94,8 @@ export function Comparison() {
           </motion.div>
           
           {/* winner */}
-          <motion.div variants={itemVariants} className="flex items-center gap-4 pt-1">
-            <div className="w-36 shrink-0 text-right text-[14px] font-extrabold text-blue sm:w-44">Email Pilots</div>
+          <motion.div variants={itemVariants} className="flex items-center gap-2 sm:gap-4 pt-1">
+            <div className="w-24 shrink-0 text-right text-[13px] sm:text-[14px] font-extrabold text-blue sm:w-44 leading-tight">Email Pilots</div>
             <div className="relative h-14 flex-1 overflow-hidden rounded-xl bg-blue shadow-glow ring-4 ring-blue/15">
               <motion.div 
                 initial={{ width: 0 }}

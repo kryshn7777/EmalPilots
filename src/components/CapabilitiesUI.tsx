@@ -322,7 +322,7 @@ export default function CapabilitiesUI() {
            <div className="w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-16 relative h-full">
               
               {/* Left: Text Stack */}
-              <div className="w-full lg:w-5/12 relative h-[45%] lg:h-full flex flex-col justify-center">
+              <div className="w-full lg:w-5/12 relative h-[40%] md:h-[45%] lg:h-full flex flex-col justify-center">
                  {capabilities.map((cap, i) => (
                     <div 
                        key={`text-${cap.id}`} 
@@ -341,7 +341,7 @@ export default function CapabilitiesUI() {
               </div>
 
               {/* Right: Mockup Stack */}
-              <div className="w-full lg:w-7/12 relative h-[55%] lg:h-full flex items-center justify-center lg:justify-end">
+              <div className="w-full lg:w-7/12 relative h-[60%] md:h-[55%] lg:h-full flex items-center justify-center lg:justify-end">
                  <div className="w-full max-w-[600px] h-full relative">
                     {mockups.map((mockup, i) => (
                        <div 

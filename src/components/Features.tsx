@@ -29,11 +29,11 @@ export function Features() {
             <div className="mb-5 inline-grid h-12 w-12 place-items-center rounded-xl bg-blue-soft text-blue"><svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4" strokeLinecap="round"/></svg></div>
             <h3 className="font-display text-xl font-bold text-ink">100% local privacy</h3>
             <p className="mt-2 max-w-md text-[15px] leading-relaxed text-slate-ink">Your contacts and lead lists never touch a cloud server. Everything runs on your machine — your proprietary data stays yours, full stop.</p>
-            <div className="mt-6 flex items-center gap-3 rounded-xl border border-slate-line bg-slate-wash px-4 py-3">
+            <div className="mt-6 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3 rounded-xl border border-slate-line bg-slate-wash px-3 sm:px-4 py-3">
               <span className="grid h-8 w-8 place-items-center rounded-lg bg-white text-slate-mute shadow-sm"><svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18" /></svg></span>
               <span className="font-mono text-[12px] text-slate-mute">cloud</span>
-              <span className="relative mx-1 h-px flex-1 bg-slate-line"><span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white p-0.5 text-red-500"><svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.4"><path d="m6 6 12 12M18 6 6 18" strokeLinecap="round"/></svg></span></span>
-              <span className="grid h-8 w-8 place-items-center rounded-lg bg-blue text-white shadow"><svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8" strokeLinecap="round"/></svg></span>
+              <span className="relative mx-1 h-px flex-1 bg-slate-line hidden sm:block"><span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white p-0.5 text-red-500"><svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.4"><path d="m6 6 12 12M18 6 6 18" strokeLinecap="round"/></svg></span></span>
+              <span className="grid h-8 w-8 place-items-center rounded-lg bg-blue text-white shadow ml-auto sm:ml-0"><svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8" strokeLinecap="round"/></svg></span>
               <span className="font-mono text-[12px] font-bold text-blue">your machine</span>
             </div>
           </motion.div>

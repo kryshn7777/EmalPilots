@@ -84,9 +84,9 @@ export function Hero() {
               </span>
             </div>
             
-            <div className="grid grid-cols-[1fr_.92fr]">
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_.92fr]">
               {/* Composer */}
-              <div className="border-r border-slate-line p-5">
+              <div className="border-b md:border-b-0 md:border-r border-slate-line p-5">
                 <div className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-slate-mute">Message template</div>
                 <div className="space-y-3 text-[13px] leading-relaxed text-slate-ink">
                   <p>Hi <span className="rounded bg-blue-soft px-1.5 py-0.5 font-mono text-[12px] font-semibold text-blue">{`{{Name}}`}</span>,</p>
