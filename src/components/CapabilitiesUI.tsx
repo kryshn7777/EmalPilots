@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import { motion } from "motion/react";
+import { useRef, useState, useEffect } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -91,9 +91,18 @@ function MockupPrivacy() {
 }
 
 function MockupSpam() {
+  const [isFixed, setIsFixed] = useState(false);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsFixed(prev => !prev);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="w-full h-full flex flex-col items-center justify-center p-4 md:p-8">
-      <div className="w-full max-w-sm bg-background border border-border rounded-xl shadow-2xl overflow-hidden relative">
+      <div className="w-full max-w-sm bg-background border border-border rounded-xl shadow-2xl overflow-hidden relative transition-colors duration-500">
         <div className="bg-muted/30 px-4 py-3 border-b border-border flex items-center justify-between">
            <div className="text-xs font-mono text-muted-foreground">composer.html</div>
            <div className="flex gap-1.5">
@@ -105,16 +114,61 @@ function MockupSpam() {
         <div className="p-5 pb-20 font-mono text-sm leading-relaxed text-foreground/80">
            <p className="mb-4">Hey John,</p>
            <p>
-             We can help you <span className="bg-red-500/20 text-red-500 border border-red-500/30 px-1 rounded relative group cursor-help">10x YOUR REVENUE<span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-500 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50">Warning: ALL CAPS</span></span> in just weeks!
+             We can help you{' '}
+             <AnimatePresence mode="wait">
+               {!isFixed ? (
+                 <motion.span key="bad1" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="inline-block bg-red-500/20 text-red-500 border border-red-500/30 px-1 rounded relative group cursor-help">
+                   10x YOUR REVENUE
+                   <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-500 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50">Warning: ALL CAPS</span>
+                 </motion.span>
+               ) : (
+                 <motion.span key="good1" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="inline-block bg-green-500/10 text-green-600 border border-green-500/20 px-1 rounded font-bold">
+                   grow your business
+                 </motion.span>
+               )}
+             </AnimatePresence>
+             {' '}in just weeks!
            </p>
            <p className="mt-4">
-             Click <span className="bg-yellow-500/20 text-yellow-500 border border-yellow-500/30 px-1 rounded relative group cursor-help">here<span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-yellow-500 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50">Vague link text</span></span> to claim your <span className="bg-red-500/20 text-red-500 border border-red-500/30 px-1 rounded relative group cursor-help">FREE<span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-500 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50">Spam trigger word</span></span> trial.
+             Click{' '}
+             <AnimatePresence mode="wait">
+               {!isFixed ? (
+                 <motion.span key="bad2" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="inline-block bg-yellow-500/20 text-yellow-500 border border-yellow-500/30 px-1 rounded relative group cursor-help">
+                   here
+                   <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-yellow-500 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50">Vague link text</span>
+                 </motion.span>
+               ) : (
+                 <motion.span key="good2" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="inline-block bg-green-500/10 text-green-600 border border-green-500/20 px-1 rounded font-bold">
+                   this personalized link
+                 </motion.span>
+               )}
+             </AnimatePresence>
+             {' '}to claim your{' '}
+             <AnimatePresence mode="wait">
+               {!isFixed ? (
+                 <motion.span key="bad3" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="inline-block bg-red-500/20 text-red-500 border border-red-500/30 px-1 rounded relative group cursor-help">
+                   FREE
+                   <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-500 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50">Spam trigger word</span>
+                 </motion.span>
+               ) : (
+                 <motion.span key="good3" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="inline-block bg-green-500/10 text-green-600 border border-green-500/20 px-1 rounded font-bold">
+                   complimentary
+                 </motion.span>
+               )}
+             </AnimatePresence>
+             {' '}trial.
            </p>
         </div>
         <div className="absolute bottom-4 right-4 bg-background border border-border shadow-lg rounded-lg p-3 flex flex-col gap-2">
            <div className="flex justify-between items-center text-xs font-bold gap-4">
              <span>Spam Score</span>
-             <span className="text-red-500 bg-red-500/10 px-2 py-0.5 rounded flex items-center gap-1"><AlertTriangle className="w-3 h-3"/> High Risk</span>
+             <AnimatePresence mode="wait">
+               {!isFixed ? (
+                 <motion.span key="scoreBad" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="text-red-500 bg-red-500/10 px-2 py-0.5 rounded flex items-center gap-1"><AlertTriangle className="w-3 h-3"/> High Risk</motion.span>
+               ) : (
+                 <motion.span key="scoreGood" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="text-green-600 bg-green-500/10 px-2 py-0.5 rounded flex items-center gap-1"><CheckCircle2 className="w-3 h-3"/> Safe</motion.span>
+               )}
+             </AnimatePresence>
            </div>
         </div>
       </div>
@@ -123,42 +177,80 @@ function MockupSpam() {
 }
 
 function MockupPersonalization() {
+  const [idx, setIdx] = useState(0);
+  const people = [
+    { name: "{{Name}}", co: "{{Co}}", file: "PitchDeck_Template.pdf" },
+    { name: "Sarah", co: "Acme", file: "PitchDeck_Acme.pdf" },
+    { name: "Mike", co: "TechFlow", file: "PitchDeck_TechFlow.pdf" },
+    { name: "Elena", co: "Globex", file: "PitchDeck_Globex.pdf" },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIdx(prev => (prev + 1) % people.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const current = people[idx];
+
   return (
     <div className="w-full h-full flex flex-col items-center justify-center p-8">
       <div className="text-2xl md:text-4xl font-display font-medium tracking-tight flex items-center gap-2">
         Hey 
         <div className="relative inline-block overflow-hidden h-[1.2em] w-[3em] md:w-[4em] bg-primary/10 border border-primary/20 rounded-lg text-primary px-2 pb-1 text-center align-bottom">
-           <motion.div
-             animate={{ y: ["0%", "-50%"] }}
-             transition={{ duration: 0.5, delay: 1, ease: "backInOut", repeat: Infinity, repeatDelay: 3 }}
-             className="flex flex-col"
-           >
-             <span className="h-[1.2em] flex items-center justify-center font-mono text-xl md:text-3xl">{"{{Name}}"}</span>
-             <span className="h-[1.2em] flex items-center justify-center font-bold">Sarah</span>
-           </motion.div>
+           <AnimatePresence mode="wait">
+             <motion.span 
+               key={current.name}
+               initial={{ y: "50%", opacity: 0 }}
+               animate={{ y: "0%", opacity: 1 }}
+               exit={{ y: "-50%", opacity: 0 }}
+               transition={{ duration: 0.3 }}
+               className="absolute inset-0 flex items-center justify-center font-bold"
+               style={{ fontFamily: idx === 0 ? "monospace" : "inherit" }}
+             >
+               {current.name}
+             </motion.span>
+           </AnimatePresence>
         </div>
         ,
       </div>
       <div className="mt-8 text-base md:text-xl text-muted-foreground flex items-center gap-2 flex-wrap justify-center">
         I noticed you work at 
-        <div className="relative inline-block overflow-hidden h-[1.2em] w-[4em] bg-primary/10 border border-primary/20 rounded-lg text-primary px-2 pb-1 text-center align-bottom mt-1 md:mt-0">
-           <motion.div
-             animate={{ y: ["0%", "-50%"] }}
-             transition={{ duration: 0.5, delay: 1.2, ease: "backInOut", repeat: Infinity, repeatDelay: 3 }}
-             className="flex flex-col"
-           >
-             <span className="h-[1.2em] flex items-center justify-center font-mono text-sm md:text-lg">{"{{Co}}"}</span>
-             <span className="h-[1.2em] flex items-center justify-center font-bold text-base md:text-xl">Acme</span>
-           </motion.div>
+        <div className="relative inline-block overflow-hidden h-[1.2em] w-[4em] md:w-[5em] bg-primary/10 border border-primary/20 rounded-lg text-primary px-2 pb-1 text-center align-bottom mt-1 md:mt-0">
+           <AnimatePresence mode="wait">
+             <motion.span 
+               key={current.co}
+               initial={{ y: "50%", opacity: 0 }}
+               animate={{ y: "0%", opacity: 1 }}
+               exit={{ y: "-50%", opacity: 0 }}
+               transition={{ duration: 0.3 }}
+               className="absolute inset-0 flex items-center justify-center font-bold"
+               style={{ fontFamily: idx === 0 ? "monospace" : "inherit" }}
+             >
+               {current.co}
+             </motion.span>
+           </AnimatePresence>
         </div>
       </div>
       <div className="mt-12 bg-card border border-border p-4 rounded-xl shadow-sm flex items-center gap-4 w-full max-w-[280px]">
          <div className="w-10 h-10 rounded-lg bg-red-500/10 text-red-500 flex items-center justify-center shrink-0">
            <Wand2 className="w-5 h-5" />
          </div>
-         <div className="text-sm truncate">
-           <div className="font-bold truncate">PitchDeck_Acme.pdf</div>
-           <div className="text-muted-foreground text-[10px]">Dynamically generated</div>
+         <div className="text-sm truncate relative flex-1 h-10 flex flex-col justify-center">
+           <AnimatePresence mode="wait">
+             <motion.div 
+               key={current.file}
+               initial={{ y: 10, opacity: 0 }}
+               animate={{ y: 0, opacity: 1 }}
+               exit={{ y: -10, opacity: 0 }}
+               transition={{ duration: 0.3 }}
+               className="absolute w-full"
+             >
+               <div className="font-bold truncate">{current.file}</div>
+               <div className="text-muted-foreground text-[10px]">Dynamically generated</div>
+             </motion.div>
+           </AnimatePresence>
          </div>
       </div>
     </div>
@@ -203,35 +295,80 @@ function MockupScheduling() {
 }
 
 function MockupAutoClean() {
+  const [step, setStep] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setStep(prev => (prev >= 6 ? 0 : prev + 1));
+    }, 1200);
+    return () => clearInterval(interval);
+  }, []);
+
+  const items = [
+    { email: "john@acme.com", status: "Valid", color: "text-green-500", icon: CheckCircle2, strike: false },
+    { email: "sarah@tech.co", status: "Valid", color: "text-green-500", icon: CheckCircle2, strike: false },
+    { email: "mike@old.io", status: "Hard Bounce", color: "text-red-500", icon: XCircle, strike: true },
+    { email: "info@noreply.com", status: "Role", color: "text-yellow-500", icon: AlertTriangle, strike: true }
+  ];
+
   return (
     <div className="w-full h-full flex flex-col items-center justify-center p-4 md:p-8">
       <div className="w-full max-w-md bg-background border border-border rounded-xl shadow-2xl overflow-hidden font-mono text-xs">
         <div className="bg-muted/30 px-4 py-2 border-b border-border flex items-center gap-2">
            <Server className="w-4 h-4 text-muted-foreground" />
            <span className="text-muted-foreground">verify_list.sh</span>
+           {step > 0 && step < 6 && (
+             <span className="ml-auto flex gap-1 items-center">
+               <span className="w-1.5 h-1.5 bg-primary rounded-full animate-ping"/>
+               <span className="w-1.5 h-1.5 bg-primary rounded-full animate-ping delay-75"/>
+               <span className="w-1.5 h-1.5 bg-primary rounded-full animate-ping delay-150"/>
+             </span>
+           )}
         </div>
-        <div className="p-4 flex flex-col gap-2">
-          <div className="flex items-center justify-between text-foreground/70">
-             <span className="truncate">Checking <span className="text-foreground">john@acme.com</span>...</span>
-             <span className="text-green-500 flex items-center gap-1 shrink-0"><CheckCircle2 className="w-3 h-3"/> Valid</span>
-          </div>
-          <div className="flex items-center justify-between text-foreground/70">
-             <span className="truncate">Checking <span className="text-foreground">sarah@tech.co</span>...</span>
-             <span className="text-green-500 flex items-center gap-1 shrink-0"><CheckCircle2 className="w-3 h-3"/> Valid</span>
-          </div>
-          <div className="flex items-center justify-between text-foreground/70 opacity-50">
-             <span className="truncate line-through">Checking <span className="text-foreground">mike@old.io</span>...</span>
-             <span className="text-red-500 flex items-center gap-1 shrink-0"><XCircle className="w-3 h-3"/> Hard Bounce</span>
-          </div>
-          <div className="flex items-center justify-between text-foreground/70 opacity-50">
-             <span className="truncate line-through">Checking <span className="text-foreground">info@noreply.com</span>...</span>
-             <span className="text-yellow-500 flex items-center gap-1 shrink-0"><AlertTriangle className="w-3 h-3"/> Role</span>
-          </div>
+        <div className="p-4 flex flex-col gap-2 min-h-[180px]">
+          {items.map((item, i) => {
+            const isChecking = step === i + 1;
+            const isDone = step > i + 1;
+            const isVisible = step > i;
+
+            if (!isVisible) return null;
+
+            return (
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: isDone && item.strike ? 0.5 : 1, x: 0 }}
+                className={`flex items-center justify-between ${isDone && item.strike ? "text-foreground/50" : "text-foreground/90"}`}
+              >
+                 <span className={`truncate ${isDone && item.strike ? "line-through" : ""}`}>
+                   Checking <span className="text-foreground font-bold">{item.email}</span>...
+                 </span>
+                 {isChecking && (
+                   <span className="text-primary animate-pulse shrink-0 font-bold">Working...</span>
+                 )}
+                 {isDone && (
+                   <motion.span 
+                     initial={{ scale: 0 }} 
+                     animate={{ scale: 1 }} 
+                     className={`${item.color} flex items-center gap-1 shrink-0 font-bold`}
+                   >
+                     <item.icon className="w-3 h-3"/> {item.status}
+                   </motion.span>
+                 )}
+              </motion.div>
+            );
+          })}
           
-          <div className="mt-4 pt-4 border-t border-border border-dashed text-primary flex items-center gap-2">
-             <ShieldCheck className="w-4 h-4 shrink-0" />
-             Removed 2 risky addresses
-          </div>
+          {step >= 5 && (
+            <motion.div 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-4 pt-4 border-t border-border border-dashed text-primary flex items-center gap-2 font-bold"
+            >
+               <ShieldCheck className="w-4 h-4 shrink-0" />
+               Removed 2 risky addresses
+            </motion.div>
+          )}
         </div>
       </div>
     </div>

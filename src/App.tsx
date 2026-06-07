@@ -7,7 +7,6 @@ import { Hero } from './components/Hero'
 import { Comparison } from './components/Comparison'
 import { DontBcc } from './components/DontBcc'
 import { HowItWorks } from './components/HowItWorks'
-import { Features } from './components/Features'
 import { Deliverability } from './components/Deliverability'
 import CapabilitiesUI from './components/CapabilitiesUI'
 import { WhoItsFor } from './components/WhoItsFor'
@@ -41,7 +40,7 @@ function App() {
         className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed font-sans text-ink"
         style={{ backgroundImage: "url('/bg-aviation.png')" }}
       >
-        <div className="absolute inset-0 bg-white/60 z-0" />
+        <div className="absolute inset-0 bg-white/30 z-0" />
         
         <div className="fixed inset-0 z-0 pointer-events-none">
           <Canvas camera={{ position: [0, 0, 15], fov: 50 }}>
@@ -52,17 +51,16 @@ function App() {
         <div className="relative z-10">
           <Header />
         <main className="overflow-clip">
-          <Hero />
-          <Comparison />
-          <DontBcc />
-          <HowItWorks />
-          <Features />
-          <Deliverability />
-          <CapabilitiesUI />
-          <MultiAccountSupport />
-          <WhoItsFor />
-          <Pricing />
-          <FAQ />
+          <div className="relative z-20"><Hero /></div>
+          <div className="relative z-20"><Comparison /></div>
+          <div className="relative z-10"><DontBcc /></div>
+          <div className="relative z-20"><HowItWorks /></div>
+          <div className="relative z-20"><Deliverability /></div>
+          <div className="relative z-20"><CapabilitiesUI /></div>
+          <div className="relative z-20"><MultiAccountSupport /></div>
+          <div className="relative z-20"><WhoItsFor /></div>
+          <div className="relative z-20"><Pricing /></div>
+          <div className="relative z-20"><FAQ /></div>
         </main>
         <Footer />
         </div>

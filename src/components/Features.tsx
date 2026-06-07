@@ -2,8 +2,12 @@ import { motion } from 'motion/react'
 
 export function Features() {
   return (
-    <section id="features" className="relative py-20 md:py-28">
-      <div className="mx-auto max-w-6xl px-5">
+    <section id="features" className="relative py-32 md:py-40">
+      <div 
+        className="absolute inset-x-0 -top-[150px] -bottom-[150px] pointer-events-none -z-10" 
+        style={{ background: 'linear-gradient(to bottom, transparent 0px, rgba(255,255,255,0.7) 150px, white 250px, white calc(100% - 250px), rgba(255,255,255,0.7) calc(100% - 150px), transparent 100%)' }} 
+      />
+      <div className="mx-auto max-w-6xl px-5 relative z-10">
         
         <motion.div 
           initial={{ opacity: 0, y: 26 }}
