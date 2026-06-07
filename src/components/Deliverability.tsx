@@ -55,8 +55,8 @@ function InteractiveBounceCard() {
         transformStyle: "preserve-3d",
       }}
       whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.98 }}
-      className="relative flex h-full min-h-[180px] cursor-pointer flex-col justify-center overflow-hidden rounded-2xl border border-blue/20 bg-blue p-6 text-white shadow-glow"
+      whileTap={{ scale: 1.05 }}
+      className="relative flex h-full min-h-[180px] cursor-pointer flex-col justify-center items-center sm:items-start text-center sm:text-left overflow-hidden rounded-2xl border border-blue/20 bg-blue p-6 text-white shadow-glow"
     >
       {/* Spotlight Overlay */}
       <motion.div 
@@ -117,8 +117,9 @@ export function Deliverability() {
             variants={itemVariants} 
             initial="rest"
             whileHover="hover"
+            whileTap="hover"
             animate="rest"
-            className="rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
+            className="rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift flex flex-col items-center sm:items-start text-center sm:text-left"
           >
             <div className="mb-4 flex items-end gap-1 h-10">
               <motion.span variants={{ rest: { height: "40%" }, hover: { height: ["0%", "40%"], transition: { duration: 0.4, ease: "easeOut" } } }} className="w-2 rounded-t bg-blue/30"></motion.span>
@@ -137,8 +138,9 @@ export function Deliverability() {
             variants={itemVariants} 
             initial="rest"
             whileHover="hover"
+            whileTap="hover"
             animate="rest"
-            className="rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
+            className="rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift flex flex-col items-center sm:items-start text-center sm:text-left"
           >
             <div className="mb-4 flex h-10 items-center">
               <div className="flex h-7 w-44 items-center rounded-full border-2 border-orange/30 bg-white p-1">
@@ -159,8 +161,9 @@ export function Deliverability() {
             variants={itemVariants} 
             initial="rest"
             whileHover="hover"
+            whileTap="hover"
             animate="rest"
-            className="rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
+            className="rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift flex flex-col items-center sm:items-start text-center sm:text-left"
           >
             <div className="mb-4 h-10">
               <svg viewBox="0 0 120 40" className="h-full w-32" fill="none">
@@ -181,8 +184,9 @@ export function Deliverability() {
             variants={itemVariants} 
             initial="rest"
             whileHover="hover"
+            whileTap="hover"
             animate="rest"
-            className="rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
+            className="rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift flex flex-col items-center sm:items-start text-center sm:text-left"
           >
             <div className="mb-4 flex h-10 items-center gap-2 rounded-lg bg-violet-50 px-3">
               <motion.span 
@@ -202,8 +206,9 @@ export function Deliverability() {
             variants={itemVariants} 
             initial="rest"
             whileHover="hover"
+            whileTap="hover"
             animate="rest"
-            className="rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
+            className="rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift flex flex-col items-center sm:items-start text-center sm:text-left"
           >
             <div className="mb-4 flex h-10 items-center">
               <div className="w-32 rounded-md border-t-4 border-amber-400 bg-slate-wash p-2">

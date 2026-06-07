@@ -3,7 +3,8 @@ import { motion } from 'motion/react'
 export function DontBcc() {
   return (
     <section className="relative py-20 md:py-28">
-      <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 lg:grid-cols-2 lg:gap-20">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/95 to-transparent pointer-events-none" />
+      <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 lg:grid-cols-2 lg:gap-20 relative z-10">
         
         {/* visual: spam card vs paced timeline */}
         <motion.div 

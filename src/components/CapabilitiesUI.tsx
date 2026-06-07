@@ -289,7 +289,7 @@ export default function CapabilitiesUI() {
   }, { scope: containerRef });
 
   return (
-    <section id="features" ref={containerRef} className="w-full h-[500vh] relative bg-background border-t border-b border-border/50">
+    <section id="features" ref={containerRef} className="w-full h-[250vh] md:h-[400vh] lg:h-[500vh] relative bg-background border-t border-b border-border/50">
       
       {/* Sticky container that locks to the screen as we scroll through the 500vh section */}
       <div className="sticky top-0 left-0 w-full h-[100dvh] overflow-hidden flex flex-col relative z-10">
