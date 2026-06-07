@@ -59,7 +59,7 @@ export function Pricing() {
             <ul className="mt-10 space-y-4">
               {[
                 "Up to 50 emails/day per account",
-                "Up to 5 accounts (Gmail/Outlook)",
+                "Up to 5 accounts (Gmail/Outlook/Custom)",
                 "Smart human scheduling & pacing",
                 "100% local data privacy",
                 "Automated bounce cleaning",

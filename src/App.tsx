@@ -15,6 +15,8 @@ import { Pricing } from './components/Pricing'
 import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
 import MultiAccountSupport from './components/MultiAccountSupport'
+import { Canvas } from "@react-three/fiber"
+import { AviationScene } from "./components/AviationBackground"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -35,8 +37,20 @@ function App() {
 
   return (
     <ReactLenis root>
-      <div className="min-h-screen bg-white font-sans text-ink">
-        <Header />
+      <div 
+        className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed font-sans text-ink"
+        style={{ backgroundImage: "url('/bg-aviation.png')" }}
+      >
+        <div className="absolute inset-0 bg-white/60 z-0" />
+        
+        <div className="fixed inset-0 z-0 pointer-events-none">
+          <Canvas camera={{ position: [0, 0, 15], fov: 50 }}>
+            <AviationScene />
+          </Canvas>
+        </div>
+
+        <div className="relative z-10">
+          <Header />
         <main className="overflow-clip">
           <Hero />
           <Comparison />
@@ -51,6 +65,7 @@ function App() {
           <FAQ />
         </main>
         <Footer />
+        </div>
       </div>
     </ReactLenis>
   )

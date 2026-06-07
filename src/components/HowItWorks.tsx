@@ -35,7 +35,7 @@ export function HowItWorks() {
               <span className="font-display text-5xl font-extrabold text-white/10">01</span>
             </div>
             <h3 className="font-display text-xl font-bold">Connect your inbox</h3>
-            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Securely link Gmail or Outlook via an App Password. No complex APIs or DNS routing — it sends safely through the inbox you already use.</p>
+            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Securely link Gmail, Outlook, or your Custom Email provider via an App Password. No complex APIs or DNS routing — it sends safely through the inbox you already use.</p>
           </motion.div>
           
           <motion.div 

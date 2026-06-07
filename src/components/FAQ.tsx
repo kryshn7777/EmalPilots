@@ -8,8 +8,8 @@ const faqs = [
     answer: "No, Email Pilots runs entirely in your web browser. However, because it operates locally, you need to keep the tab open while your campaigns are actively sending."
   },
   {
-    question: "Does this work with both Gmail and Outlook?",
-    answer: "Yes! You can connect as many Gmail (Google Workspace) or Outlook (Microsoft 365) accounts as you'd like without paying any extra per-seat fees."
+    question: "Does this work with Gmail, Outlook, and Custom domains?",
+    answer: "Yes! You can connect as many Gmail (Google Workspace), Outlook (Microsoft 365), or custom SMTP/IMAP accounts as you'd like without paying any extra per-seat fees."
   },
   {
     question: "How does it avoid the spam folder?",
