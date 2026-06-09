@@ -33,7 +33,6 @@ export function Header() {
             <a href="#faq" className="hover:text-blue transition-colors">FAQ</a>
           </nav>
           <div className="flex items-center gap-1.5 sm:gap-2">
-            <a href="#waitlist" className="hidden text-[14px] font-semibold text-slate-ink hover:text-blue transition-colors lg:inline-flex px-2">Sign in</a>
             <a href="#waitlist" className="group flex items-center gap-1.5 sm:gap-2 rounded-xl bg-ink px-3 py-2 sm:px-4 sm:py-2.5 text-xs sm:text-[14px] font-semibold text-white transition-all duration-300 hover:bg-blue active:scale-95 whitespace-nowrap">
               <span>Join Waitlist</span>
               <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 sm:h-4 sm:w-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
