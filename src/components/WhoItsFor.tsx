@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'motion/react'
-import { Briefcase, Users, Zap, Globe, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Briefcase, Users, Zap, Globe, Building, Lightbulb, Target, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const personas = [
   {
@@ -38,6 +38,42 @@ const personas = [
     icon: Globe,
     color: "text-purple-600",
     bg: "bg-purple-50"
+  },
+  {
+    id: "05",
+    title: "Agencies",
+    role: "AGENCY",
+    desc: "Scale your client outreach without the overhead. Automate personalized emails to book more meetings.",
+    icon: Building,
+    color: "text-indigo-600",
+    bg: "bg-indigo-50"
+  },
+  {
+    id: "06",
+    title: "Consultants",
+    role: "ADVISOR",
+    desc: "Grow your consulting practice by reaching decision-makers directly with highly tailored proposals.",
+    icon: Lightbulb,
+    color: "text-teal-600",
+    bg: "bg-teal-50"
+  },
+  {
+    id: "07",
+    title: "Founders",
+    role: "FOUNDER",
+    desc: "Connect with investors and early adopters directly to gain traction for your startup without the busywork.",
+    icon: Globe,
+    color: "text-rose-600",
+    bg: "bg-rose-50"
+  },
+  {
+    id: "08",
+    title: "Sales Professionals",
+    role: "SALES",
+    desc: "Close more deals by keeping your pipeline full. Send timely, relevant follow-ups that consistently get replies.",
+    icon: Target,
+    color: "text-red-600",
+    bg: "bg-red-50"
   }
 ];
 
@@ -62,9 +98,16 @@ function Barcode() {
 
 export function WhoItsFor() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [hasInteracted, setHasInteracted] = useState(false);
 
-  const next = () => setActiveIndex((prev) => (prev + 1) % personas.length);
-  const prev = () => setActiveIndex((prev) => (prev - 1 + personas.length) % personas.length);
+  const next = () => {
+    setActiveIndex((prev) => (prev + 1) % personas.length);
+    setHasInteracted(true);
+  };
+  const prev = () => {
+    setActiveIndex((prev) => (prev - 1 + personas.length) % personas.length);
+    setHasInteracted(true);
+  };
 
   return (
     <section id="who" className="relative py-20 md:py-32 bg-slate-wash overflow-hidden">
@@ -79,31 +122,33 @@ export function WhoItsFor() {
         >
           <span className="text-[13px] font-bold uppercase tracking-[.2em] text-blue mb-4">Security Clearance</span>
           <h2 className="font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
-            Built for people who send for themselves.
+            Who is EmailPilots for?
           </h2>
         </motion.div>
 
         {/* 3D Carousel Container */}
         <div className="relative h-[450px] md:h-[500px] w-full flex items-center justify-center">
           {personas.map((p, index) => {
-            const offset = (index - activeIndex + personas.length) % personas.length;
+            let isFront = index === activeIndex;
+            let isRight = index === (activeIndex + 1) % personas.length;
+            let isLeft = index === (activeIndex - 1 + personas.length) % personas.length;
             
-            // 0 = Front, 1 = Right, 2 = Back, 3 = Left
             let x = "0%";
             let scale = 1;
             let opacity = 1;
             let blur = 0;
             let zIndex = 30;
 
-            if (offset === 1) {
+            if (isRight) {
               x = "105%"; scale = 0.85; opacity = 0.5; blur = 4; zIndex = 20;
-            } else if (offset === 2) {
-              x = "0%"; scale = 0.7; opacity = 0; blur = 10; zIndex = 10;
-            } else if (offset === 3) {
+            } else if (isLeft) {
               x = "-105%"; scale = 0.85; opacity = 0.5; blur = 4; zIndex = 20;
+            } else if (!isFront) {
+              x = "0%"; scale = 0.7; opacity = 0; blur = 10; zIndex = 10;
             }
 
             const handleDragEnd = (e: any, { offset, velocity }: any) => {
+              setHasInteracted(true);
               const swipe = offset.x;
               if (swipe < -50) {
                 next();
@@ -115,7 +160,7 @@ export function WhoItsFor() {
             return (
               <motion.div
                 key={p.id}
-                onClick={() => setActiveIndex(index)}
+                onClick={() => { setActiveIndex(index); setHasInteracted(true); }}
                 drag="x"
                 dragConstraints={{ left: 0, right: 0 }}
                 dragElastic={0.2}
@@ -152,6 +197,24 @@ export function WhoItsFor() {
               </motion.div>
             )
           })}
+
+          {/* Swipe Indicator */}
+          {!hasInteracted && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-slate-900/80 backdrop-blur text-white px-5 py-2.5 rounded-full text-[12px] font-bold tracking-widest shadow-xl pointer-events-none z-50"
+            >
+              <motion.div animate={{ x: [-4, 0, -4] }} transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}>
+                <ChevronLeft className="w-4 h-4 opacity-70" />
+              </motion.div>
+              SWIPE
+              <motion.div animate={{ x: [4, 0, 4] }} transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}>
+                <ChevronRight className="w-4 h-4 opacity-70" />
+              </motion.div>
+            </motion.div>
+          )}
         </div>
 
         {/* Controls */}

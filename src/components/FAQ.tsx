@@ -4,8 +4,12 @@ import { cn } from '@/lib/utils'
 
 const faqs = [
   {
-    question: "Do I need to install any software?",
-    answer: "No, Email Pilots runs entirely in your web browser. However, because it operates locally, you need to keep the tab open while your campaigns are actively sending."
+    question: "Will my computer need to stay on?",
+    answer: "Yes. EmailPilots is a local-first application. Scheduled emails are sent from your device."
+  },
+  {
+    question: "How long does setup take?",
+    answer: "Most users can connect an account and schedule their first campaign in a few minutes."
   },
   {
     question: "Does this work with Gmail, Outlook, and Custom domains?",
