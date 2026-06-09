@@ -443,34 +443,34 @@ export default function CapabilitiesUI() {
            ))}
         </div>
 
-        <div className="w-full pt-16 pb-4 md:pt-16 md:pb-8 flex justify-center mt-2 relative z-20">
-           <div className="text-center">
-            <h2 className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
+        <div className="w-full pt-12 pb-2 md:pt-16 md:pb-8 flex justify-center mt-2 relative z-20">
+           <div className="text-center px-4">
+            <h2 className="text-[10px] md:text-sm font-bold tracking-[0.2em] text-primary uppercase mb-1 md:mb-2">
               Capabilities
             </h2>
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-black text-foreground tracking-tight title-glow">
+            <h3 className="text-xl md:text-4xl lg:text-5xl font-display font-black text-foreground tracking-tight title-glow">
               What you can do with Email Pilots
             </h3>
           </div>
         </div>
 
         {/* Main Split Screen Area */}
-        <div className="flex-1 w-full max-w-7xl mx-auto px-4 lg:px-8 relative mb-8 flex items-center z-10 min-h-0 py-2 md:py-8">
-           <div className="w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-16 relative h-full">
+        <div className="flex-1 w-full max-w-7xl mx-auto px-4 lg:px-8 relative mb-4 md:mb-8 flex items-center z-10 min-h-0 py-2 md:py-8">
+           <div className="w-full flex flex-col lg:flex-row items-center gap-4 lg:gap-16 relative h-full">
               
               {/* Left: Text Stack */}
-              <div className="w-full lg:w-5/12 relative h-[40%] md:h-[45%] lg:h-full flex flex-col justify-center">
+              <div className="w-full lg:w-5/12 relative h-[180px] md:h-[250px] lg:h-full flex flex-col justify-center shrink-0">
                  {capabilities.map((cap, i) => (
                     <div 
                        key={`text-${cap.id}`} 
                        ref={el => { textsRef.current[i] = el; }}
                        className={`absolute inset-0 flex flex-col justify-center ${i === 0 ? 'visible opacity-100' : 'invisible opacity-0'}`}
                     >
-                       <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4 md:mb-6 border border-primary/20 shadow-[0_10px_30px_-10px_rgba(0,85,255,0.3)] shrink-0">
-                          <cap.icon className="w-6 h-6 md:w-8 md:h-8" />
+                       <div className="w-10 h-10 md:w-16 md:h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-2 md:mb-6 border border-primary/20 shadow-[0_10px_30px_-10px_rgba(0,85,255,0.3)] shrink-0">
+                          <cap.icon className="w-5 h-5 md:w-8 md:h-8" />
                        </div>
-                       <h4 className="text-2xl md:text-4xl lg:text-5xl font-display font-bold mb-3 md:mb-6 tracking-tight leading-tight">{cap.title}</h4>
-                       <p className="text-sm md:text-base lg:text-xl text-muted-foreground leading-relaxed max-w-lg">
+                       <h4 className="text-xl md:text-4xl lg:text-5xl font-display font-bold mb-2 md:mb-6 tracking-tight leading-tight">{cap.title}</h4>
+                       <p className="text-xs md:text-base lg:text-xl text-muted-foreground leading-relaxed max-w-lg">
                           {cap.description}
                        </p>
                     </div>
@@ -478,7 +478,7 @@ export default function CapabilitiesUI() {
               </div>
 
               {/* Right: Mockup Stack */}
-              <div className="w-full lg:w-7/12 relative h-[60%] md:h-[55%] lg:h-full flex items-center justify-center lg:justify-end">
+              <div className="w-full lg:w-7/12 relative flex-1 min-h-[220px] lg:h-full flex items-center justify-center lg:justify-end pb-4 md:pb-0">
                  <div className="w-full max-w-[600px] h-full relative">
                     {mockups.map((mockup, i) => (
                        <div 

@@ -8,10 +8,10 @@ export function HowItWorks() {
       
       <div className="relative mx-auto max-w-6xl px-5">
         <motion.div 
-          initial={{ opacity: 0, y: 26 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 40, scale: 0.9 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ type: "spring", stiffness: 100, damping: 15 }}
           className="mx-auto max-w-2xl text-center"
         >
           <span className="text-[13px] font-bold uppercase tracking-[.2em] text-blue-soft/90">From zero to sending</span>
@@ -24,10 +24,10 @@ export function HowItWorks() {
           <div className="pointer-events-none absolute left-[16%] right-[16%] top-9 hidden h-px text-white/20 dash-path md:block animate-dash-move" style={{ backgroundSize: '200px 100%' }}></div>
           
           <motion.div 
-            initial={{ opacity: 0, y: 26 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 200, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+            transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
             className="relative rounded-2xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur"
           >
             <div className="mb-5 flex items-center justify-between">
@@ -39,10 +39,10 @@ export function HowItWorks() {
           </motion.div>
           
           <motion.div 
-            initial={{ opacity: 0, y: 26 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 200, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.2 }}
             className="relative rounded-2xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur"
           >
             <div className="mb-5 flex items-center justify-between">
@@ -54,10 +54,10 @@ export function HowItWorks() {
           </motion.div>
           
           <motion.div 
-            initial={{ opacity: 0, y: 26 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 200, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+            transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.3 }}
             className="relative rounded-2xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur"
           >
             <div className="mb-5 flex items-center justify-between">
