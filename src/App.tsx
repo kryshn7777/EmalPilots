@@ -36,11 +36,7 @@ function App() {
 
   return (
     <ReactLenis root>
-      <div 
-        className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed font-sans text-ink"
-        style={{ backgroundImage: "url('/bg-aviation.png')" }}
-      >
-        <div className="absolute inset-0 bg-white/30 z-0" />
+      <div className="relative min-h-screen w-full bg-white font-sans text-ink">
         
         <div className="fixed inset-0 z-0 pointer-events-none">
           <Canvas camera={{ position: [0, 0, 15], fov: 50 }}>
