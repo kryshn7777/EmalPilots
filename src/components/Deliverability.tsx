@@ -130,7 +130,7 @@ export function Deliverability() {
               <motion.span variants={{ rest: { height: "85%" }, hover: { height: ["0%", "85%"], transition: { duration: 0.4, ease: "easeOut", delay: 0.5 } } }} className="w-2 rounded-t bg-blue/80"></motion.span>
             </div>
             <h3 className="font-display text-lg font-bold text-ink">Natural Send Pacing</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Randomized delays and strategic pauses make your automated emails appear hand-typed.</p>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Randomized delays and strategic pauses make your automated emails look like they were typed by hand.</p>
           </motion.div>
           
           {/* Card 2: Rate Limiting */}
@@ -197,8 +197,8 @@ export function Deliverability() {
               </motion.span>
               <span className="font-mono text-[11px] font-bold text-violet-700">verified</span>
             </div>
-            <h3 className="font-display text-lg font-bold text-ink">Pre-send Verification</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Validates email addresses before sending to maintain a near-zero bounce rate.</p>
+            <h3 className="font-display text-lg font-bold text-ink">Verification before sending</h3>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Validates email addresses before sending to maintain an almost zero bounce rate.</p>
           </motion.div>
           
           {/* Card 5: Primary Inbox */}
@@ -218,7 +218,7 @@ export function Deliverability() {
               </div>
             </div>
             <h3 className="font-display text-lg font-bold text-ink">Primary Inbox Placement</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Clean, plain-text emails bypass promotional filters and land directly in the primary inbox.</p>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Clean, plain text emails bypass promotional filters and land directly in the primary inbox.</p>
           </motion.div>
           
           <motion.div variants={itemVariants} className="perspective-1000">

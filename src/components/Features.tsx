@@ -18,7 +18,7 @@ export function Features() {
         >
           <span className="text-[13px] font-bold uppercase tracking-[.2em] text-blue">Everything in the box</span>
           <h2 className="mt-3 font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">A full outreach studio. On your laptop.</h2>
-          <p className="mt-4 text-[17px] leading-relaxed text-slate-ink">No add-ons, no upsells, no per-seat pricing. Every feature below is included from day one.</p>
+          <p className="mt-4 text-[17px] leading-relaxed text-slate-ink">No extra fees, no upsells, no pricing per user. Every feature below is included from day one.</p>
         </motion.div>
 
         <div className="mt-14 grid gap-5 md:grid-cols-6">
@@ -67,8 +67,8 @@ export function Features() {
             className="group rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift md:col-span-2"
           >
             <div className="mb-4 inline-grid h-11 w-11 place-items-center rounded-xl bg-green-50 text-green-600"><svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" strokeLinejoin="round"/><path d="m9 12 2 2 4-4" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
-            <h3 className="font-display text-lg font-bold text-ink">Pre-flight spam check</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Catches spam-trigger words, ALL CAPS and broken links before you ever hit send.</p>
+            <h3 className="font-display text-lg font-bold text-ink">Spam check before sending</h3>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Catches spam trigger words, ALL CAPS and broken links before you ever hit send.</p>
           </motion.div>
           
           <motion.div 
@@ -80,7 +80,7 @@ export function Features() {
           >
             <div className="mb-4 inline-grid h-11 w-11 place-items-center rounded-xl bg-blue-soft text-blue"><svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
             <h3 className="font-display text-lg font-bold text-ink">Smart human scheduling</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Randomized, human-like delays and perfect send times in your prospect's timezone.</p>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Randomized delays that look natural and perfect send times in your prospect's timezone.</p>
           </motion.div>
           
           <motion.div 
@@ -91,8 +91,8 @@ export function Features() {
             className="group rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift md:col-span-2"
           >
             <div className="mb-4 inline-grid h-11 w-11 place-items-center rounded-xl bg-orange-soft text-orange"><svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 7h18M3 12h18M3 17h12" strokeLinecap="round"/></svg></div>
-            <h3 className="font-display text-lg font-bold text-ink">Auto-clean bounces</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Pre-checks domains and instantly stops sending to dead inboxes — no manual cleanup.</p>
+            <h3 className="font-display text-lg font-bold text-ink">Clean bounced emails automatically</h3>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Checks domains in advance and instantly stops sending to dead inboxes — no manual cleanup.</p>
           </motion.div>
         </div>
       </div>

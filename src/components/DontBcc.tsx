@@ -22,7 +22,7 @@ export function DontBcc() {
               <span className="ml-1 font-mono text-[10px] text-slate-mute">New Message</span>
             </div>
             <div className="font-mono text-[10.5px] leading-relaxed text-slate-mute">
-              <div className="mb-1">To: <span className="text-ink">undisclosed-recipients;</span></div>
+              <div className="mb-1">To: <span className="text-ink">hidden recipients;</span></div>
               <div className="text-red-500 break-all">BCC: user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com…</div>
             </div>
             <div className="mt-3 inline-flex rotate-3 items-center rounded bg-red-500 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white shadow">550 Spam Error</div>

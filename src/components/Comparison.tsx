@@ -66,7 +66,7 @@ export function Comparison() {
           </motion.div>
           
           <motion.div variants={itemVariants} className="flex items-center gap-2 sm:gap-4">
-            <div className="w-24 shrink-0 text-right text-[12px] sm:text-[14px] font-semibold text-slate-ink sm:w-44 leading-tight">Cold-email Platforms</div>
+            <div className="w-24 shrink-0 text-right text-[12px] sm:text-[14px] font-semibold text-slate-ink sm:w-44 leading-tight">Cold email platforms</div>
             <div className="relative h-11 flex-1 overflow-hidden rounded-xl bg-slate-200/70">
               <motion.div 
                 initial={{ width: 0 }}

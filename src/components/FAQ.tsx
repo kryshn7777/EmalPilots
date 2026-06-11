@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 const faqs = [
   {
     question: "Will my computer need to stay on?",
-    answer: "Yes. EmailPilots is a local-first application. Scheduled emails are sent from your device."
+    answer: "Yes. EmailPilots is an application that runs locally. Scheduled emails are sent directly from your device."
   },
   {
     question: "How long does setup take?",
@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Does this work with Gmail, Outlook, and Custom domains?",
-    answer: "Yes! You can connect as many Gmail (Google Workspace), Outlook (Microsoft 365), or custom SMTP/IMAP accounts as you'd like without paying any extra per-seat fees."
+    answer: "Yes! You can connect as many Gmail (Google Workspace), Outlook (Microsoft 365), or custom SMTP/IMAP accounts as you'd like without paying any extra fees per user."
   },
   {
     question: "How does it avoid the spam folder?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: "Can I cancel my subscription anytime?",
-    answer: "Absolutely. You can cancel your weekly subscription directly from your dashboard at any time. No hidden fees or lock-in contracts."
+    answer: "Absolutely. You can cancel your weekly subscription directly from your dashboard at any time. No hidden fees or contracts that lock you in."
   }
 ]
 

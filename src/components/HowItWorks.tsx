@@ -50,7 +50,7 @@ export function HowItWorks() {
               <span className="font-display text-5xl font-extrabold text-white/10">02</span>
             </div>
             <h3 className="font-display text-xl font-bold">Add your contacts</h3>
-            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Upload a spreadsheet or add recipients manually. Use variables like <span className="font-mono text-[13px] text-blue-soft">{`{{Name}}`}</span> to automatically personalize every message, or save a specific message for them to be auto-triggered.</p>
+            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Upload a spreadsheet or add recipients manually. Use variables like <span className="font-mono text-[13px] text-blue-soft">{`{{Name}}`}</span> to automatically personalize every message, or save a specific message for them to be sent automatically.</p>
           </motion.div>
           
           <motion.div 
