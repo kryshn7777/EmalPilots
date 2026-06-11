@@ -4,14 +4,14 @@ import { Plane, CheckCircle2, Loader2 } from 'lucide-react'
 
 export function Waitlist() {
   const [email, setEmail] = useState('')
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success'>('idle')
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!email) return
-    
+
     setStatus('loading')
-    
+
     // Formspree Integration
     try {
       const response = await fetch('https://formspree.io/f/mojzepne', {
@@ -22,17 +22,11 @@ export function Waitlist() {
         },
         body: JSON.stringify({ email })
       })
-      
-      if (response.ok) {
-        setStatus('success')
-      } else {
-        // If there's an error, revert to idle so they can try again
-        setStatus('idle')
-        alert("Oops! There was a problem submitting your email. Please try again.")
-      }
+
+      setStatus(response.ok ? 'success' : 'error')
     } catch (err) {
       console.error(err)
-      setStatus('idle')
+      setStatus('error')
     }
   }
 
@@ -99,7 +93,13 @@ export function Waitlist() {
               )}
             </div>
           </div>
-          
+
+          {status === 'error' && (
+            <p className="mt-4 text-[13px] font-medium text-red-400" role="alert">
+              Something went wrong sending your request. Please check your connection and try again.
+            </p>
+          )}
+
           {status !== 'success' && (
             <p className="mt-6 text-[13px] text-slate-400 font-medium">
               Join <span className="text-white">2,400+</span> others already waiting. No spam, ever.

@@ -142,9 +142,9 @@ export function WhoItsFor() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex flex-col items-center text-center mb-16 md:mb-24"
         >
-          <span className="text-[13px] font-bold uppercase tracking-[.2em] text-blue mb-4">Security Clearance</span>
+          <span className="text-[13px] font-bold uppercase tracking-[.2em] text-blue mb-4">Now Boarding</span>
           <h2 className="font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
-            Who is EmailPilots for?
+            Who is Email Pilots for?
           </h2>
         </motion.div>
 

@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 const faqs = [
   {
     question: "Will my computer need to stay on?",
-    answer: "Yes. EmailPilots is an application that runs locally. Scheduled emails are sent directly from your device."
+    answer: "Yes. Email Pilots is an application that runs locally. Scheduled emails are sent directly from your device."
   },
   {
     question: "How long does setup take?",

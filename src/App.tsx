@@ -1,7 +1,7 @@
 import { ReactLenis, useLenis } from 'lenis/react'
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { useEffect } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Comparison } from './components/Comparison'
@@ -14,8 +14,8 @@ import { Waitlist } from './components/Waitlist'
 import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
 import MultiAccountSupport from './components/MultiAccountSupport'
-import { Canvas } from "@react-three/fiber"
-import { AviationScene } from "./components/AviationBackground"
+
+const AviationCanvas = lazy(() => import('./components/AviationCanvas'))
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -23,6 +23,19 @@ function App() {
   const lenis = useLenis((_scroll: any) => {
     // Scroll update logic if needed
   })
+
+  // The 3D scene is decorative: load it after first paint, and only on
+  // desktop where it doesn't collide with the hero text or drain the GPU.
+  const [showScene, setShowScene] = useState(false)
+  useEffect(() => {
+    if (!window.matchMedia('(min-width: 768px)').matches) return
+    if ('requestIdleCallback' in window) {
+      const handle = window.requestIdleCallback(() => setShowScene(true), { timeout: 1500 })
+      return () => window.cancelIdleCallback(handle)
+    }
+    const handle = window.setTimeout(() => setShowScene(true), 300)
+    return () => window.clearTimeout(handle)
+  }, [])
 
   useEffect(() => {
     if (lenis) {
@@ -39,9 +52,11 @@ function App() {
       <div className="relative min-h-screen w-full bg-white font-sans text-ink">
         
         <div className="fixed inset-0 z-0 pointer-events-none">
-          <Canvas camera={{ position: [0, 0, 15], fov: 50 }}>
-            <AviationScene />
-          </Canvas>
+          {showScene && (
+            <Suspense fallback={null}>
+              <AviationCanvas />
+            </Suspense>
+          )}
         </div>
 
         <div className="relative z-10">

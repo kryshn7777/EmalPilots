@@ -72,6 +72,10 @@
     scroll-behavior: auto !important; /* Managed by Lenis */
     -webkit-text-size-adjust: 100%;
   }
+  /* Keep anchor targets clear of the fixed header */
+  section[id] {
+    scroll-margin-top: 88px;
+  }
   html.lenis, html.lenis body {
     height: auto;
   }

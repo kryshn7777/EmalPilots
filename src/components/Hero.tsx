@@ -38,12 +38,12 @@ export function Hero() {
           </motion.div>
 
           <motion.h1 variants={itemVariants} className="mt-6 font-display text-[2.7rem] font-extrabold leading-[1.02] tracking-[-.02em] text-ink sm:text-6xl lg:text-[4.4rem]">
-            Personalized emails,<br className="hidden sm:block" />
+            Personalized emails,{' '}<br className="hidden sm:block" />
             sent from <span className="text-blue">your own inbox.</span>
           </motion.h1>
 
           <motion.p variants={itemVariants} className="mt-6 max-w-xl text-[17px] leading-relaxed text-slate-ink sm:text-lg">
-            Email Pilots is your personal sending assistant. Connect your gmail, outlook accounts, upload your contact list, and we'll send each message individually — <span className="font-semibold text-ink">paced naturally</span>. This ensures your emails land in the primary inbox, avoiding the spam folder.
+            Email Pilots is your personal sending assistant. Connect your Gmail or Outlook account, upload your contact list, and we'll send each message individually — <span className="font-semibold text-ink">paced naturally</span>. This ensures your emails land in the primary inbox, avoiding the spam folder.
           </motion.p>
 
           <motion.div variants={itemVariants} className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
