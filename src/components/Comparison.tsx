@@ -26,7 +26,7 @@ export function Comparison() {
         >
           <motion.span variants={itemVariants} className="text-[13px] font-bold uppercase tracking-[.2em] text-blue">The honest comparison</motion.span>
           <motion.h2 variants={itemVariants} className="mt-3 font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">The math is almost unfair.</motion.h2>
-          <motion.p variants={itemVariants} className="mt-4 text-[17px] leading-relaxed text-slate-ink">Everyone else charges you a monthly fortune to send cold email. You're already paying for Gmail, Outlook, or custom hosting — Email Pilots just makes it send for you, for the price of a weekly coffee.</motion.p>
+          <motion.p variants={itemVariants} className="mt-4 text-[17px] leading-relaxed text-slate-ink">Most platforms charge a premium to send cold emails. You already pay for an email provider — Email Pilots simply automates your outreach for the price of a weekly coffee.</motion.p>
         </motion.div>
 
         <motion.div 
@@ -66,7 +66,7 @@ export function Comparison() {
           </motion.div>
           
           <motion.div variants={itemVariants} className="flex items-center gap-2 sm:gap-4">
-            <div className="w-24 shrink-0 text-right text-[12px] sm:text-[14px] font-semibold text-slate-ink sm:w-44 leading-tight">Cold-email SaaS</div>
+            <div className="w-24 shrink-0 text-right text-[12px] sm:text-[14px] font-semibold text-slate-ink sm:w-44 leading-tight">Cold-email Platforms</div>
             <div className="relative h-11 flex-1 overflow-hidden rounded-xl bg-slate-200/70">
               <motion.div 
                 initial={{ width: 0 }}

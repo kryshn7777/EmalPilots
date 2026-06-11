@@ -118,19 +118,9 @@ export function AviationScene() {
       
       <FlightPath curve={curve1} color="#0055ff" />
       <AnimatedPlane curve={curve1} color="#0055ff" offset={0} />
-      <AnimatedPlane curve={curve1} color="#ffffff" offset={0.3} />
       
       <FlightPath curve={curve2} color="#ff6600" />
       <AnimatedPlane curve={curve2} color="#ff6600" offset={0.5} />
-      <AnimatedPlane curve={curve2} color="#ffffff" offset={0.8} />
-      
-      <FlightPath curve={curve3} color="#00ccff" />
-      <AnimatedPlane curve={curve3} color="#ffffff" offset={0.2} />
-      <AnimatedPlane curve={curve3} color="#00ccff" offset={0.6} />
-
-      <FlightPath curve={curve4} color="#ff3366" />
-      <AnimatedPlane curve={curve4} color="#ffffff" offset={0.1} />
-      <AnimatedPlane curve={curve4} color="#ff3366" offset={0.7} />
     </>
   )
 }

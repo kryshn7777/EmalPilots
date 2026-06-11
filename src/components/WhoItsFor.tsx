@@ -1,5 +1,10 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { motion } from 'motion/react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useGSAP } from '@gsap/react'
+
+gsap.registerPlugin(ScrollTrigger)
 import { Briefcase, Users, Zap, Globe, Building, Lightbulb, Target, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const personas = [
@@ -97,8 +102,25 @@ function Barcode() {
 }
 
 export function WhoItsFor() {
+  const containerRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [hasInteracted, setHasInteracted] = useState(false);
+
+  useGSAP(() => {
+    gsap.from(".ticket-wrapper", {
+      y: 400,
+      scale: 0.5,
+      opacity: 0,
+      duration: 1.2,
+      stagger: 0.1,
+      transformOrigin: "bottom center",
+      ease: "back.out(1.2)",
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top 75%",
+      }
+    });
+  }, { scope: containerRef });
 
   const next = () => {
     setActiveIndex((prev) => (prev + 1) % personas.length);
@@ -127,7 +149,7 @@ export function WhoItsFor() {
         </motion.div>
 
         {/* 3D Carousel Container */}
-        <div className="relative h-[450px] md:h-[500px] w-full flex items-center justify-center">
+        <div ref={containerRef} className="relative h-[450px] md:h-[500px] w-full flex items-center justify-center">
           {personas.map((p, index) => {
             let isFront = index === activeIndex;
             let isRight = index === (activeIndex + 1) % personas.length;
@@ -138,13 +160,14 @@ export function WhoItsFor() {
             let opacity = 1;
             let blur = 0;
             let zIndex = 30;
+            let rotate = 0;
 
             if (isRight) {
-              x = "105%"; scale = 0.85; opacity = 0.5; blur = 4; zIndex = 20;
+              x = "105%"; scale = 0.85; opacity = 0.5; blur = 4; zIndex = 20; rotate = 8;
             } else if (isLeft) {
-              x = "-105%"; scale = 0.85; opacity = 0.5; blur = 4; zIndex = 20;
+              x = "-105%"; scale = 0.85; opacity = 0.5; blur = 4; zIndex = 20; rotate = -8;
             } else if (!isFront) {
-              x = "0%"; scale = 0.7; opacity = 0; blur = 10; zIndex = 10;
+              x = "0%"; scale = 0.7; opacity = 0; blur = 10; zIndex = 10; rotate = 0;
             }
 
             const handleDragEnd = (e: any, { offset, velocity }: any) => {
@@ -158,23 +181,24 @@ export function WhoItsFor() {
             };
 
             return (
-              <motion.div
-                key={p.id}
-                onClick={() => { setActiveIndex(index); setHasInteracted(true); }}
-                drag="x"
-                dragConstraints={{ left: 0, right: 0 }}
-                dragElastic={0.2}
-                onDragEnd={handleDragEnd}
-                animate={{
-                  x,
-                  scale,
-                  opacity,
-                  filter: `blur(${blur}px)`,
-                  zIndex
-                }}
-                transition={{ duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
-                className="absolute w-[280px] md:w-[320px] h-[400px] md:h-[450px] bg-white rounded-3xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] p-6 md:p-8 flex flex-col items-center text-center border border-slate-line/50 cursor-pointer hover:shadow-2xl transition-shadow touch-pan-y"
-              >
+              <div key={p.id} className="ticket-wrapper absolute w-[280px] md:w-[320px] h-[400px] md:h-[450px] pointer-events-none flex justify-center items-center">
+                <motion.div
+                  onClick={() => { setActiveIndex(index); setHasInteracted(true); }}
+                  drag="x"
+                  dragConstraints={{ left: 0, right: 0 }}
+                  dragElastic={0.2}
+                  onDragEnd={handleDragEnd}
+                  animate={{
+                    x,
+                    scale,
+                    rotate,
+                    opacity,
+                    filter: `blur(${blur}px)`,
+                    zIndex
+                  }}
+                  transition={{ duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
+                  className="w-full h-full bg-white rounded-3xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] p-6 md:p-8 flex flex-col items-center text-center border border-slate-line/50 cursor-pointer hover:shadow-2xl transition-shadow touch-pan-y pointer-events-auto"
+                >
                 {/* Lanyard Hole */}
                 <div className="absolute top-4 md:top-6 left-1/2 -translate-x-1/2 w-12 h-3 rounded-full bg-slate-100 border border-slate-200 shadow-inner" />
                 
@@ -195,6 +219,7 @@ export function WhoItsFor() {
                   <Barcode />
                 </div>
               </motion.div>
+            </div>
             )
           })}
 

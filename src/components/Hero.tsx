@@ -34,7 +34,7 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-70"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
             </span>
-            Runs locally · Gmail, Outlook &amp; Custom
+            Works on your computer · Connect any email
           </motion.div>
 
           <motion.h1 variants={itemVariants} className="mt-6 font-display text-[2.7rem] font-extrabold leading-[1.02] tracking-[-.02em] text-ink sm:text-6xl lg:text-[4.4rem]">
@@ -43,7 +43,7 @@ export function Hero() {
           </motion.h1>
 
           <motion.p variants={itemVariants} className="mt-6 max-w-xl text-[17px] leading-relaxed text-slate-ink sm:text-lg">
-            Email Pilots is your personal sending assistant. Connect Gmail, Outlook, or Custom SMTP, drop in a spreadsheet, and it sends each message <span className="font-semibold text-ink">one by one — paced like a human</span> so you land in the primary inbox, never the spam folder.
+            Email Pilots is your personal sending assistant. Connect your gmail, outlook accounts, upload your contact list, and we'll send each message individually — <span className="font-semibold text-ink">paced naturally</span>. This ensures your emails land in the primary inbox, avoiding the spam folder.
           </motion.p>
 
           <motion.div variants={itemVariants} className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -171,8 +171,8 @@ export function Hero() {
           <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-2 text-[14px] font-semibold text-slate-ink">
             <span className="inline-flex items-center gap-2"><svg viewBox="0 0 24 24" className="h-4 w-4 text-blue" fill="currentColor"><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" strokeWidth="2"/></svg>Works with Gmail</span>
             <span className="inline-flex items-center gap-2"><svg viewBox="0 0 24 24" className="h-4 w-4 text-blue" fill="currentColor"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8" opacity=".6"/><rect x="3" y="13" width="8" height="8" opacity=".6"/><rect x="13" y="13" width="8" height="8" opacity=".35"/></svg>Works with Outlook</span>
-            <span className="inline-flex items-center gap-2"><svg viewBox="0 0 24 24" className="h-4 w-4 text-blue" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 3h18v18H3zM4 6v14h16V6H4zm2 2h12v2H6V8z"/></svg>Works with Custom SMTP</span>
-            <span className="inline-flex items-center gap-2"><svg viewBox="0 0 24 24" className="h-4 w-4 text-blue" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" strokeLinejoin="round"/></svg>100% local &amp; private</span>
+            <span className="inline-flex items-center gap-2"><svg viewBox="0 0 24 24" className="h-4 w-4 text-blue" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 3h18v18H3zM4 6v14h16V6H4zm2 2h12v2H6V8z"/></svg>Works with any email</span>
+            <span className="inline-flex items-center gap-2"><svg viewBox="0 0 24 24" className="h-4 w-4 text-blue" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" strokeLinejoin="round"/></svg>100% private</span>
           </div>
         </div>
       </motion.div>

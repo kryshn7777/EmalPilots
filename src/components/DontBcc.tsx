@@ -62,8 +62,8 @@ export function DontBcc() {
           <h2 className="mt-3 font-display text-[2rem] font-extrabold leading-[1.1] tracking-tight text-ink sm:text-[2.5rem]" style={{ textWrap: 'balance' }}>
             Don't BCC 100 people.<br /><span className="text-slate-mute">Let your assistant<br />send them perfectly.</span>
           </h2>
-          <p className="mt-5 max-w-lg text-[17px] leading-relaxed text-slate-ink">Blast everyone in one BCC and your email dives straight into spam. Send them by hand and you lose an entire afternoon to copy-paste.</p>
-          <p className="mt-4 max-w-lg text-[17px] leading-relaxed text-slate-ink">Email Pilots sends each message individually, with natural pauses in between — exactly like a real person would. You grab a coffee; it does the typing.</p>
+          <p className="mt-5 max-w-lg text-[17px] leading-relaxed text-slate-ink">Sending a mass BCC email almost guarantees you'll land in the spam folder. But writing them individually takes hours of manual work.</p>
+          <p className="mt-4 max-w-lg text-[17px] leading-relaxed text-slate-ink">Email Pilots sends each message individually, with natural pauses between sends — mimicking human behavior while you focus on other work.</p>
           <div className="mt-7 flex flex-wrap gap-3">
             <span className="inline-flex items-center gap-2 rounded-lg border border-slate-line bg-white px-3.5 py-2 text-[13.5px] font-semibold text-ink"><svg viewBox="0 0 24 24" className="h-4 w-4 text-green-600" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="m5 13 4 4L19 7"/></svg>No spam folder</span>
             <span className="inline-flex items-center gap-2 rounded-lg border border-slate-line bg-white px-3.5 py-2 text-[13.5px] font-semibold text-ink"><svg viewBox="0 0 24 24" className="h-4 w-4 text-green-600" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="m5 13 4 4L19 7"/></svg>Hours back every week</span>

@@ -129,8 +129,8 @@ export function Deliverability() {
               <motion.span variants={{ rest: { height: "60%" }, hover: { height: ["0%", "60%"], transition: { duration: 0.4, ease: "easeOut", delay: 0.4 } } }} className="w-2 rounded-t bg-blue/60"></motion.span>
               <motion.span variants={{ rest: { height: "85%" }, hover: { height: ["0%", "85%"], transition: { duration: 0.4, ease: "easeOut", delay: 0.5 } } }} className="w-2 rounded-t bg-blue/80"></motion.span>
             </div>
-            <h3 className="font-display text-lg font-bold text-ink">Human-like pacing</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Randomized delays and strategic pauses glide past spam filters undetected.</p>
+            <h3 className="font-display text-lg font-bold text-ink">Natural Send Pacing</h3>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Randomized delays and strategic pauses make your automated emails appear hand-typed.</p>
           </motion.div>
           
           {/* Card 2: Rate Limiting */}
@@ -152,8 +152,8 @@ export function Deliverability() {
                 </motion.div>
               </div>
             </div>
-            <h3 className="font-display text-lg font-bold text-ink">Hard rate limiting</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Small, controlled batches enforce daily limits — no spikes, no provider throttling.</p>
+            <h3 className="font-display text-lg font-bold text-ink">Intelligent Rate Limiting</h3>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Controlled daily limits ensure consistent delivery without triggering provider flags.</p>
           </motion.div>
           
           {/* Card 3: Warmup */}
@@ -175,8 +175,8 @@ export function Deliverability() {
                 <circle cx="116" cy="4" r="3" fill="#16a34a"/>
               </svg>
             </div>
-            <h3 className="font-display text-lg font-bold text-ink">Automatic warmup</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Starts at 5 a day and safely ramps volume to build domain trust on autopilot.</p>
+            <h3 className="font-display text-lg font-bold text-ink">Automated Warmup</h3>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Gradually ramps up your sending volume to establish and protect your domain reputation.</p>
           </motion.div>
           
           {/* Card 4: DNS */}
@@ -197,8 +197,8 @@ export function Deliverability() {
               </motion.span>
               <span className="font-mono text-[11px] font-bold text-violet-700">verified</span>
             </div>
-            <h3 className="font-display text-lg font-bold text-ink">DNS pre-verification</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Verifies recipient domains before sending for a pristine, near-0% bounce rate.</p>
+            <h3 className="font-display text-lg font-bold text-ink">Pre-send Verification</h3>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Validates email addresses before sending to maintain a near-zero bounce rate.</p>
           </motion.div>
           
           {/* Card 5: Primary Inbox */}
@@ -217,8 +217,8 @@ export function Deliverability() {
                 <motion.span variants={{ rest: { opacity: 1, scale: 1 }, hover: { opacity: [0, 1], scale: [0.8, 1], transition: { duration: 0.4, delay: 0.3 } } }} className="mt-1.5 inline-block rounded bg-amber-100 px-1.5 py-0.5 text-[8px] font-bold uppercase tracking-wider text-amber-700">Primary</motion.span>
               </div>
             </div>
-            <h3 className="font-display text-lg font-bold text-ink">Primary inbox placement</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Crisp 1:1 plain-text bypasses promo filters and lands in the Primary tab.</p>
+            <h3 className="font-display text-lg font-bold text-ink">Primary Inbox Placement</h3>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Clean, plain-text emails bypass promotional filters and land directly in the primary inbox.</p>
           </motion.div>
           
           <motion.div variants={itemVariants} className="perspective-1000">

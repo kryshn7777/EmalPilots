@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     question: "How does it avoid the spam folder?",
-    answer: "Most tools blast hundreds of emails simultaneously via cloud servers, which immediately triggers spam filters. Email Pilots mimics human behavior by sending directly from your browser, pacing emails one by one with randomized delays."
+    answer: "Other tools send all emails at the exact same time from huge cloud servers, which makes email providers think it's junk. Email Pilots sends them one by one right from your computer, like a real person would, with natural pauses in between."
   },
   {
     question: "Is my data secure?",
-    answer: "100%. We never store your contact lists or email bodies on our servers. The app processes your data locally on your device, meaning your proprietary outreach lists remain completely private."
+    answer: "100%. We never store your contact lists or emails on our servers. The app runs locally on your computer, meaning your data stays completely private."
   },
   {
     question: "Can I cancel my subscription anytime?",

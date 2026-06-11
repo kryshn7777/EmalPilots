@@ -47,8 +47,19 @@ function App() {
         <div className="relative z-10">
           <Header />
         <main className="overflow-clip relative">
-          <div className="relative z-20"><Hero /></div>
-          <div className="relative z-20"><Comparison /></div>
+          <div className="relative z-10">
+            {/* Top fog: Intense on left, gradient to right */}
+            <div 
+              className="absolute inset-0 pointer-events-none -z-10 backdrop-blur-[3px]" 
+              style={{ 
+                background: 'linear-gradient(to right, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.8) 30%, rgba(255,255,255,0) 100%)', 
+                maskImage: 'linear-gradient(to right, black 0%, rgba(0,0,0,0.8) 30%, transparent 100%)', 
+                WebkitMaskImage: 'linear-gradient(to right, black 0%, rgba(0,0,0,0.8) 30%, transparent 100%)' 
+              }} 
+            />
+            <div className="relative z-20"><Hero /></div>
+            <div className="relative z-20"><Comparison /></div>
+          </div>
           
           <div className="relative z-10">
             {/* Fog block 1: Fades in at top, fades out at bottom */}

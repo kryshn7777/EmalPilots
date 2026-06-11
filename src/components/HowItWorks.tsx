@@ -16,7 +16,7 @@ export function HowItWorks() {
         >
           <span className="text-[13px] font-bold uppercase tracking-[.2em] text-blue-soft/90">From zero to sending</span>
           <h2 className="mt-3 font-display text-4xl font-extrabold tracking-tight sm:text-5xl">Live in three minutes flat.</h2>
-          <p className="mt-4 text-[17px] leading-relaxed text-white/65">No SMTP wrangling, no DNS records, no learning curve. If you can send an email, you can run a campaign.</p>
+          <p className="mt-4 text-[17px] leading-relaxed text-white/65">No complex DNS setup required. If you can send an email, you can launch a campaign.</p>
         </motion.div>
         
         <div className="relative mt-14 grid gap-6 md:grid-cols-3">
@@ -35,7 +35,7 @@ export function HowItWorks() {
               <span className="font-display text-5xl font-extrabold text-white/10">01</span>
             </div>
             <h3 className="font-display text-xl font-bold">Connect your inbox</h3>
-            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Securely link Gmail, Outlook, or your Custom Email provider via an App Password. No complex APIs or DNS routing — it sends safely through the inbox you already use.</p>
+            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Securely link your existing email provider. There's no complicated API setup — it sends reliably through the inbox you already trust.</p>
           </motion.div>
           
           <motion.div 
@@ -49,8 +49,8 @@ export function HowItWorks() {
               <span className="grid h-12 w-12 place-items-center rounded-xl bg-blue text-white shadow-glow"><svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4" strokeLinecap="round"/><path d="M9 3h6v6M21 3 11 13" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
               <span className="font-display text-5xl font-extrabold text-white/10">02</span>
             </div>
-            <h3 className="font-display text-xl font-bold">Drop in your spreadsheet</h3>
-            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Upload an Excel or CSV of contacts. Use <span className="font-mono text-[13px] text-blue-soft">{`{{Name}}`}</span>, <span className="font-mono text-[13px] text-blue-soft">{`{{Company}}`}</span> tags to personalize every line.</p>
+            <h3 className="font-display text-xl font-bold">Add your contacts</h3>
+            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Upload a spreadsheet or add recipients manually. Use variables like <span className="font-mono text-[13px] text-blue-soft">{`{{Name}}`}</span> to automatically personalize every message, or save a specific message for them to be auto-triggered.</p>
           </motion.div>
           
           <motion.div 

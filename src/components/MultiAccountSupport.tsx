@@ -35,8 +35,8 @@ const Counter = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const controls = animate(0, 1250430, {
-      duration: 5,
+    const controls = animate(0, 2500, {
+      duration: 3,
       ease: "easeOut",
       onUpdate(value) {
         setCount(Math.floor(value));
@@ -51,7 +51,7 @@ const Counter = () => {
         {count.toLocaleString()}+
       </div>
       <div className="text-sm md:text-xl font-bold tracking-[0.2em] uppercase text-muted-foreground mt-2">
-        Emails Automated Concurrently
+        Emails Delivered Weekly
       </div>
     </div>
   );
@@ -94,7 +94,7 @@ export default function MultiAccountSupport() {
         </h2>
         
         <p className="text-lg md:text-2xl text-foreground/80 max-w-2xl mx-auto mb-16 leading-relaxed font-medium">
-          Manage your entire outreach infrastructure from a single local command center. Sync up to 5 accounts, hit send, and watch Email Pilots orchestrate massive parallel campaigns right from your desktop.
+          Manage your entire outreach from a single local command center. Sync up to 5 accounts, hit send, and let Email Pilots securely handle your daily sending right from your desktop.
         </p>
 
         <Counter />

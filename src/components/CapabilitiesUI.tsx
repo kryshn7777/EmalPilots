@@ -11,31 +11,31 @@ const capabilities = [
   {
     id: 0,
     title: "100% Local Privacy",
-    description: "Your contacts stay on your machine, not in the cloud. We never store or sell your lead lists. Keep your proprietary data completely private and secure.",
+    description: "Your data stays securely on your device. We never store or monetize your contact lists, ensuring complete privacy.",
     icon: Lock,
   },
   {
     id: 1,
-    title: "Pre-Flight Spam Protection",
-    description: "Before you hit send, our built-in editor warns you about spam-trigger words, ALL CAPS, and broken links. Combined with our automatic sending delays, you stay out of the spam folder.",
+    title: "Spam Protection",
+    description: "Before sending, we check your email for common spam triggers (like ALL CAPS or broken links) to maximize deliverability.",
     icon: ShieldCheck,
   },
   {
     id: 2,
-    title: "Deep Personalization",
-    description: "Use simple tags like {{Name}} to adapt every message on the fly. You can even automatically attach a unique PDF or pitch deck to each individual person.",
+    title: "Dynamic Personalization",
+    description: "Use simple tags like {{Name}} to customize every message. You can even automatically attach unique documents for each recipient.",
     icon: Wand2,
   },
   {
     id: 3,
-    title: "Smart, Human Scheduling",
-    description: "Plan your campaigns to hit the inbox when your prospect is actually awake. We add randomized, human-like delays between emails so it looks like you are typing them yourself.",
+    title: "Intelligent Scheduling",
+    description: "Schedule emails to send when your prospects are active. We add randomized delays so the outreach appears completely manual.",
     icon: Clock,
   },
   {
     id: 4,
-    title: "Auto-Clean Bounces",
-    description: "Stop wasting time doing manual cleanup. The app automatically pre-checks domains so you don't send to dead emails, and instantly stops sending to anyone who bounces.",
+    title: "Bounce Prevention",
+    description: "Stop wasting time cleaning lists. We verify email addresses before sending and automatically halt outreach to invalid addresses.",
     icon: Mail,
   }
 ];
