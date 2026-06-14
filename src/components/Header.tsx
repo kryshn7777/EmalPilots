@@ -20,9 +20,7 @@ export function Header() {
           )}
         >
           <a href="/#top" className="flex items-center gap-2.5">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-blue text-white shadow-glow">
-              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none"><path d="M3 11.5 21 3l-6.5 18-3.2-7.2L3 11.5Z" fill="currentColor"/><path d="m11.3 13.8 3.2-3.4" stroke="#fff" strokeWidth="1.4" strokeLinecap="round" opacity=".5"/></svg>
-            </span>
+            <img src="/logo.png" alt="Email Pilots Logo" className="h-9 w-auto" />
             <span className="font-display text-[17px] font-extrabold tracking-tight text-ink">Email&nbsp;Pilots</span>
           </a>
           <nav className="hidden items-center gap-8 text-[14px] font-medium text-slate-ink lg:flex">
