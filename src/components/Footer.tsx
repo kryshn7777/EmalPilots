@@ -3,8 +3,7 @@ export function Footer() {
     <footer className="border-t border-slate-line bg-white py-12 md:py-16">
       <div className="mx-auto max-w-7xl px-5 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex items-center gap-2.5">
-          <img src="/logo.png" alt="Email Pilots Logo" className="h-8 w-auto" />
-          <span className="font-display text-[16px] font-extrabold tracking-tight text-ink">Email&nbsp;Pilots</span>
+          <img src="/logo.png" alt="Email Pilots Logo" className="h-10 md:h-12 w-auto object-contain" />
         </div>
         
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[14px] font-medium text-slate-mute">

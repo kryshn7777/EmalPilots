@@ -20,8 +20,7 @@ export function Header() {
           )}
         >
           <a href="/#top" className="flex items-center gap-2.5">
-            <img src="/logo.png" alt="Email Pilots Logo" className="h-9 w-auto" />
-            <span className="font-display text-[17px] font-extrabold tracking-tight text-ink">Email&nbsp;Pilots</span>
+            <img src="/logo.png" alt="Email Pilots Logo" className="h-10 md:h-12 w-auto object-contain" />
           </a>
           <nav className="hidden items-center gap-8 text-[14px] font-medium text-slate-ink lg:flex">
             <a href="/#how" className="hover:text-blue transition-colors">How it works</a>
