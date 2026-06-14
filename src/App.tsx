@@ -14,6 +14,8 @@ import { Waitlist } from './components/Waitlist'
 import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
 import MultiAccountSupport from './components/MultiAccountSupport'
+import { PrivacyPolicy } from './components/PrivacyPolicy'
+import { TermsOfService } from './components/TermsOfService'
 
 const AviationCanvas = lazy(() => import('./components/AviationCanvas'))
 
@@ -30,11 +32,11 @@ function App() {
   useEffect(() => {
     if (!window.matchMedia('(min-width: 768px)').matches) return
     if ('requestIdleCallback' in window) {
-      const handle = window.requestIdleCallback(() => setShowScene(true), { timeout: 1500 })
-      return () => window.cancelIdleCallback(handle)
+      const handle = (window as any).requestIdleCallback(() => setShowScene(true), { timeout: 1500 })
+      return () => (window as any).cancelIdleCallback(handle)
     }
-    const handle = window.setTimeout(() => setShowScene(true), 300)
-    return () => window.clearTimeout(handle)
+    const handle = setTimeout(() => setShowScene(true), 300)
+    return () => clearTimeout(handle)
   }, [])
 
   useEffect(() => {
@@ -46,6 +48,36 @@ function App() {
       gsap.ticker.lagSmoothing(0)
     }
   }, [lenis])
+
+  const [currentPath, setCurrentPath] = useState(window.location.pathname)
+
+  useEffect(() => {
+    const handlePopState = () => setCurrentPath(window.location.pathname)
+    window.addEventListener('popstate', handlePopState)
+
+    const handleLinkClick = (e: MouseEvent) => {
+      const target = (e.target as HTMLElement).closest('a')
+      if (target && target.href && target.href.startsWith(window.location.origin)) {
+        const url = new URL(target.href)
+        // If it's a different pathname, intercept and use SPA routing
+        if (url.pathname !== window.location.pathname) {
+          e.preventDefault()
+          window.history.pushState({}, '', url.pathname + url.hash)
+          setCurrentPath(url.pathname)
+          window.scrollTo(0, 0)
+        }
+      }
+    }
+    window.addEventListener('click', handleLinkClick)
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState)
+      window.removeEventListener('click', handleLinkClick)
+    }
+  }, [])
+
+  if (currentPath === '/privacy') return <PrivacyPolicy />
+  if (currentPath === '/terms') return <TermsOfService />
 
   return (
     <ReactLenis root>
