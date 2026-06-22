@@ -32,7 +32,7 @@ export function Features() {
           >
             <div className="mb-5 inline-grid h-12 w-12 place-items-center rounded-xl bg-blue-soft text-blue"><svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4" strokeLinecap="round"/></svg></div>
             <h3 className="font-display text-xl font-bold text-ink">100% local privacy</h3>
-            <p className="mt-2 max-w-md text-[15px] leading-relaxed text-slate-ink">Your contacts and lead lists never touch a cloud server. Everything runs on your machine — your proprietary data stays yours, full stop.</p>
+            <p className="mt-2 max-w-md text-[15px] leading-relaxed text-slate-ink">Your contacts and lead lists never touch a cloud server. Everything runs on your machine, so your data stays yours. Full stop.</p>
             <div className="mt-6 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3 rounded-xl border border-slate-line bg-slate-wash px-3 sm:px-4 py-3">
               <span className="grid h-8 w-8 place-items-center rounded-lg bg-white text-slate-mute shadow-sm"><svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18" /></svg></span>
               <span className="font-mono text-[12px] text-slate-mute">cloud</span>
@@ -52,7 +52,7 @@ export function Features() {
           >
             <div className="mb-5 inline-grid h-12 w-12 place-items-center rounded-xl bg-orange-soft text-orange"><svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2"><path d="m12 3 1.9 4.6L19 9.2l-4.1 3 1.4 5.2L12 14.8 7.7 17.4l1.4-5.2L5 9.2l5.1-1.6L12 3Z" strokeLinejoin="round"/></svg></div>
             <h3 className="font-display text-xl font-bold text-ink">Deep personalization</h3>
-            <p className="mt-2 max-w-md text-[15px] leading-relaxed text-slate-ink">Merge tags adapt every message on the fly — even attaching a unique PDF or pitch deck per recipient.</p>
+            <p className="mt-2 max-w-md text-[15px] leading-relaxed text-slate-ink">Merge tags reshape every message on the fly, right down to a unique PDF or pitch deck for each recipient.</p>
             <div className="mt-6 rounded-xl border border-slate-line bg-slate-wash px-4 py-3 font-mono text-[13px]">
               <span className="text-ink">Hey </span><span className="rounded bg-blue-soft px-1.5 py-0.5 font-semibold text-blue">{`{{Name}}`}</span><span className="text-ink">, congrats on </span><span className="rounded bg-orange-soft px-1.5 py-0.5 font-semibold text-orange">{`{{Company}}`}</span><span className="text-ink">'s raise…</span>
             </div>
@@ -92,7 +92,7 @@ export function Features() {
           >
             <div className="mb-4 inline-grid h-11 w-11 place-items-center rounded-xl bg-orange-soft text-orange"><svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 7h18M3 12h18M3 17h12" strokeLinecap="round"/></svg></div>
             <h3 className="font-display text-lg font-bold text-ink">Clean bounced emails automatically</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Checks domains in advance and instantly stops sending to dead inboxes — no manual cleanup.</p>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Checks domains up front and instantly stops sending to dead inboxes. Zero manual cleanup.</p>
           </motion.div>
         </div>
       </div>

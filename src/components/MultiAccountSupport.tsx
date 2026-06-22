@@ -94,7 +94,7 @@ export default function MultiAccountSupport() {
         </h2>
         
         <p className="text-lg md:text-2xl text-foreground/80 max-w-2xl mx-auto mb-16 leading-relaxed font-medium">
-          Manage your entire outreach from a single local command center. Sync up to 5 accounts, hit send, and let Email Pilots securely handle your daily sending right from your desktop.
+          Run all your outreach from one local command center. Connect up to 5 accounts, hit send, and let Email Pilots fire off your daily emails straight from your desktop.
         </p>
 
         <Counter />

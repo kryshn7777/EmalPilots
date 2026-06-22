@@ -11,31 +11,31 @@ const capabilities = [
   {
     id: 0,
     title: "100% Local Privacy",
-    description: "Your data stays securely on your device. We never store or monetize your contact lists, ensuring complete privacy.",
+    description: "Your data never leaves your device. We never store or sell your contact lists. Full stop.",
     icon: Lock,
   },
   {
     id: 1,
     title: "Spam Protection",
-    description: "Before sending, we check your email for common spam triggers (like ALL CAPS or broken links) to maximize deliverability.",
+    description: "We scan every email for spam triggers like ALL CAPS and broken links before it goes out, so you hit the inbox more often.",
     icon: ShieldCheck,
   },
   {
     id: 2,
     title: "Dynamic Personalization",
-    description: "Use simple tags like {{Name}} to customize every message. You can even automatically attach unique documents for each recipient.",
+    description: "Drop in simple tags like {{Name}} to tailor every message, and auto attach a unique document for each recipient.",
     icon: Wand2,
   },
   {
     id: 3,
     title: "Intelligent Scheduling",
-    description: "Schedule emails to send when your prospects are active. We add randomized delays so the outreach appears completely manual.",
+    description: "Send when your prospects are actually awake. Randomized delays make every message look hand typed.",
     icon: Clock,
   },
   {
     id: 4,
     title: "Bounce Prevention",
-    description: "Stop wasting time cleaning lists. We verify email addresses before sending and automatically halt outreach to invalid addresses.",
+    description: "Quit babysitting your lists. We verify addresses up front and instantly stop sending to dead inboxes.",
     icon: Mail,
   }
 ];

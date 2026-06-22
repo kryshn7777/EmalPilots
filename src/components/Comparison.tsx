@@ -26,7 +26,7 @@ export function Comparison() {
         >
           <motion.span variants={itemVariants} className="text-[13px] font-bold uppercase tracking-[.2em] text-blue">The honest comparison</motion.span>
           <motion.h2 variants={itemVariants} className="mt-3 font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">The math is almost unfair.</motion.h2>
-          <motion.p variants={itemVariants} className="mt-4 text-[17px] leading-relaxed text-slate-ink">Most platforms charge a premium to send cold emails. You already pay for an email provider — Email Pilots simply automates your outreach for the price of a weekly coffee.</motion.p>
+          <motion.p variants={itemVariants} className="mt-4 text-[17px] leading-relaxed text-slate-ink">Most platforms charge a premium just to send cold email. You already pay for an inbox, so Email Pilots automates the whole thing for the price of one weekly coffee.</motion.p>
         </motion.div>
 
         <motion.div 
@@ -119,7 +119,7 @@ export function Comparison() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mx-auto mt-10 max-w-xl text-center text-[15px] text-slate-mute"
         >
-          Same inbox you already trust. None of the monthly bills. <span className="font-semibold text-ink">Unlimited emails included.</span>
+          Same inbox you already trust. Zero monthly bloat.<span className="font-semibold text-ink">Unlimited emails included.</span>
         </motion.p>
       </div>
     </section>

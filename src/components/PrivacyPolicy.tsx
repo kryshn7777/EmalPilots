@@ -23,7 +23,7 @@ export function PrivacyPolicy() {
                 <p>We fundamentally believe that your data belongs to you. The Email Pilots desktop application is architected to operate <strong>100% locally on your machine</strong>.</p>
                 <ul className="list-disc pl-6 mt-4 space-y-2">
                   <li><strong>No Data Harvesting or Telemetry:</strong> The application contains zero network telemetry, crash reporting, or tracking scripts. It makes no HTTP requests to our servers or any third-party analytics providers.</li>
-                  <li><strong>Local Data Storage:</strong> All configuration and operational data—including your recipient lists, sending limits, suppressed emails, and email templates—are stored securely and solely on your local hard drive.</li>
+                  <li><strong>Local Data Storage:</strong> All configuration and operational data, including your recipient lists, sending limits, suppressed emails, and email templates, are stored securely and solely on your local hard drive.</li>
                   <li><strong>Direct SMTP Connections:</strong> The application connects directly from your computer to your chosen SMTP provider (e.g., Gmail, Outlook, or custom SMTP). Your emails, attachments, and recipient data never pass through, touch, or get processed by our servers.</li>
                   <li><strong>Secure Credentials:</strong> Your SMTP credentials (e.g., App Passwords) are stored entirely locally on your machine. We have absolutely no access to your credentials or your email accounts.</li>
                 </ul>

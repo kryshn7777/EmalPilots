@@ -49,10 +49,10 @@ export function Waitlist() {
           </div>
           
           <h2 className="font-display text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-6">
-            Get early access to the Email Pilots platform.
+            Be first on Email Pilots.
           </h2>
           <p className="text-[17px] md:text-lg text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Email Pilots is currently in private beta. Join the waitlist to secure your spot as we open up access for new users.
+            Email Pilots is in private beta right now. Hop on the waitlist and lock in your spot as we open the doors.
           </p>
 
           <div className="relative max-w-lg mx-auto group mt-8">

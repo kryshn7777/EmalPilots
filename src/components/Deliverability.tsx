@@ -102,7 +102,7 @@ export function Deliverability() {
             <span className="h-1.5 w-1.5 rounded-full bg-blue animate-pulse"></span>Deliverability engine
           </span>
           <h2 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">Built to land in the inbox.</h2>
-          <p className="mt-4 text-[17px] leading-relaxed text-slate-ink">Five safeguards protect your sender reputation so your messages actually get read — not buried under Promotions.</p>
+          <p className="mt-4 text-[17px] leading-relaxed text-slate-ink">Five safeguards guard your sender reputation so your messages actually get read, not buried under Promotions.</p>
         </motion.div>
 
         <motion.div 
@@ -153,7 +153,7 @@ export function Deliverability() {
               </div>
             </div>
             <h3 className="font-display text-lg font-bold text-ink">Intelligent Rate Limiting</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Controlled daily limits ensure consistent delivery without triggering provider flags.</p>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Smart daily limits keep delivery steady and keep provider red flags away.</p>
           </motion.div>
           
           {/* Card 3: Warmup */}
@@ -198,7 +198,7 @@ export function Deliverability() {
               <span className="font-mono text-[11px] font-bold text-violet-700">verified</span>
             </div>
             <h3 className="font-display text-lg font-bold text-ink">Verification before sending</h3>
-            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Validates email addresses before sending to maintain an almost zero bounce rate.</p>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Checks every address before it sends, keeping your bounce rate near zero.</p>
           </motion.div>
           
           {/* Card 5: Primary Inbox */}

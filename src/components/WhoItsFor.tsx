@@ -12,7 +12,7 @@ const personas = [
     id: "01",
     title: "Job Seekers",
     role: "APPLICANT",
-    desc: "Reach 50 hiring managers a week with a personalized intro. Stop refreshing job boards and take control of your search.",
+    desc: "Hit 50 hiring managers a week with a personal intro. Stop refreshing job boards and run your own search.",
     icon: Briefcase,
     color: "text-blue",
     bg: "bg-blue-50"
@@ -21,7 +21,7 @@ const personas = [
     id: "02",
     title: "Recruiters",
     role: "SOURCING",
-    desc: "Contact great candidates without paying thousands for LinkedIn Recruiter. Send personalized follow-ups completely automatically.",
+    desc: "Reach top candidates without dropping thousands on LinkedIn Recruiter. Personalized follow-ups fire on their own.",
     icon: Users,
     color: "text-orange",
     bg: "bg-orange-50"
@@ -30,7 +30,7 @@ const personas = [
     id: "03",
     title: "Freelancers",
     role: "CONTRACTOR",
-    desc: "Pitch your services to local businesses on autopilot. Keep your calendar booked without hours of copy-paste.",
+    desc: "Pitch local businesses on autopilot. Keep your calendar packed without the copy-paste grind.",
     icon: Zap,
     color: "text-green-600",
     bg: "bg-green-50"
@@ -39,7 +39,7 @@ const personas = [
     id: "04",
     title: "Community",
     role: "BUILDER",
-    desc: "Personally invite early users, speakers, or members to your new project without burning out before launch.",
+    desc: "Personally invite early users, speakers, and members to your project without burning out before launch day.",
     icon: Globe,
     color: "text-purple-600",
     bg: "bg-purple-50"
@@ -48,7 +48,7 @@ const personas = [
     id: "05",
     title: "Agencies",
     role: "AGENCY",
-    desc: "Scale your client outreach without the overhead. Automate personalized emails to book more meetings.",
+    desc: "Scale client outreach without the overhead. Automated personal emails book you more meetings.",
     icon: Building,
     color: "text-indigo-600",
     bg: "bg-indigo-50"
@@ -57,7 +57,7 @@ const personas = [
     id: "06",
     title: "Consultants",
     role: "ADVISOR",
-    desc: "Grow your consulting practice by reaching decision-makers directly with highly tailored proposals.",
+    desc: "Grow your practice by landing in front of decision-makers with sharp, tailored proposals.",
     icon: Lightbulb,
     color: "text-teal-600",
     bg: "bg-teal-50"
@@ -66,7 +66,7 @@ const personas = [
     id: "07",
     title: "Founders",
     role: "FOUNDER",
-    desc: "Connect with investors and early adopters directly to gain traction for your startup without the busywork.",
+    desc: "Reach investors and early adopters directly and build real traction, minus the busywork.",
     icon: Globe,
     color: "text-rose-600",
     bg: "bg-rose-50"
@@ -75,7 +75,7 @@ const personas = [
     id: "08",
     title: "Sales Professionals",
     role: "SALES",
-    desc: "Close more deals by keeping your pipeline full. Send timely, relevant follow-ups that consistently get replies.",
+    desc: "Keep your pipeline full and close more deals. Timely, relevant follow-ups that actually get replies.",
     icon: Target,
     color: "text-red-600",
     bg: "bg-red-50"

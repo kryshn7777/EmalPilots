@@ -76,7 +76,7 @@ export function Pricing() {
 
             <div className="mt-10">
               <button className="w-full group inline-flex h-14 items-center justify-center gap-2 rounded-xl bg-blue px-6 text-[16px] font-bold text-white shadow-glow transition-all duration-300 hover:bg-blue-600 active:scale-95">
-                Start your subscription
+                Start Sending Today
                 <svg viewBox="0 0 24 24" className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
               </button>
               <p className="mt-4 text-center text-[13px] font-medium text-slate-mute">No credit card required for 7-day trial.</p>
