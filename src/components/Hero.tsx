@@ -34,32 +34,32 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-70"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
             </span>
-            Works on your computer · Connect any email
+            Runs on your machine · Connects to any inbox
           </motion.div>
 
           <motion.h1 variants={itemVariants} className="mt-6 font-display text-[2.7rem] font-extrabold leading-[1.02] tracking-[-.02em] text-ink sm:text-6xl lg:text-[4.4rem]">
-            Personalized emails,{' '}<br className="hidden sm:block" />
+            Emails they actually open,{' '}<br className="hidden sm:block" />
             sent from <span className="text-blue">your own inbox.</span>
           </motion.h1>
 
           <motion.p variants={itemVariants} className="mt-6 max-w-xl text-[17px] leading-relaxed text-slate-ink sm:text-lg">
-            Email Pilots is your personal sending assistant. Connect your Gmail or Outlook account, upload your contact list, and we'll send each message individually — <span className="font-semibold text-ink">paced naturally</span>. This ensures your emails land in the primary inbox, avoiding the spam folder.
+            Email Pilots is your personal sending assistant. Connect Gmail or Outlook, drop in your contact list, and we send every message <span className="font-semibold text-ink">one by one at a natural human pace</span>. The payoff: you land in the primary inbox, not the spam folder.
           </motion.p>
 
           <motion.div variants={itemVariants} className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a href="#waitlist" className="group inline-flex items-center justify-center gap-2 rounded-xl bg-blue px-6 py-4 text-[16px] font-semibold text-white shadow-glow transition-all duration-300 hover:bg-blue-600 active:scale-95">
-              Join the Early Access Waitlist
+              Get Early Access Now
               <svg viewBox="0 0 24 24" className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
             </a>
             <a href="#how" className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-line bg-white px-6 py-4 text-[16px] font-semibold text-ink transition-all duration-300 hover:border-ink/30 hover:shadow-card active:scale-95">
               <svg viewBox="0 0 24 24" className="h-5 w-5 text-blue" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-              Watch 60-sec demo
+              Watch the 60-sec demo
             </a>
           </motion.div>
 
           <motion.div variants={itemVariants} className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-[13.5px] font-medium text-slate-mute">
-            <span className="inline-flex items-center gap-1.5"><svg viewBox="0 0 24 24" className="h-4 w-4 text-green-600" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m5 13 4 4L19 7"/></svg>Less than a coffee a week</span>
-            <span className="inline-flex items-center gap-1.5"><svg viewBox="0 0 24 24" className="h-4 w-4 text-green-600" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m5 13 4 4L19 7"/></svg>No credit card to try</span>
+            <span className="inline-flex items-center gap-1.5"><svg viewBox="0 0 24 24" className="h-4 w-4 text-green-600" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m5 13 4 4L19 7"/></svg>Cheaper than your weekly coffee</span>
+            <span className="inline-flex items-center gap-1.5"><svg viewBox="0 0 24 24" className="h-4 w-4 text-green-600" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m5 13 4 4L19 7"/></svg>No card needed to start</span>
             <span className="inline-flex items-center gap-1.5"><svg viewBox="0 0 24 24" className="h-4 w-4 text-green-600" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m5 13 4 4L19 7"/></svg>Cancel anytime</span>
           </motion.div>
         </motion.div>
@@ -78,7 +78,7 @@ export function Hero() {
               <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]"></span>
               <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]"></span>
               <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]"></span>
-              <span className="ml-2 font-mono text-[11px] text-slate-mute">Email Pilots — Campaign: Q3 Outreach</span>
+              <span className="ml-2 font-mono text-[11px] text-slate-mute">Email Pilots · Campaign: Q3 Outreach</span>
               <span className="ml-auto inline-flex items-center gap-1.5 rounded-full bg-green-100 px-2 py-0.5 text-[10.5px] font-bold text-green-700">
                 <span className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse"></span>SENDING
               </span>
@@ -164,7 +164,7 @@ export function Hero() {
             </div>
             <div className="text-[13.5px] leading-tight">
               <div className="flex items-center gap-1 text-orange">★★★★★ <span className="ml-1 font-semibold text-ink">4.9/5</span></div>
-              <div className="text-slate-mute">loved by 2,000+ solo senders</div>
+              <div className="text-slate-mute">trusted by 2,000+ solo senders</div>
             </div>
           </div>
           <div className="hidden h-8 w-px bg-slate-line sm:block"></div>

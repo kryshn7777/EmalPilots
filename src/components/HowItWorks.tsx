@@ -16,7 +16,7 @@ export function HowItWorks() {
         >
           <span className="text-[13px] font-bold uppercase tracking-[.2em] text-blue-soft/90">From zero to sending</span>
           <h2 className="mt-3 font-display text-4xl font-extrabold tracking-tight sm:text-5xl">Live in three minutes flat.</h2>
-          <p className="mt-4 text-[17px] leading-relaxed text-white/65">No complex DNS setup required. If you can send an email, you can launch a campaign.</p>
+          <p className="mt-4 text-[17px] leading-relaxed text-white/65">No DNS headaches. If you can send an email, you can launch a full campaign.</p>
         </motion.div>
         
         <div className="relative mt-14 grid gap-6 md:grid-cols-3">
@@ -35,7 +35,7 @@ export function HowItWorks() {
               <span className="font-display text-5xl font-extrabold text-white/10">01</span>
             </div>
             <h3 className="font-display text-xl font-bold">Connect your inbox</h3>
-            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Securely link your existing email provider. There's no complicated API setup — it sends reliably through the inbox you already trust.</p>
+            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Securely link the email provider you already use. No API wrangling, no setup maze. It sends through the inbox you already trust.</p>
           </motion.div>
           
           <motion.div 
@@ -50,7 +50,7 @@ export function HowItWorks() {
               <span className="font-display text-5xl font-extrabold text-white/10">02</span>
             </div>
             <h3 className="font-display text-xl font-bold">Add your contacts</h3>
-            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Upload a spreadsheet or add recipients manually. Use variables like <span className="font-mono text-[13px] text-blue-soft">{`{{Name}}`}</span> to automatically personalize every message, or save a specific message for them to be sent automatically.</p>
+            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Upload a spreadsheet or add people by hand. Drop in variables like <span className="font-mono text-[13px] text-blue-soft">{`{{Name}}`}</span> to personalize every message automatically, or write a custom note for anyone special.</p>
           </motion.div>
           
           <motion.div 
@@ -64,8 +64,8 @@ export function HowItWorks() {
               <span className="grid h-12 w-12 place-items-center rounded-xl bg-orange text-white shadow-[0_18px_50px_-18px_rgba(255,106,26,.8)]"><svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 11.5 21 3l-6.5 18-3.2-7.2L3 11.5Z" strokeLinejoin="round"/></svg></span>
               <span className="font-display text-5xl font-extrabold text-white/10">03</span>
             </div>
-            <h3 className="font-display text-xl font-bold">Hit send — walk away</h3>
-            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Email Pilots paces every message naturally and stops on bounces. Watch it fly from a live dashboard.</p>
+            <h3 className="font-display text-xl font-bold">Hit send and walk away</h3>
+            <p className="mt-2 text-[15px] leading-relaxed text-white/65">Email Pilots paces every send like a human and stops the second something bounces. Kick back and watch it fly on the live dashboard.</p>
           </motion.div>
         </div>
       </div>
