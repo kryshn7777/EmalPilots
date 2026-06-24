@@ -154,20 +154,7 @@ export function Hero() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="mx-auto mt-16 max-w-6xl px-5"
       >
-        <div className="flex flex-col items-center gap-5 rounded-2xl border border-slate-line bg-white/70 px-6 py-5 backdrop-blur sm:flex-row sm:justify-between">
-          <div className="flex items-center gap-3">
-            <div className="flex -space-x-2">
-              <span className="h-8 w-8 rounded-full border-2 border-white bg-blue/20"></span>
-              <span className="h-8 w-8 rounded-full border-2 border-white bg-orange/30"></span>
-              <span className="h-8 w-8 rounded-full border-2 border-white bg-green-200"></span>
-              <span className="h-8 w-8 rounded-full border-2 border-white bg-slate-200"></span>
-            </div>
-            <div className="text-[13.5px] leading-tight">
-              <div className="flex items-center gap-1 text-orange">★★★★★ <span className="ml-1 font-semibold text-ink">4.9/5</span></div>
-              <div className="text-slate-mute">trusted by 2,000+ solo senders</div>
-            </div>
-          </div>
-          <div className="hidden h-8 w-px bg-slate-line sm:block"></div>
+        <div className="flex flex-col items-center gap-5 rounded-2xl border border-slate-line bg-white/70 px-6 py-5 backdrop-blur sm:flex-row sm:justify-center">
           <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-2 text-[14px] font-semibold text-slate-ink">
             <span className="inline-flex items-center gap-2"><svg viewBox="0 0 24 24" className="h-4 w-4 text-blue" fill="currentColor"><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" strokeWidth="2"/></svg>Works with Gmail</span>
             <span className="inline-flex items-center gap-2"><svg viewBox="0 0 24 24" className="h-4 w-4 text-blue" fill="currentColor"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8" opacity=".6"/><rect x="3" y="13" width="8" height="8" opacity=".6"/><rect x="13" y="13" width="8" height="8" opacity=".35"/></svg>Works with Outlook</span>

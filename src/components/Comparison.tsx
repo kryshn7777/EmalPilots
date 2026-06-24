@@ -34,7 +34,7 @@ export function Comparison() {
           whileInView="show"
           viewport={{ once: true, margin: "-50px" }}
           variants={containerVariants}
-          className="mx-auto mt-12 max-w-3xl space-y-3.5"
+          className="mx-auto mt-12 max-w-3xl space-y-3.5 -translate-x-3 sm:-translate-x-6"
         >
           {/* rows */}
           <motion.div variants={itemVariants} className="group flex items-center gap-2 sm:gap-4">
@@ -119,7 +119,7 @@ export function Comparison() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mx-auto mt-10 max-w-xl text-center text-[15px] text-slate-mute"
         >
-          Same inbox you already trust. Zero monthly bloat.<span className="font-semibold text-ink">Unlimited emails included.</span>
+          Same inbox you already trust. Zero monthly bloat. <span className="font-semibold text-ink">Unlimited emails included.</span>
         </motion.p>
       </div>
     </section>

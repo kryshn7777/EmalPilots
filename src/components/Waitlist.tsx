@@ -102,7 +102,7 @@ export function Waitlist() {
 
           {status !== 'success' && (
             <p className="mt-6 text-[13px] text-slate-400 font-medium">
-              Join <span className="text-white">2,400+</span> others already waiting. No spam, ever.
+              No spam, ever.
             </p>
           )}
         </motion.div>

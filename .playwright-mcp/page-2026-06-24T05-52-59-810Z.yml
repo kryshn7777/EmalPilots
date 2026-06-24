@@ -1,0 +1,575 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - link "Email Pilots Logo" [ref=e8] [cursor=pointer]:
+        - /url: /#top
+        - img "Email Pilots Logo" [ref=e9]
+      - navigation [ref=e10]:
+        - link "How it works" [ref=e11] [cursor=pointer]:
+          - /url: /#how
+        - link "Features" [ref=e12] [cursor=pointer]:
+          - /url: /#features
+        - link "Who it's for" [ref=e13] [cursor=pointer]:
+          - /url: /#who
+        - link "Waitlist" [ref=e14] [cursor=pointer]:
+          - /url: /#waitlist
+        - link "FAQ" [ref=e15] [cursor=pointer]:
+          - /url: /#faq
+      - link "Join Waitlist" [ref=e17] [cursor=pointer]:
+        - /url: /#waitlist
+        - generic [ref=e18]: Join Waitlist
+        - img [ref=e19]
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e27]: Runs on your machine · Connects to any inbox
+            - heading "Emails they actually open, sent from your own inbox." [level=1] [ref=e31]:
+              - text: Emails they actually open,
+              - text: sent from your own inbox.
+            - paragraph [ref=e32]: "Email Pilots is your personal sending assistant. Connect Gmail or Outlook, drop in your contact list, and we send every message one by one at a natural human pace. The payoff: you land in the primary inbox, not the spam folder."
+            - generic [ref=e33]:
+              - link "Get Early Access Now" [ref=e34] [cursor=pointer]:
+                - /url: "#waitlist"
+                - text: Get Early Access Now
+                - img [ref=e35]
+              - link "Watch the 60-sec demo" [ref=e37] [cursor=pointer]:
+                - /url: "#how"
+                - img [ref=e38]
+                - text: Watch the 60-sec demo
+            - generic [ref=e40]:
+              - generic [ref=e41]:
+                - img [ref=e42]
+                - text: Cheaper than your weekly coffee
+              - generic [ref=e44]:
+                - img [ref=e45]
+                - text: No card needed to start
+              - generic [ref=e47]:
+                - img [ref=e48]
+                - text: Cancel anytime
+          - generic [ref=e50]:
+            - generic [ref=e51]:
+              - generic [ref=e52]:
+                - generic [ref=e56]: "Email Pilots · Campaign: Q3 Outreach"
+                - generic [ref=e57]: SENDING
+              - generic [ref=e59]:
+                - generic [ref=e60]:
+                  - generic [ref=e61]: Message template
+                  - generic [ref=e62]:
+                    - paragraph [ref=e63]: "Hi {{Name}},"
+                    - paragraph [ref=e64]: "I came across {{Company}} and wanted to reach out personally about…"
+                    - generic [ref=e65]:
+                      - img [ref=e66]
+                      - generic [ref=e68]: "Deck_{{Company}}.pdf"
+                      - generic [ref=e69]: for each recipient
+                  - generic [ref=e70]:
+                    - generic [ref=e71]: Spam score
+                    - generic [ref=e72]: ✓ Safe · 0.4
+                - generic [ref=e73]:
+                  - generic [ref=e74]:
+                    - generic [ref=e75]: Live queue
+                    - generic [ref=e76]: 42 / 100
+                  - generic [ref=e77]:
+                    - generic [ref=e78]:
+                      - img [ref=e80]
+                      - generic [ref=e82]:
+                        - generic [ref=e83]: john@acme.com
+                        - generic [ref=e84]: Delivered · 9:02
+                    - generic [ref=e85]:
+                      - img [ref=e87]
+                      - generic [ref=e89]:
+                        - generic [ref=e90]: sarah@tech.co
+                        - generic [ref=e91]: Delivered · 9:11
+                    - generic [ref=e96]:
+                      - generic [ref=e97]: Waiting 4m 12s…
+                      - generic [ref=e98]: Mimicking human pace
+                    - generic [ref=e101]:
+                      - generic [ref=e102]: mike@startup.io
+                      - generic [ref=e103]: Queued
+                  - generic [ref=e107]: Paced delivery · est. 3h 40m remaining
+            - generic [ref=e108]:
+              - img [ref=e110]
+              - generic [ref=e113]:
+                - generic [ref=e114]: 98.7%
+                - generic [ref=e115]: inbox success rate
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - img [ref=e120]
+            - text: Works with Gmail
+          - generic [ref=e123]:
+            - img [ref=e124]
+            - text: Works with Outlook
+          - generic [ref=e129]:
+            - img [ref=e130]
+            - text: Works with any email
+          - generic [ref=e132]:
+            - img [ref=e133]
+            - text: 100% private
+      - generic [ref=e137]:
+        - generic [ref=e138]:
+          - text: The honest comparison
+          - heading "The math is almost unfair." [level=2] [ref=e139]
+          - paragraph [ref=e140]: Most platforms charge a premium just to send cold email. You already pay for an inbox, so Email Pilots automates the whole thing for the price of one weekly coffee.
+        - generic [ref=e141]:
+          - generic [ref=e142]:
+            - generic [ref=e143]: LinkedIn Recruiter
+            - generic [ref=e145]:
+              - text: €140
+              - generic [ref=e146]: /mo
+          - generic [ref=e147]:
+            - generic [ref=e148]: Hiring a VA
+            - generic [ref=e150]:
+              - text: €500+
+              - generic [ref=e151]: /mo
+          - generic [ref=e152]:
+            - generic [ref=e153]: Cold email platforms
+            - generic [ref=e155]:
+              - text: €59
+              - generic [ref=e156]: /mo
+          - generic [ref=e157]:
+            - generic [ref=e158]: Doing it by hand
+            - generic [ref=e160]:
+              - text: ~6 hrs
+              - generic [ref=e161]: / 100 emails
+          - generic [ref=e162]:
+            - generic [ref=e163]: Email Pilots
+            - generic [ref=e165]:
+              - text: €1.99
+              - generic [ref=e166]: /wk
+              - generic [ref=e167]: ≈ €0.28 / day
+        - paragraph [ref=e168]: Same inbox you already trust. Zero monthly bloat. Unlimited emails included.
+    - generic [ref=e169]:
+      - generic [ref=e172]:
+        - generic [ref=e173]:
+          - generic [ref=e174]:
+            - generic [ref=e179]: New Message
+            - generic [ref=e180]:
+              - generic [ref=e181]: "To: hidden recipients;"
+              - generic [ref=e182]: "BCC: user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com…"
+            - generic [ref=e183]: 550 Spam Error
+          - generic [ref=e184]:
+            - generic [ref=e185]: Sending one by one
+            - generic [ref=e187]:
+              - generic [ref=e188]:
+                - img [ref=e190]
+                - generic [ref=e192]:
+                  - generic [ref=e193]: john@acme.com
+                  - generic [ref=e194]: Sent perfectly
+              - generic [ref=e198]:
+                - generic [ref=e199]: Waiting 3 minutes…
+                - generic [ref=e200]: Looks human
+              - generic [ref=e201]:
+                - img [ref=e203]
+                - generic [ref=e205]:
+                  - generic [ref=e206]: sarah@tech.co
+                  - generic [ref=e207]: Sent perfectly
+        - generic [ref=e208]:
+          - text: Stop hurting your reputation
+          - heading "Don't BCC 100 people. Let your assistant send them perfectly." [level=2] [ref=e209]:
+            - text: Don't BCC 100 people.
+            - generic [ref=e210]:
+              - text: Let your assistant
+              - text: send them perfectly.
+          - paragraph [ref=e211]: Blast 100 people on BCC and you basically book a one way ticket to spam. Write each one by hand and you burn hours you don't have.
+          - paragraph [ref=e212]: Email Pilots sends every message on its own, with natural pauses in between, exactly like a human would. You handle real work while it handles the sending.
+          - generic [ref=e213]:
+            - generic [ref=e214]:
+              - img [ref=e215]
+              - text: No spam folder
+            - generic [ref=e217]:
+              - img [ref=e218]
+              - text: Hours back every week
+      - generic [ref=e222]:
+        - generic [ref=e223]:
+          - text: From zero to sending
+          - heading "Live in three minutes flat." [level=2] [ref=e224]
+          - paragraph [ref=e225]: No DNS headaches. If you can send an email, you can launch a full campaign.
+        - generic [ref=e226]:
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - img [ref=e230]
+              - generic [ref=e233]: "01"
+            - heading "Connect your inbox" [level=3] [ref=e234]
+            - paragraph [ref=e235]: Securely link the email provider you already use. No API wrangling, no setup maze. It sends through the inbox you already trust.
+          - generic [ref=e236]:
+            - generic [ref=e237]:
+              - img [ref=e239]
+              - generic [ref=e242]: "02"
+            - heading "Add your contacts" [level=3] [ref=e243]
+            - paragraph [ref=e244]: "Upload a spreadsheet or add people by hand. Drop in variables like {{Name}} to personalize every message automatically, or write a custom note for anyone special."
+          - generic [ref=e245]:
+            - generic [ref=e246]:
+              - img [ref=e248]
+              - generic [ref=e250]: "03"
+            - heading "Hit send and walk away" [level=3] [ref=e251]
+            - paragraph [ref=e252]: Email Pilots paces every send like a human and stops the second something bounces. Kick back and watch it fly on the live dashboard.
+      - generic [ref=e255]:
+        - generic [ref=e256]:
+          - generic [ref=e257]: Deliverability engine
+          - heading "Built to land in the inbox." [level=2] [ref=e259]
+          - paragraph [ref=e260]: Five safeguards guard your sender reputation so your messages actually get read, not buried under Promotions.
+        - generic [ref=e261]:
+          - generic [ref=e262]:
+            - heading "Natural Send Pacing" [level=3] [ref=e270]
+            - paragraph [ref=e271]: Randomized delays and strategic pauses make your automated emails look like they were typed by hand.
+          - generic [ref=e272]:
+            - generic [ref=e276]: SAFE LIMIT
+            - heading "Intelligent Rate Limiting" [level=3] [ref=e277]
+            - paragraph [ref=e278]: Smart daily limits keep delivery steady and keep provider red flags away.
+          - generic [ref=e279]:
+            - img [ref=e281]
+            - heading "Automated Warmup" [level=3] [ref=e284]
+            - paragraph [ref=e285]: Gradually ramps up your sending volume to establish and protect your domain reputation.
+          - generic [ref=e286]:
+            - generic [ref=e287]:
+              - img [ref=e289]
+              - generic [ref=e291]: verified
+            - heading "Verification before sending" [level=3] [ref=e292]
+            - paragraph [ref=e293]: Checks every address before it sends, keeping your bounce rate near zero.
+          - generic [ref=e294]:
+            - generic [ref=e299]: Primary
+            - heading "Primary Inbox Placement" [level=3] [ref=e300]
+            - paragraph [ref=e301]: Clean, plain text emails bypass promotional filters and land directly in the primary inbox.
+          - generic [ref=e304] [cursor=pointer]:
+            - generic [ref=e305]: ~0%
+            - generic [ref=e306]: average bounce rate
+            - paragraph [ref=e307]: across campaigns run with all five safeguards on.
+      - generic [ref=e311]:
+        - generic [ref=e319]:
+          - heading "Capabilities" [level=2] [ref=e320]
+          - heading "What you can do with Email Pilots" [level=3] [ref=e321]
+        - generic [ref=e323]:
+          - generic [ref=e325]:
+            - img [ref=e327]
+            - heading "100% Local Privacy" [level=4] [ref=e330]
+            - paragraph [ref=e331]: Your data never leaves your device. We never store or sell your contact lists. Full stop.
+          - generic [ref=e335]:
+            - generic:
+              - img
+            - generic [ref=e336]:
+              - generic [ref=e337]:
+                - generic [ref=e338]:
+                  - img [ref=e340]
+                  - generic [ref=e345]: The Cloud
+                - img [ref=e349]
+                - generic [ref=e353]:
+                  - generic [ref=e354]:
+                    - img [ref=e356]
+                    - img [ref=e360]
+                  - generic [ref=e363]: Your Machine
+              - generic [ref=e365]: Data is securely locked locally
+    - generic [ref=e370]:
+      - generic [ref=e371]:
+        - heading "One dashboard. Up to 5 active inboxes." [level=2] [ref=e372]:
+          - text: One dashboard.
+          - text: Up to 5 active inboxes.
+        - paragraph [ref=e373]: Run all your outreach from one local command center. Connect up to 5 accounts, hit send, and let Email Pilots fire off your daily emails straight from your desktop.
+        - generic [ref=e374]:
+          - generic [ref=e375]: 257+
+          - generic [ref=e376]: Emails Delivered Weekly
+      - generic [ref=e377]:
+        - generic [ref=e378]:
+          - generic [ref=e379]:
+            - img [ref=e382]
+            - generic [ref=e385]:
+              - generic [ref=e386]: sales@acme.com
+              - generic [ref=e387]: Active (Custom)
+          - generic [ref=e389]:
+            - img [ref=e392]
+            - generic [ref=e395]:
+              - generic [ref=e396]: john.doe@gmail.com
+              - generic [ref=e397]: Active (Gmail)
+          - generic [ref=e399]:
+            - img [ref=e402]
+            - generic [ref=e405]:
+              - generic [ref=e406]: support@startup.io
+              - generic [ref=e407]: Active (Custom)
+          - generic [ref=e409]:
+            - img [ref=e412]
+            - generic [ref=e415]:
+              - generic [ref=e416]: sarah.m@outlook.com
+              - generic [ref=e417]: Active (Outlook)
+          - generic [ref=e419]:
+            - img [ref=e422]
+            - generic [ref=e425]:
+              - generic [ref=e426]: contact@agency.com
+              - generic [ref=e427]: Active (Custom)
+          - generic [ref=e429]:
+            - img [ref=e432]
+            - generic [ref=e435]:
+              - generic [ref=e436]: hello@world.net
+              - generic [ref=e437]: Active (Gmail)
+          - generic [ref=e439]:
+            - img [ref=e442]
+            - generic [ref=e445]:
+              - generic [ref=e446]: sales@acme.com
+              - generic [ref=e447]: Active (Custom)
+          - generic [ref=e449]:
+            - img [ref=e452]
+            - generic [ref=e455]:
+              - generic [ref=e456]: john.doe@gmail.com
+              - generic [ref=e457]: Active (Gmail)
+          - generic [ref=e459]:
+            - img [ref=e462]
+            - generic [ref=e465]:
+              - generic [ref=e466]: support@startup.io
+              - generic [ref=e467]: Active (Custom)
+          - generic [ref=e469]:
+            - img [ref=e472]
+            - generic [ref=e475]:
+              - generic [ref=e476]: sarah.m@outlook.com
+              - generic [ref=e477]: Active (Outlook)
+          - generic [ref=e479]:
+            - img [ref=e482]
+            - generic [ref=e485]:
+              - generic [ref=e486]: contact@agency.com
+              - generic [ref=e487]: Active (Custom)
+          - generic [ref=e489]:
+            - img [ref=e492]
+            - generic [ref=e495]:
+              - generic [ref=e496]: hello@world.net
+              - generic [ref=e497]: Active (Gmail)
+          - generic [ref=e499]:
+            - img [ref=e502]
+            - generic [ref=e505]:
+              - generic [ref=e506]: sales@acme.com
+              - generic [ref=e507]: Active (Custom)
+          - generic [ref=e509]:
+            - img [ref=e512]
+            - generic [ref=e515]:
+              - generic [ref=e516]: john.doe@gmail.com
+              - generic [ref=e517]: Active (Gmail)
+          - generic [ref=e519]:
+            - img [ref=e522]
+            - generic [ref=e525]:
+              - generic [ref=e526]: support@startup.io
+              - generic [ref=e527]: Active (Custom)
+          - generic [ref=e529]:
+            - img [ref=e532]
+            - generic [ref=e535]:
+              - generic [ref=e536]: sarah.m@outlook.com
+              - generic [ref=e537]: Active (Outlook)
+          - generic [ref=e539]:
+            - img [ref=e542]
+            - generic [ref=e545]:
+              - generic [ref=e546]: contact@agency.com
+              - generic [ref=e547]: Active (Custom)
+          - generic [ref=e549]:
+            - img [ref=e552]
+            - generic [ref=e555]:
+              - generic [ref=e556]: hello@world.net
+              - generic [ref=e557]: Active (Gmail)
+        - generic [ref=e563]:
+          - img [ref=e564]
+          - text: Data Stream Active
+        - generic [ref=e568]:
+          - generic [ref=e569]:
+            - img [ref=e572]
+            - generic [ref=e575]:
+              - generic [ref=e576]: marketing@brand.co
+              - generic [ref=e577]: Active (Custom)
+          - generic [ref=e579]:
+            - img [ref=e582]
+            - generic [ref=e585]:
+              - generic [ref=e586]: info@business.com
+              - generic [ref=e587]: Active (Outlook)
+          - generic [ref=e589]:
+            - img [ref=e592]
+            - generic [ref=e595]:
+              - generic [ref=e596]: ceo@company.com
+              - generic [ref=e597]: Active (Custom)
+          - generic [ref=e599]:
+            - img [ref=e602]
+            - generic [ref=e605]:
+              - generic [ref=e606]: team@product.com
+              - generic [ref=e607]: Active (Gmail)
+          - generic [ref=e609]:
+            - img [ref=e612]
+            - generic [ref=e615]:
+              - generic [ref=e616]: press@media.org
+              - generic [ref=e617]: Active (Custom)
+          - generic [ref=e619]:
+            - img [ref=e622]
+            - generic [ref=e625]:
+              - generic [ref=e626]: events@local.com
+              - generic [ref=e627]: Active (Outlook)
+          - generic [ref=e629]:
+            - img [ref=e632]
+            - generic [ref=e635]:
+              - generic [ref=e636]: marketing@brand.co
+              - generic [ref=e637]: Active (Custom)
+          - generic [ref=e639]:
+            - img [ref=e642]
+            - generic [ref=e645]:
+              - generic [ref=e646]: info@business.com
+              - generic [ref=e647]: Active (Outlook)
+          - generic [ref=e649]:
+            - img [ref=e652]
+            - generic [ref=e655]:
+              - generic [ref=e656]: ceo@company.com
+              - generic [ref=e657]: Active (Custom)
+          - generic [ref=e659]:
+            - img [ref=e662]
+            - generic [ref=e665]:
+              - generic [ref=e666]: team@product.com
+              - generic [ref=e667]: Active (Gmail)
+          - generic [ref=e669]:
+            - img [ref=e672]
+            - generic [ref=e675]:
+              - generic [ref=e676]: press@media.org
+              - generic [ref=e677]: Active (Custom)
+          - generic [ref=e679]:
+            - img [ref=e682]
+            - generic [ref=e685]:
+              - generic [ref=e686]: events@local.com
+              - generic [ref=e687]: Active (Outlook)
+          - generic [ref=e689]:
+            - img [ref=e692]
+            - generic [ref=e695]:
+              - generic [ref=e696]: marketing@brand.co
+              - generic [ref=e697]: Active (Custom)
+          - generic [ref=e699]:
+            - img [ref=e702]
+            - generic [ref=e705]:
+              - generic [ref=e706]: info@business.com
+              - generic [ref=e707]: Active (Outlook)
+          - generic [ref=e709]:
+            - img [ref=e712]
+            - generic [ref=e715]:
+              - generic [ref=e716]: ceo@company.com
+              - generic [ref=e717]: Active (Custom)
+          - generic [ref=e719]:
+            - img [ref=e722]
+            - generic [ref=e725]:
+              - generic [ref=e726]: team@product.com
+              - generic [ref=e727]: Active (Gmail)
+          - generic [ref=e729]:
+            - img [ref=e732]
+            - generic [ref=e735]:
+              - generic [ref=e736]: press@media.org
+              - generic [ref=e737]: Active (Custom)
+          - generic [ref=e739]:
+            - img [ref=e742]
+            - generic [ref=e745]:
+              - generic [ref=e746]: events@local.com
+              - generic [ref=e747]: Active (Outlook)
+    - generic [ref=e752]:
+      - generic [ref=e757] [cursor=pointer]:
+        - generic [ref=e773]: Now Boarding
+        - heading "Who is Email Pilots for?" [level=2] [ref=e775]
+        - generic:
+          - img
+        - generic [ref=e776]:
+          - text: Grab your pass now
+          - img [ref=e777]
+      - generic [ref=e779]:
+        - generic [ref=e780] [cursor=pointer]:
+          - img [ref=e783]
+          - heading "Job Seekers" [level=3] [ref=e786]
+          - generic [ref=e787]: 01 / APPLICANT
+          - paragraph [ref=e788]: Hit 50 hiring managers a week with a personal intro. Stop refreshing job boards and run your own search.
+          - img [ref=e790]
+        - generic [ref=e803] [cursor=pointer]:
+          - img [ref=e806]
+          - heading "Recruiters" [level=3] [ref=e811]
+          - generic [ref=e812]: 02 / SOURCING
+          - paragraph [ref=e813]: Reach top candidates without dropping thousands on LinkedIn Recruiter. Personalized follow-ups fire on their own.
+          - img [ref=e815]
+        - generic [ref=e828] [cursor=pointer]:
+          - img [ref=e831]
+          - heading "Freelancers" [level=3] [ref=e833]
+          - generic [ref=e834]: 03 / CONTRACTOR
+          - paragraph [ref=e835]: Pitch local businesses on autopilot. Keep your calendar packed without the copy-paste grind.
+          - img [ref=e837]
+        - generic [ref=e850] [cursor=pointer]:
+          - img [ref=e853]
+          - heading "Community" [level=3] [ref=e856]
+          - generic [ref=e857]: 04 / BUILDER
+          - paragraph [ref=e858]: Personally invite early users, speakers, and members to your project without burning out before launch day.
+          - img [ref=e860]
+        - generic [ref=e873] [cursor=pointer]:
+          - img [ref=e876]
+          - heading "Agencies" [level=3] [ref=e879]
+          - generic [ref=e880]: 05 / AGENCY
+          - paragraph [ref=e881]: Scale client outreach without the overhead. Automated personal emails book you more meetings.
+          - img [ref=e883]
+        - generic [ref=e896] [cursor=pointer]:
+          - img [ref=e899]
+          - heading "Consultants" [level=3] [ref=e901]
+          - generic [ref=e902]: 06 / ADVISOR
+          - paragraph [ref=e903]: Grow your practice by landing in front of decision-makers with sharp, tailored proposals.
+          - img [ref=e905]
+        - generic [ref=e918] [cursor=pointer]:
+          - img [ref=e921]
+          - heading "Founders" [level=3] [ref=e924]
+          - generic [ref=e925]: 07 / FOUNDER
+          - paragraph [ref=e926]: Reach investors and early adopters directly and build real traction, minus the busywork.
+          - img [ref=e928]
+        - generic [ref=e941] [cursor=pointer]:
+          - img [ref=e944]
+          - heading "Sales Professionals" [level=3] [ref=e948]
+          - generic [ref=e949]: 08 / SALES
+          - paragraph [ref=e950]: Keep your pipeline full and close more deals. Timely, relevant follow-ups that actually get replies.
+          - img [ref=e952]
+        - generic:
+          - generic:
+            - img
+          - text: SWIPE
+          - generic:
+            - img
+      - generic [ref=e965]:
+        - button [ref=e966]:
+          - img [ref=e967]
+        - button [ref=e969]:
+          - img [ref=e970]
+    - generic [ref=e977]:
+      - img [ref=e979]
+      - heading "Be first on Email Pilots." [level=2] [ref=e981]
+      - paragraph [ref=e982]: Email Pilots is in private beta right now. Hop on the waitlist and lock in your spot as we open the doors.
+      - generic [ref=e985]:
+        - textbox "name@company.com" [ref=e986]
+        - button "Request Access" [ref=e987]
+      - paragraph [ref=e988]: Join 2,400+ others already waiting. No spam, ever.
+    - generic [ref=e992]:
+      - generic [ref=e993]:
+        - text: Questions
+        - heading "Common questions." [level=2] [ref=e994]
+      - generic [ref=e995]:
+        - generic [ref=e996]:
+          - button "Will my computer need to stay on?" [ref=e997]:
+            - text: Will my computer need to stay on?
+            - img [ref=e999]
+          - generic [ref=e1002]: Yes. Email Pilots is an application that runs locally. Scheduled emails are sent directly from your device.
+        - button "How long does setup take?" [ref=e1004]:
+          - text: How long does setup take?
+          - img [ref=e1006]
+        - button "Does this work with Gmail, Outlook, and Custom domains?" [ref=e1009]:
+          - text: Does this work with Gmail, Outlook, and Custom domains?
+          - img [ref=e1011]
+        - button "How does it avoid the spam folder?" [ref=e1014]:
+          - text: How does it avoid the spam folder?
+          - img [ref=e1016]
+        - button "Is my data secure?" [ref=e1019]:
+          - text: Is my data secure?
+          - img [ref=e1021]
+        - button "Can I cancel my subscription anytime?" [ref=e1024]:
+          - text: Can I cancel my subscription anytime?
+          - img [ref=e1026]
+  - contentinfo [ref=e1028]:
+    - generic [ref=e1029]:
+      - img "Email Pilots Logo" [ref=e1031]
+      - generic [ref=e1032]:
+        - link "How it works" [ref=e1033] [cursor=pointer]:
+          - /url: /#how
+        - link "Features" [ref=e1034] [cursor=pointer]:
+          - /url: /#features
+        - link "Waitlist" [ref=e1035] [cursor=pointer]:
+          - /url: /#waitlist
+        - link "FAQ" [ref=e1036] [cursor=pointer]:
+          - /url: /#faq
+        - link "Terms of Service" [ref=e1037] [cursor=pointer]:
+          - /url: /terms
+        - link "Privacy Policy" [ref=e1038] [cursor=pointer]:
+          - /url: /privacy
+      - generic [ref=e1039]: © 2026 Email Pilots. All rights reserved.

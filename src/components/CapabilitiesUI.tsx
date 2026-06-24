@@ -397,31 +397,41 @@ export default function CapabilitiesUI() {
         trigger: containerRef.current,
         start: "top top",
         end: "bottom bottom",
-        scrub: 1,
-        // pin: true removed to avoid pin-spacer layout issues
+        scrub: 0.2,
+        snap: {
+          snapTo: 1 / (capabilities.length - 1), // Snaps to 0%, 25%, 50%, 75%, 100%
+          duration: { min: 0.2, max: 0.4 },
+          ease: "power2.inOut"
+        }
       }
     });
 
     capabilities.forEach((_, i) => {
-      // 1. Animate the progress bar for this specific item (duration = 1 unit of scrub time)
-      tl.to(progressBarsRef.current[i], { width: "100%", ease: "none", duration: 1 }, i);
+      // Progress bars
+      if (i < capabilities.length - 1) {
+        tl.to(progressBarsRef.current[i], { width: "100%", ease: "none", duration: 1 }, i);
+      } else {
+        // Fill the last progress bar as it comes into view
+        tl.to(progressBarsRef.current[i], { width: "100%", ease: "none", duration: 0.5 }, i - 0.5);
+      }
 
-      // 2. Crossfade elements
+      // Fast crossfade exactly between items
       if (i > 0) {
-        const transitionStart = i - 0.25; // Start crossfade slightly before this item takes over
+        const transitionCenter = i - 0.5;
+        const duration = 0.3; // Tight duration so it never lingers
         
         // Fade out previous
-        tl.to(textsRef.current[i - 1], { autoAlpha: 0, y: -20, duration: 0.5, ease: "power2.inOut" }, transitionStart);
-        tl.to(mockupsRef.current[i - 1], { autoAlpha: 0, scale: 0.98, filter: "blur(4px)", duration: 0.5, ease: "power2.inOut" }, transitionStart);
+        tl.to(textsRef.current[i - 1], { autoAlpha: 0, y: -20, duration: duration/2, ease: "power2.in" }, transitionCenter - duration/2);
+        tl.to(mockupsRef.current[i - 1], { autoAlpha: 0, scale: 0.96, filter: "blur(6px)", duration: duration/2, ease: "power2.in" }, transitionCenter - duration/2);
 
         // Fade in current
-        tl.fromTo(textsRef.current[i], { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 0.5, ease: "power2.inOut" }, transitionStart);
-        tl.fromTo(mockupsRef.current[i], { autoAlpha: 0, scale: 1.02, filter: "blur(4px)" }, { autoAlpha: 1, scale: 1, filter: "blur(0px)", duration: 0.5, ease: "power2.inOut" }, transitionStart);
+        tl.fromTo(textsRef.current[i], { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: duration/2, ease: "power2.out" }, transitionCenter);
+        tl.fromTo(mockupsRef.current[i], { autoAlpha: 0, scale: 1.04, filter: "blur(6px)" }, { autoAlpha: 1, scale: 1, filter: "blur(0px)", duration: duration/2, ease: "power2.out" }, transitionCenter);
       }
     });
 
-    // Hold the very last item in place at the end of the scroll scrub
-    tl.to({}, { duration: 0.1 }, 5);
+    // Ensure the timeline length is exactly capabilities.length - 1
+    tl.to({}, { duration: 0.01 }, capabilities.length - 1);
 
   }, { scope: containerRef });
 
