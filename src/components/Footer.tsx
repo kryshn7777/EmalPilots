@@ -9,6 +9,7 @@ export function Footer() {
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[14px] font-medium text-slate-mute">
           <a href="/#how" className="hover:text-blue transition-colors">How it works</a>
           <a href="/#features" className="hover:text-blue transition-colors">Features</a>
+          <a href="/#pricing" className="hover:text-blue transition-colors">Pricing</a>
           <a href="/#waitlist" className="hover:text-blue transition-colors">Waitlist</a>
           <a href="/#faq" className="hover:text-blue transition-colors">FAQ</a>
           <a href="/terms" className="hover:text-blue transition-colors">Terms of Service</a>

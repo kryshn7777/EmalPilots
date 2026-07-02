@@ -163,11 +163,11 @@ export function WhoItsFor() {
             let rotate = 0;
 
             if (isRight) {
-              x = "105%"; scale = 0.85; opacity = 0.5; blur = 4; zIndex = 20; rotate = 8;
+              x = "105%"; scale = 0.85; opacity = 0.5; blur = 0; zIndex = 20; rotate = 8;
             } else if (isLeft) {
-              x = "-105%"; scale = 0.85; opacity = 0.5; blur = 4; zIndex = 20; rotate = -8;
+              x = "-105%"; scale = 0.85; opacity = 0.5; blur = 0; zIndex = 20; rotate = -8;
             } else if (!isFront) {
-              x = "0%"; scale = 0.7; opacity = 0; blur = 10; zIndex = 10; rotate = 0;
+              x = "0%"; scale = 0.7; opacity = 0; blur = 0; zIndex = 10; rotate = 0;
             }
 
             const handleDragEnd = (e: any, { offset, velocity }: any) => {

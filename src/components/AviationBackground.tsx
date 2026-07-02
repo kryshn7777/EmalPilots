@@ -1,4 +1,4 @@
-import { useRef, useMemo } from "react"
+import { useRef, useMemo, useEffect } from "react"
 import { useFrame } from "@react-three/fiber"
 import { Float, Line } from "@react-three/drei"
 import * as THREE from "three"
@@ -32,6 +32,12 @@ export function PaperPlaneMesh({ color = "#0055ff" }: { color?: string }) {
     geom.computeVertexNormals()
     return geom
   }, [])
+
+  useEffect(() => {
+    return () => {
+      geometry.dispose()
+    }
+  }, [geometry])
 
   return (
     <mesh geometry={geometry}>

@@ -105,6 +105,14 @@
   mask-image: radial-gradient(circle at 0 0, transparent 9px, #000 9px);
 }
 
+@utility perforation {
+  background-image: repeating-linear-gradient(180deg, var(--color-slate-line) 0 7px, transparent 7px 14px);
+}
+
+@utility barcode {
+  background-image: repeating-linear-gradient(90deg, var(--color-ink) 0 2px, transparent 2px 3px, var(--color-ink) 3px 4px, transparent 4px 7px);
+}
+
 @keyframes float-y {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }

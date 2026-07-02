@@ -11,6 +11,7 @@ import { Deliverability } from './components/Deliverability'
 import CapabilitiesUI from './components/CapabilitiesUI'
 import { WhoItsFor } from './components/WhoItsFor'
 import { Waitlist } from './components/Waitlist'
+import { Pricing } from './components/Pricing'
 import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
 import MultiAccountSupport from './components/MultiAccountSupport'
@@ -41,11 +42,18 @@ function App() {
 
   useEffect(() => {
     if (lenis) {
-      lenis.on('scroll', ScrollTrigger.update)
-      gsap.ticker.add((time) => {
+      const tick = (time: number) => {
         lenis.raf(time * 1000)
-      })
+      }
+
+      lenis.on('scroll', ScrollTrigger.update)
+      gsap.ticker.add(tick)
       gsap.ticker.lagSmoothing(0)
+
+      return () => {
+        lenis.off('scroll', ScrollTrigger.update)
+        gsap.ticker.remove(tick)
+      }
     }
   }, [lenis])
 
@@ -129,13 +137,15 @@ function App() {
           <div className="relative z-10">
             {/* Fog block 2: Fades in at top, hits Waitlist at bottom */}
             <div 
-              className="absolute inset-x-0 -top-[250px] bottom-0 pointer-events-none -z-10 backdrop-blur-[2px]" 
+              className="absolute inset-x-0 -top-[250px] bottom-0 pointer-events-none -z-10" 
               style={{ background: 'linear-gradient(to bottom, transparent 0px, rgba(255,255,255,0.3) 100px, rgba(255,255,255,0.85) 250px, rgba(255,255,255,0.9) 100%)', maskImage: 'linear-gradient(to bottom, transparent 0px, rgba(0,0,0,0.3) 100px, black 250px, black 100%)', WebkitMaskImage: 'linear-gradient(to bottom, transparent 0px, rgba(0,0,0,0.3) 100px, black 250px, black 100%)' }} 
             />
             <div className="relative z-20"><WhoItsFor /></div>
           </div>
 
           <div className="relative z-20"><Waitlist /></div>
+
+          <div className="relative z-20"><Pricing /></div>
           
           <div className="relative z-10">
             {/* Fog background for FAQ, fading out at the bottom to show the footer/rockets */}
