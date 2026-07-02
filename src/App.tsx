@@ -23,9 +23,7 @@ const AviationCanvas = lazy(() => import('./components/AviationCanvas'))
 gsap.registerPlugin(ScrollTrigger)
 
 function App() {
-  const lenis = useLenis((_scroll: any) => {
-    // Scroll update logic if needed
-  })
+  const lenis = useLenis()
 
   // The 3D scene is decorative: load it after first paint, and only on
   // desktop where it doesn't collide with the hero text or drain the GPU.
@@ -40,18 +38,6 @@ function App() {
     return () => clearTimeout(handle)
   }, [])
 
-  const [isTopVisible, setIsTopVisible] = useState(true)
-
-  useEffect(() => {
-    if (!showScene) return
-    const el = document.getElementById('hero-comparison-container')
-    if (!el) return
-    const observer = new IntersectionObserver(([entry]) => {
-      setIsTopVisible(entry.isIntersecting)
-    }, { threshold: 0 })
-    observer.observe(el)
-    return () => observer.disconnect()
-  }, [showScene])
 
   useEffect(() => {
     if (lenis) {
@@ -107,7 +93,7 @@ function App() {
         <div className="fixed inset-0 z-0 pointer-events-none">
           {showScene && (
             <Suspense fallback={null}>
-              <AviationCanvas isActive={isTopVisible} />
+              <AviationCanvas />
             </Suspense>
           )}
         </div>
@@ -158,7 +144,7 @@ function App() {
 
           <div className="relative z-20"><Waitlist /></div>
 
-          <div className="relative z-20"><Pricing /></div>
+          {/* <div className="relative z-20"><Pricing /></div> */}
           
           <div className="relative z-10">
             {/* Fog background for FAQ, fading out at the bottom to show the footer/rockets */}

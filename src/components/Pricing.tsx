@@ -84,8 +84,8 @@ export function Pricing() {
               <div>
                 <div className="font-mono text-[13px] font-bold uppercase tracking-[.2em] text-slate-mute">Fare</div>
                 <div className="mt-2 flex items-end gap-1">
-                  <span className="font-display text-6xl font-black text-ink">{PRICE.amount}</span>
-                  <span className="mb-2 text-lg font-semibold text-slate-mute">/{PRICE.period}</span>
+                  <span className="font-display text-5xl font-black text-ink">{PRICE.amount}</span>
+                  <span className="mb-1 text-base font-semibold text-slate-mute">/{PRICE.period}</span>
                 </div>
                 <div className="mt-2 text-[14px] leading-relaxed text-slate-mute">Starts with a {PRICE.trialDays}-day trial · cancel anytime</div>
               </div>

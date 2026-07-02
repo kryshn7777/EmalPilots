@@ -26,7 +26,6 @@ export function Header() {
             <a href="/#how" className="hover:text-blue transition-colors">How it works</a>
             <a href="/#features" className="hover:text-blue transition-colors">Features</a>
             <a href="/#who" className="hover:text-blue transition-colors">Who it's for</a>
-            <a href="/#pricing" className="hover:text-blue transition-colors">Pricing</a>
             <a href="/#waitlist" className="hover:text-blue transition-colors">Waitlist</a>
             <a href="/#faq" className="hover:text-blue transition-colors">FAQ</a>
           </nav>

@@ -67,11 +67,17 @@ function AnimatedPlane({ curve, color, offset = 0 }: { curve: THREE.CatmullRomCu
   const group = useRef<THREE.Group>(null)
   const speed = useMemo(() => 0.02 + Math.random() * 0.06, []) // Random speed between 0.02 and 0.08
   
+  // Pre-allocate vectors to avoid GC thrashing on every frame
+  const pos = useMemo(() => new THREE.Vector3(), [])
+  const nextPos = useMemo(() => new THREE.Vector3(), [])
+
   useFrame((state) => {
     if (!group.current) return
     const t = ((state.clock.elapsedTime * speed) + offset) % 1
-    const pos = curve.getPointAt(t)
-    const nextPos = curve.getPointAt((t + 0.01) % 1)
+    
+    // Pass pre-allocated vectors as target parameters to avoid allocations
+    curve.getPointAt(t, pos)
+    curve.getPointAt((t + 0.01) % 1, nextPos)
     
     group.current.position.copy(pos)
     group.current.lookAt(nextPos)

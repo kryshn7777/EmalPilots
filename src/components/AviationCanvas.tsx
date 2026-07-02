@@ -1,7 +1,20 @@
 import { Canvas } from "@react-three/fiber"
 import { AviationScene } from "./AviationBackground"
+import { useState, useEffect } from "react"
 
-export default function AviationCanvas({ isActive = true }: { isActive?: boolean }) {
+export default function AviationCanvas() {
+  const [isActive, setIsActive] = useState(true)
+
+  useEffect(() => {
+    const el = document.getElementById('hero-comparison-container')
+    if (!el) return
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsActive(entry.isIntersecting)
+    }, { threshold: 0 })
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <Canvas
       camera={{ position: [0, 0, 15], fov: 50 }}
