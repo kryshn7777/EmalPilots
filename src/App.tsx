@@ -40,6 +40,19 @@ function App() {
     return () => clearTimeout(handle)
   }, [])
 
+  const [isTopVisible, setIsTopVisible] = useState(true)
+
+  useEffect(() => {
+    if (!showScene) return
+    const el = document.getElementById('hero-comparison-container')
+    if (!el) return
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsTopVisible(entry.isIntersecting)
+    }, { threshold: 0 })
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [showScene])
+
   useEffect(() => {
     if (lenis) {
       const tick = (time: number) => {
@@ -94,7 +107,7 @@ function App() {
         <div className="fixed inset-0 z-0 pointer-events-none">
           {showScene && (
             <Suspense fallback={null}>
-              <AviationCanvas />
+              <AviationCanvas isActive={isTopVisible} />
             </Suspense>
           )}
         </div>
@@ -102,10 +115,10 @@ function App() {
         <div className="relative z-10">
           <Header />
         <main className="overflow-clip relative">
-          <div className="relative z-10">
+          <div id="hero-comparison-container" className="relative z-10">
             {/* Top fog: Intense on left, gradient to right */}
             <div 
-              className="absolute inset-0 pointer-events-none -z-10 backdrop-blur-[3px]" 
+              className="absolute inset-0 pointer-events-none -z-10" 
               style={{ 
                 background: 'linear-gradient(to right, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.8) 30%, rgba(255,255,255,0) 100%)', 
                 maskImage: 'linear-gradient(to right, black 0%, rgba(0,0,0,0.8) 30%, transparent 100%)', 
@@ -119,7 +132,7 @@ function App() {
           <div className="relative z-10">
             {/* Fog block 1: Fades in at top, fades out at bottom */}
             <div 
-              className="absolute inset-x-0 -top-[250px] -bottom-[250px] pointer-events-none -z-10 backdrop-blur-[2px]" 
+              className="absolute inset-x-0 -top-[250px] -bottom-[250px] pointer-events-none -z-10" 
               style={{ 
                 background: 'linear-gradient(to bottom, transparent 0px, rgba(255,255,255,0.3) 100px, rgba(255,255,255,0.85) 250px, rgba(255,255,255,0.9) 350px, rgba(255,255,255,0.9) calc(100% - 350px), rgba(255,255,255,0.85) calc(100% - 250px), rgba(255,255,255,0.3) calc(100% - 100px), transparent 100%)', 
                 maskImage: 'linear-gradient(to bottom, transparent 0px, rgba(0,0,0,0.3) 100px, black 250px, black calc(100% - 250px), rgba(0,0,0,0.3) calc(100% - 100px), transparent 100%)', 
@@ -150,7 +163,7 @@ function App() {
           <div className="relative z-10">
             {/* Fog background for FAQ, fading out at the bottom to show the footer/rockets */}
             <div 
-              className="absolute inset-x-0 top-0 -bottom-[250px] pointer-events-none -z-10 backdrop-blur-[2px]" 
+              className="absolute inset-x-0 top-0 -bottom-[250px] pointer-events-none -z-10" 
               style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.9) 0px, rgba(255,255,255,0.85) calc(100% - 250px), rgba(255,255,255,0.3) calc(100% - 100px), transparent 100%)', maskImage: 'linear-gradient(to bottom, black 0px, black calc(100% - 250px), rgba(0,0,0,0.3) calc(100% - 100px), transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 0px, black calc(100% - 250px), rgba(0,0,0,0.3) calc(100% - 100px), transparent 100%)' }} 
             />
             <div className="relative z-20"><FAQ /></div>

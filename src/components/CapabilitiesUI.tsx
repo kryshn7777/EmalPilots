@@ -422,11 +422,11 @@ export default function CapabilitiesUI() {
         
         // Fade out previous
         tl.to(textsRef.current[i - 1], { autoAlpha: 0, y: -20, duration: duration/2, ease: "power2.in" }, transitionCenter - duration/2);
-        tl.to(mockupsRef.current[i - 1], { autoAlpha: 0, scale: 0.96, filter: "blur(6px)", duration: duration/2, ease: "power2.in" }, transitionCenter - duration/2);
+        tl.to(mockupsRef.current[i - 1], { autoAlpha: 0, scale: 0.96, duration: duration/2, ease: "power2.in" }, transitionCenter - duration/2);
 
         // Fade in current
         tl.fromTo(textsRef.current[i], { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: duration/2, ease: "power2.out" }, transitionCenter);
-        tl.fromTo(mockupsRef.current[i], { autoAlpha: 0, scale: 1.04, filter: "blur(6px)" }, { autoAlpha: 1, scale: 1, filter: "blur(0px)", duration: duration/2, ease: "power2.out" }, transitionCenter);
+        tl.fromTo(mockupsRef.current[i], { autoAlpha: 0, scale: 1.04 }, { autoAlpha: 1, scale: 1, duration: duration/2, ease: "power2.out" }, transitionCenter);
       }
     });
 
@@ -494,7 +494,7 @@ export default function CapabilitiesUI() {
                        <div 
                           key={`mockup-${i}`} 
                           ref={el => { mockupsRef.current[i] = el; }}
-                          className={`absolute inset-0 bg-white border border-black/5 rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] ${i === 0 ? 'visible opacity-100 scale-100 blur-none' : 'invisible opacity-0 scale-105 blur-[2px]'}`}
+                          className={`absolute inset-0 bg-white border border-black/5 rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] ${i === 0 ? 'visible opacity-100 scale-100' : 'invisible opacity-0 scale-105'}`}
                        >
                           <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
                           {mockup}

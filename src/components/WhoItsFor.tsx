@@ -193,7 +193,6 @@ export function WhoItsFor() {
                     scale,
                     rotate,
                     opacity,
-                    filter: `blur(${blur}px)`,
                     zIndex
                   }}
                   transition={{ duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
