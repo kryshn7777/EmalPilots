@@ -107,49 +107,19 @@ export function WhoItsFor() {
   const [hasInteracted, setHasInteracted] = useState(false);
 
   useGSAP(() => {
-    const tl = gsap.timeline({
+    gsap.from(".ticket-wrapper", {
+      y: 400,
+      scale: 0.5,
+      opacity: 0,
+      duration: 1.2,
+      stagger: 0.1,
+      transformOrigin: "bottom center",
+      ease: "back.out(1.2)",
       scrollTrigger: {
         trigger: containerRef.current,
         start: "top 75%",
       }
     });
-
-    // 1. "Now Boarding" badge fades in and scales slightly
-    tl.from(".boarding-badge", {
-      opacity: 0,
-      y: 15,
-      scale: 0.95,
-      duration: 0.6,
-      ease: "power2.out"
-    });
-
-    // 2. Split-text words slide up from overflow-hidden container
-    tl.from(".word-reveal", {
-      y: "110%",
-      rotation: 3,
-      duration: 0.8,
-      stagger: 0.08,
-      ease: "back.out(1.4)",
-      transformOrigin: "left center"
-    }, "-=0.35");
-
-    // 3. Runway light sweeps across
-    tl.fromTo(".runway-sweep", 
-      { x: "-100%" },
-      { x: "200%", duration: 1.2, ease: "power2.inOut" },
-      "-=0.45"
-    );
-
-    // 4. Ticket cards rise and fan out
-    tl.from(".ticket-wrapper", {
-      y: 320,
-      scale: 0.65,
-      opacity: 0,
-      stagger: 0.12,
-      duration: 1.1,
-      transformOrigin: "bottom center",
-      ease: "back.out(1.15)"
-    }, "-=0.8");
   }, { scope: containerRef });
 
   const next = () => {
@@ -165,22 +135,18 @@ export function WhoItsFor() {
     <section id="who" className="relative py-20 md:py-32 bg-slate-wash overflow-hidden">
       <div className="mx-auto max-w-6xl px-5">
         
-        <div className="flex flex-col items-center text-center mb-16 md:mb-24">
-          <span className="boarding-badge text-[13px] font-bold uppercase tracking-[.2em] text-blue mb-4">Now Boarding</span>
-          <h2 className="font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl flex flex-wrap justify-center">
-            {"Who is Email Pilots for?".split(" ").map((word, i) => (
-              <span key={i} className="inline-block overflow-hidden mr-3 py-1">
-                <span className="word-reveal inline-block">
-                  {word}
-                </span>
-              </span>
-            ))}
+        <motion.div 
+          initial={{ opacity: 0, y: 26 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-col items-center text-center mb-16 md:mb-24"
+        >
+          <span className="text-[13px] font-bold uppercase tracking-[.2em] text-blue mb-4">Now Boarding</span>
+          <h2 className="font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
+            Who is Email Pilots for?
           </h2>
-          {/* Runway light sweeper */}
-          <div className="relative w-40 h-[2px] bg-slate-line/60 mt-6 overflow-hidden rounded-full">
-            <div className="runway-sweep absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-transparent via-blue to-transparent shadow-[0_0_8px_rgba(20,102,255,0.8)]" />
-          </div>
-        </div>
+        </motion.div>
 
         {/* 3D Carousel Container */}
         <div ref={containerRef} className="relative h-[450px] md:h-[500px] w-full flex items-center justify-center">
