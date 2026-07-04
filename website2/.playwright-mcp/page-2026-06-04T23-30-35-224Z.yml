@@ -1,0 +1,246 @@
+- generic [ref=e3]:
+  - banner [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]: Email Pilots
+      - navigation [ref=e11]:
+        - link "Personas" [ref=e12] [cursor=pointer]:
+          - /url: "#personas"
+        - link "Features" [ref=e13] [cursor=pointer]:
+          - /url: "#features"
+        - link "Pricing" [ref=e14] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "FAQ" [ref=e15] [cursor=pointer]:
+          - /url: "#faq"
+      - button "Start Free Trial" [ref=e16] [cursor=pointer]
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - heading "Personalized Email Outreach from Your Own Inbox." [level=1] [ref=e19]:
+        - text: Personalized Email Outreach
+        - text: from Your Own Inbox.
+      - paragraph [ref=e21]: Connect Gmail or Outlook, schedule campaigns, attach files, and send personalized emails automatically.
+      - generic [ref=e22]:
+        - button "Start Sending Now" [ref=e23] [cursor=pointer]
+        - button "Watch Demo" [ref=e24] [cursor=pointer]
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e32]: New Message
+          - generic [ref=e33]:
+            - generic [ref=e34]: "To:"
+            - generic [ref=e35]: undisclosed-recipients;
+          - generic [ref=e36]:
+            - generic [ref=e37]: "BCC:"
+            - generic [ref=e38]: user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com, user@mail.com...
+          - generic [ref=e40]: 550 Spam Error
+        - generic [ref=e41]:
+          - generic [ref=e42]: Automated Sending
+          - generic [ref=e44]:
+            - generic [ref=e46]:
+              - img [ref=e48]
+              - generic [ref=e50]:
+                - generic [ref=e51]: john@acme.com
+                - generic [ref=e52]: Sent beautifully.
+            - generic [ref=e56]:
+              - generic [ref=e57]: Waiting 3 minutes...
+              - generic [ref=e58]: Mimicking human behavior.
+            - generic [ref=e59]:
+              - img [ref=e61]
+              - generic [ref=e63]:
+                - generic [ref=e64]: sarah@tech.co
+                - generic [ref=e65]: Sent beautifully.
+      - generic [ref=e66]:
+        - heading "Don't BCC. Let your personal assistant send them perfectly." [level=2] [ref=e67]:
+          - text: Don't BCC.
+          - text: Let your personal assistant send them perfectly.
+        - paragraph [ref=e68]:
+          - text: Manually sending 100 pitches takes hours. But if you put everyone in BCC, your emails go straight to the spam folder.
+          - strong [ref=e69]: Email Pilots
+          - text: automates the process, sending each email one by one while you grab a coffee.
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - heading "3 Simple Steps to Send" [level=2] [ref=e72]
+        - paragraph [ref=e73]: A clean, straightforward process to automate your outreach.
+      - generic [ref=e74]:
+        - img [ref=e78]
+        - generic [ref=e82]:
+          - img [ref=e84]
+          - heading "1. Import Prospects" [level=3] [ref=e89]
+          - paragraph [ref=e90]: Upload your CSV or add contacts manually. We automatically run heuristic bounce-checks to keep your domain reputation pristine.
+        - generic [ref=e93]:
+          - img [ref=e95]
+          - heading "2. Compose & Personalize" [level=3] [ref=e98]
+          - paragraph [ref=e99]: Draft your pitch using dynamic variables. Our built-in spam checker ensures your copy stays out of the promotions tab.
+        - generic [ref=e102]:
+          - img [ref=e104]
+          - heading "3. Automated Dispatch" [level=3] [ref=e107]
+          - paragraph [ref=e108]: Set it and forget it. Emails are dispatched one by one at natural intervals, perfectly mimicking human behavior.
+    - generic [ref=e109]:
+      - heading "Who is Email Pilots For //" [level=2] [ref=e111]
+      - generic [ref=e112]:
+        - heading "Job Seekers." [level=3] [ref=e113]:
+          - text: Job
+          - text: Seekers.
+        - paragraph [ref=e116]: Reach out to 50 hiring managers a week with a personalized intro. Stop waiting for job boards to reply and take control of your career search.
+      - generic [ref=e117]:
+        - heading "Recruiters." [level=3] [ref=e118]
+        - paragraph [ref=e121]: Contact great candidates without paying thousands for LinkedIn Recruiter. Send highly personalized follow-ups completely automatically.
+      - generic [ref=e122]:
+        - heading "Free lancers." [level=3] [ref=e123]:
+          - text: Free
+          - text: lancers.
+        - paragraph [ref=e126]: Pitch your services to local businesses on autopilot. Keep your calendar booked without spending hours copying and pasting.
+      - generic [ref=e127]:
+        - heading "Community Builders." [level=3] [ref=e128]:
+          - text: Community
+          - text: Builders.
+        - paragraph [ref=e131]: Manage your club, sports team, or neighborhood group. Send personalized updates to everyone without starting a messy group thread or relying on BCC.
+  - generic [ref=e133]:
+    - generic [ref=e141]:
+      - heading "Engine Room" [level=2] [ref=e142]
+      - heading "Automation Capabilities" [level=3] [ref=e143]
+    - generic [ref=e145]:
+      - generic [ref=e147]:
+        - img [ref=e149]
+        - heading "100% Local Privacy" [level=4] [ref=e152]
+        - paragraph [ref=e153]: Your contacts stay on your machine, not in the cloud. We never store or sell your lead lists. Keep your proprietary data completely private and secure.
+      - generic [ref=e157]:
+        - generic:
+          - img
+        - generic [ref=e158]:
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - img [ref=e162]
+              - generic [ref=e167]: The Cloud
+            - img [ref=e171]
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - img [ref=e178]
+                - img [ref=e182]
+              - generic [ref=e185]: Your Machine
+          - generic [ref=e187]: Data is securely locked locally
+  - main [ref=e191]:
+    - generic [ref=e192]:
+      - heading "Pricing //" [level=2] [ref=e194]
+      - generic [ref=e195]:
+        - generic [ref=e196]:
+          - generic [ref=e197]:
+            - generic [ref=e198]: Basic
+            - generic [ref=e199]: Perfect for side-projects & short campaigns
+          - generic [ref=e200]:
+            - generic [ref=e201]:
+              - paragraph [ref=e202]: €1.99
+              - generic [ref=e203]: / week
+            - list [ref=e204]:
+              - listitem [ref=e205]: Send as many emails as you want
+              - listitem [ref=e207]: Works with any spreadsheet
+              - listitem [ref=e209]: Runs safely on your laptop
+            - button "Start Sending" [ref=e211] [cursor=pointer]
+        - generic [ref=e212]:
+          - generic [ref=e213]: Coming Soon
+          - generic [ref=e214]:
+            - generic [ref=e215]: Business
+            - generic [ref=e216]: For serious recruiters and teams
+          - generic [ref=e217]:
+            - generic [ref=e218]:
+              - paragraph [ref=e219]: €9.99
+              - generic [ref=e220]: / week
+            - list [ref=e221]:
+              - listitem [ref=e222]: Modern OAuth2 Authentication
+              - listitem [ref=e224]: Automated Domain Management
+              - listitem [ref=e226]: IMAP Syncing & Reply Detection
+              - listitem [ref=e228]: Open & Click Tracking
+              - listitem [ref=e230]: Cloud Sync & Collaboration
+            - button "Coming Soon" [disabled] [ref=e232]
+    - generic [ref=e233]:
+      - heading "Frequently Asked Questions" [level=2] [ref=e234]
+      - generic [ref=e235]:
+        - button "Is my data stored on your servers? +" [ref=e237] [cursor=pointer]:
+          - heading "Is my data stored on your servers?" [level=3] [ref=e238]
+          - generic [ref=e239]: +
+        - button "Does this work with Gmail? +" [ref=e241] [cursor=pointer]:
+          - heading "Does this work with Gmail?" [level=3] [ref=e242]
+          - generic [ref=e243]: +
+        - button "Does this work with Outlook? +" [ref=e245] [cursor=pointer]:
+          - heading "Does this work with Outlook?" [level=3] [ref=e246]
+          - generic [ref=e247]: +
+        - button "Can I attach PDFs? +" [ref=e249] [cursor=pointer]:
+          - heading "Can I attach PDFs?" [level=3] [ref=e250]
+          - generic [ref=e251]: +
+        - button "Can I schedule emails? +" [ref=e253] [cursor=pointer]:
+          - heading "Can I schedule emails?" [level=3] [ref=e254]
+          - generic [ref=e255]: +
+        - button "Can I personalize emails? +" [ref=e257] [cursor=pointer]:
+          - heading "Can I personalize emails?" [level=3] [ref=e258]
+          - generic [ref=e259]: +
+        - button "Can it bypass strict IT policies on enterprise accounts? +" [ref=e261] [cursor=pointer]:
+          - heading "Can it bypass strict IT policies on enterprise accounts?" [level=3] [ref=e262]
+          - generic [ref=e263]: +
+        - button "Do you provide a custom API or webhooks? +" [ref=e265] [cursor=pointer]:
+          - heading "Do you provide a custom API or webhooks?" [level=3] [ref=e266]
+          - generic [ref=e267]: +
+        - button "Will this manage my domain deliverability (SPF/DKIM/DMARC)? +" [ref=e269] [cursor=pointer]:
+          - heading "Will this manage my domain deliverability (SPF/DKIM/DMARC)?" [level=3] [ref=e270]
+          - generic [ref=e271]: +
+        - button "Does it automatically sync with my cloud CRM? +" [ref=e273] [cursor=pointer]:
+          - heading "Does it automatically sync with my cloud CRM?" [level=3] [ref=e274]
+          - generic [ref=e275]: +
+        - button "Does it add automated unsubscribe links? +" [ref=e277] [cursor=pointer]:
+          - heading "Does it add automated unsubscribe links?" [level=3] [ref=e278]
+          - generic [ref=e279]: +
+  - generic [ref=e283]:
+    - heading "Clear for takeoff." [level=2] [ref=e284]
+    - paragraph [ref=e285]: Connect your inbox and send your first personalized campaign in minutes.
+    - generic [ref=e286]:
+      - button "Start sending free" [ref=e287] [cursor=pointer]:
+        - text: Start sending free
+        - img [ref=e288]
+      - button "See how it works" [ref=e290] [cursor=pointer]
+  - contentinfo [ref=e291]:
+    - generic [ref=e292]:
+      - generic [ref=e293]:
+        - generic [ref=e294]:
+          - generic [ref=e295]: Email Pilots
+          - paragraph [ref=e296]: Personalized email outreach that flies from your own inbox — local-first, naturally paced, never spam.
+        - generic [ref=e297]:
+          - heading "Product" [level=4] [ref=e298]
+          - list [ref=e299]:
+            - listitem [ref=e300]:
+              - link "How it works" [ref=e301] [cursor=pointer]:
+                - /url: "#how-it-works"
+            - listitem [ref=e302]:
+              - link "Features" [ref=e303] [cursor=pointer]:
+                - /url: "#features"
+            - listitem [ref=e304]:
+              - link "Pricing" [ref=e305] [cursor=pointer]:
+                - /url: "#pricing"
+            - listitem [ref=e306]:
+              - link "FAQ" [ref=e307] [cursor=pointer]:
+                - /url: "#faq"
+        - generic [ref=e308]:
+          - heading "Use cases" [level=4] [ref=e309]
+          - list [ref=e310]:
+            - listitem [ref=e311]:
+              - link "Job seekers" [ref=e312] [cursor=pointer]:
+                - /url: "#job-seekers"
+            - listitem [ref=e313]:
+              - link "Recruiters" [ref=e314] [cursor=pointer]:
+                - /url: "#recruiters"
+            - listitem [ref=e315]:
+              - link "Freelancers" [ref=e316] [cursor=pointer]:
+                - /url: "#freelancers"
+            - listitem [ref=e317]:
+              - link "Community builders" [ref=e318] [cursor=pointer]:
+                - /url: "#community-builders"
+        - generic [ref=e319]:
+          - heading "Company" [level=4] [ref=e320]
+          - list [ref=e321]:
+            - listitem [ref=e322]:
+              - link "Privacy" [ref=e323] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e324]:
+              - link "Terms" [ref=e325] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e326]:
+              - link "Contact" [ref=e327] [cursor=pointer]:
+                - /url: mailto:support@emailpilots.com
+      - paragraph [ref=e329]: © 2026 Email Pilots — All rights reserved.

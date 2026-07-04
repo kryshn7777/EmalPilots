@@ -92,9 +92,9 @@ export function Hero() {
                   <p>Hi <span className="rounded bg-blue-soft px-1.5 py-0.5 font-mono text-[12px] font-semibold text-blue">{`{{Name}}`}</span>,</p>
                   <p>I came across <span className="rounded bg-blue-soft px-1.5 py-0.5 font-mono text-[12px] font-semibold text-blue">{`{{Company}}`}</span> and wanted to reach out personally about…</p>
                   <div className="!mt-4 flex items-center gap-2 rounded-lg border border-slate-line bg-slate-wash px-3 py-2">
-                    <svg viewBox="0 0 24 24" className="h-4 w-4 text-orange" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21.4 11.05 12 20.5a5.5 5.5 0 0 1-7.78-7.78l9.19-9.19a3.67 3.67 0 1 1 5.18 5.19l-9.2 9.19a1.83 1.83 0 0 1-2.59-2.59l8.49-8.48"/></svg>
-                    <span className="font-mono text-[11.5px] text-ink truncate">Deck_<span className="text-orange">{`{{Company}}`}</span>.pdf</span>
-                    <span className="ml-auto text-[10px] font-bold text-slate-mute">for each recipient</span>
+                    <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0 text-orange" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21.4 11.05 12 20.5a5.5 5.5 0 0 1-7.78-7.78l9.19-9.19a3.67 3.67 0 1 1 5.18 5.19l-9.2 9.19a1.83 1.83 0 0 1-2.59-2.59l8.49-8.48"/></svg>
+                    <span className="min-w-0 flex-1 font-mono text-[11.5px] text-ink truncate">Deck_<span className="text-orange">{`{{Company}}`}</span>.pdf</span>
+                    <span className="ml-auto shrink-0 whitespace-nowrap text-[10px] font-bold text-slate-mute">for each recipient</span>
                   </div>
                 </div>
                 <div className="mt-4 flex items-center justify-between rounded-lg bg-green-50 px-3 py-2">
@@ -123,11 +123,11 @@ export function Hero() {
                       <span className="absolute inset-0 rounded-full border-2 border-blue animate-pulse-ring"></span>
                       <span className="h-1.5 w-1.5 rounded-full bg-blue"></span>
                     </span>
-                    <div className="min-w-0"><div className="truncate text-[12.5px] font-semibold text-blue">Waiting 4m 12s…</div><div className="text-[10.5px] text-slate-mute">Mimicking human pace</div></div>
+                    <div className="min-w-0"><div className="truncate text-[12.5px] font-semibold text-blue">mike@startup.io</div><div className="text-[10.5px] text-slate-mute">Waiting 4m 12s… · natural human pacing</div></div>
                   </div>
                   <div className="flex items-center gap-3 opacity-55">
                     <span className="h-6 w-6 rounded-full border-2 border-dashed border-slate-line"></span>
-                    <div className="min-w-0"><div className="truncate text-[12.5px] font-semibold text-slate-ink">mike@startup.io</div><div className="text-[10.5px] text-slate-mute">Queued</div></div>
+                    <div className="min-w-0"><div className="truncate text-[12.5px] font-semibold text-slate-ink">lena@studio.dev</div><div className="text-[10.5px] text-slate-mute">Queued</div></div>
                   </div>
                 </div>
                 <div className="mt-5">
@@ -141,7 +141,7 @@ export function Hero() {
           {/* Floating stat chip */}
           <div className="absolute -bottom-5 -left-4 hidden items-center gap-3 rounded-xl border border-slate-line bg-white px-4 py-3 shadow-lift sm:flex animate-float-y">
             <span className="grid h-9 w-9 place-items-center rounded-lg bg-green-100 text-green-600"><svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.4"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" strokeLinecap="round"/><path d="m22 4-10 10.01-3-3" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-            <div><div className="font-display text-lg font-extrabold leading-none text-ink">98.7%</div><div className="text-[11px] text-slate-mute">inbox success rate</div></div>
+            <div><div className="font-display text-lg font-extrabold leading-none text-ink">42 delivered</div><div className="text-[11px] text-slate-mute">0 bounces · this campaign</div></div>
           </div>
         </motion.div>
       </div>

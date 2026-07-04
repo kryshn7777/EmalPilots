@@ -60,7 +60,7 @@ export function DontBcc() {
         >
           <span className="text-[13px] font-bold uppercase tracking-[.2em] text-orange">Stop hurting your reputation</span>
           <h2 className="mt-3 font-display text-[2rem] font-extrabold leading-[1.1] tracking-tight text-ink sm:text-[2.5rem]" style={{ textWrap: 'balance' }}>
-            Don't BCC 100 people.<br /><span className="text-slate-mute">Let your assistant<br />send them perfectly.</span>
+            Don't BCC 100 people.<br /><span className="text-slate-mute">Let <span className="text-blue opacity-90">Email Pilots</span><br />send them perfectly.</span>
           </h2>
           <p className="mt-5 max-w-lg text-[17px] leading-relaxed text-slate-ink">Blast 100 people on BCC and you basically book a one way ticket to spam. Write each one by hand and you burn hours you don't have.</p>
           <p className="mt-4 max-w-lg text-[17px] leading-relaxed text-slate-ink">Email Pilots sends every message on its own, with natural pauses in between, exactly like a human would. You handle real work while it handles the sending.</p>

@@ -8,6 +8,7 @@ import { Comparison } from './components/Comparison'
 import { DontBcc } from './components/DontBcc'
 import { HowItWorks } from './components/HowItWorks'
 import { Deliverability } from './components/Deliverability'
+import { LastMile } from './components/LastMile'
 import CapabilitiesUI from './components/CapabilitiesUI'
 import { WhoItsFor } from './components/WhoItsFor'
 import { Waitlist } from './components/Waitlist'
@@ -17,6 +18,7 @@ import { Footer } from './components/Footer'
 import MultiAccountSupport from './components/MultiAccountSupport'
 import { PrivacyPolicy } from './components/PrivacyPolicy'
 import { TermsOfService } from './components/TermsOfService'
+import { BusinessSuite } from './components/BusinessSuite'
 
 const AviationCanvas = lazy(() => import('./components/AviationCanvas'))
 
@@ -87,7 +89,7 @@ function App() {
   if (currentPath === '/terms') return <TermsOfService />
 
   return (
-    <ReactLenis root>
+    <ReactLenis root autoRaf={false}>
       <div className="relative min-h-screen w-full bg-white font-sans text-ink">
         
         <div className="fixed inset-0 z-0 pointer-events-none">
@@ -128,6 +130,7 @@ function App() {
             <div className="relative z-10"><DontBcc /></div>
             <div className="relative z-20"><HowItWorks /></div>
             <div className="relative z-20"><Deliverability /></div>
+            <div className="relative z-20"><LastMile /></div>
             <div className="relative z-20"><CapabilitiesUI /></div>
           </div>
 
@@ -143,6 +146,7 @@ function App() {
           </div>
 
           <div className="relative z-20"><Waitlist /></div>
+          <div className="relative z-20"><BusinessSuite /></div>
 
           {/* <div className="relative z-20"><Pricing /></div> */}
           

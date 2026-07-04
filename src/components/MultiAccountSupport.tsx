@@ -35,7 +35,7 @@ const Counter = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const controls = animate(0, 2500, {
+    const controls = animate(0, 1750, {
       duration: 3,
       ease: "easeOut",
       onUpdate(value) {
@@ -48,11 +48,14 @@ const Counter = () => {
   return (
     <div className="flex flex-col items-center">
       <div ref={ref} className="text-6xl md:text-8xl font-display font-black tracking-tighter text-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-        {count.toLocaleString()}+
+        {count.toLocaleString()}
       </div>
       <div className="text-sm md:text-xl font-bold tracking-[0.2em] uppercase text-muted-foreground mt-2">
         Emails Delivered Weekly
       </div>
+      <p className="mt-4 text-base md:text-lg text-muted-foreground font-medium max-w-md text-center">
+        Maximum volume without triggering spam filters. Paced perfectly to protect your reputation.
+      </p>
     </div>
   );
 };

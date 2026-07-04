@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence, useInView } from "motion/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -90,15 +90,16 @@ function MockupPrivacy() {
   );
 }
 
-function MockupSpam() {
+function MockupSpam({ isVisible }: { isVisible: boolean }) {
   const [isFixed, setIsFixed] = useState(false);
-  
+
   useEffect(() => {
+    if (!isVisible) return;
     const interval = setInterval(() => {
       setIsFixed(prev => !prev);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [isVisible]);
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center p-4 md:p-8">
@@ -176,7 +177,7 @@ function MockupSpam() {
   );
 }
 
-function MockupPersonalization() {
+function MockupPersonalization({ isVisible }: { isVisible: boolean }) {
   const [idx, setIdx] = useState(0);
   const people = [
     { name: "{{Name}}", co: "{{Co}}", file: "PitchDeck_Template.pdf" },
@@ -186,11 +187,12 @@ function MockupPersonalization() {
   ];
 
   useEffect(() => {
+    if (!isVisible) return;
     const interval = setInterval(() => {
       setIdx(prev => (prev + 1) % people.length);
     }, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, [isVisible]);
 
   const current = people[idx];
 
@@ -294,15 +296,16 @@ function MockupScheduling() {
   );
 }
 
-function MockupAutoClean() {
+function MockupAutoClean({ isVisible }: { isVisible: boolean }) {
   const [step, setStep] = useState(0);
-  
+
   useEffect(() => {
+    if (!isVisible) return;
     const interval = setInterval(() => {
       setStep(prev => (prev >= 6 ? 0 : prev + 1));
     }, 1200);
     return () => clearInterval(interval);
-  }, []);
+  }, [isVisible]);
 
   const items = [
     { email: "john@acme.com", status: "Valid", color: "text-green-500", icon: CheckCircle2, strike: false },
@@ -382,13 +385,14 @@ export default function CapabilitiesUI() {
   const progressBarsRef = useRef<(HTMLDivElement | null)[]>([]);
   const textsRef = useRef<(HTMLDivElement | null)[]>([]);
   const mockupsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const isVisible = useInView(containerRef, { amount: 0 });
 
   const mockups = [
     <MockupPrivacy key="0" />,
-    <MockupSpam key="1" />,
-    <MockupPersonalization key="2" />,
+    <MockupSpam key="1" isVisible={isVisible} />,
+    <MockupPersonalization key="2" isVisible={isVisible} />,
     <MockupScheduling key="3" />,
-    <MockupAutoClean key="4" />
+    <MockupAutoClean key="4" isVisible={isVisible} />
   ];
 
   useGSAP(() => {
