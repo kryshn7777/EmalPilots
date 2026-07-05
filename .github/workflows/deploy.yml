@@ -38,11 +38,9 @@ jobs:
           cache: 'npm'
           
       - name: Install dependencies
-        working-directory: ./website2
         run: npm ci
         
       - name: Build
-        working-directory: ./website2
         run: npm run build
         
       - name: Setup Pages
@@ -52,7 +50,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist folder
-          path: './website2/dist'
+          path: './dist'
           
       - name: Deploy to GitHub Pages
         id: deployment
