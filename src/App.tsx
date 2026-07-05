@@ -12,8 +12,10 @@ import CapabilitiesUI from './components/CapabilitiesUI'
 import { WhoItsFor } from './components/WhoItsFor'
 import { Waitlist } from './components/Waitlist'
 import { Pricing } from './components/Pricing'
+import { LastMile } from './components/LastMile'
 import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
+import { BusinessSuite } from './components/BusinessSuite'
 import MultiAccountSupport from './components/MultiAccountSupport'
 import { PrivacyPolicy } from './components/PrivacyPolicy'
 import { TermsOfService } from './components/TermsOfService'
@@ -129,6 +131,7 @@ function App() {
             <div className="relative z-20"><HowItWorks /></div>
             <div className="relative z-20"><Deliverability /></div>
             <div className="relative z-20"><CapabilitiesUI /></div>
+            <div className="relative z-20"><LastMile /></div>
           </div>
 
           <div className="relative z-20"><MultiAccountSupport /></div>
@@ -146,6 +149,8 @@ function App() {
 
           {/* <div className="relative z-20"><Pricing /></div> */}
           
+          <div className="relative z-20"><BusinessSuite /></div>
+
           <div className="relative z-10">
             {/* Fog background for FAQ, fading out at the bottom to show the footer/rockets */}
             <div 

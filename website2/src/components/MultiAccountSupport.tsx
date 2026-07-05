@@ -35,8 +35,8 @@ const Counter = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const controls = animate(0, 1750, {
-      duration: 3,
+    const controls = animate(0, 1250430, {
+      duration: 5,
       ease: "easeOut",
       onUpdate(value) {
         setCount(Math.floor(value));
@@ -48,14 +48,11 @@ const Counter = () => {
   return (
     <div className="flex flex-col items-center">
       <div ref={ref} className="text-6xl md:text-8xl font-display font-black tracking-tighter text-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-        {count.toLocaleString()}
+        {count.toLocaleString()}+
       </div>
-      <div className="text-sm md:text-xl font-bold tracking-[0.2em] uppercase text-muted-foreground mt-2 text-center">
-        Max Emails Delivered Weekly
+      <div className="text-sm md:text-xl font-bold tracking-[0.2em] uppercase text-muted-foreground mt-2">
+        Emails Automated Concurrently
       </div>
-      <p className="text-xs md:text-sm font-medium text-muted-foreground mt-2 text-center">
-        5 accounts × 50 daily emails = Maximum impact, zero spam risk.
-      </p>
     </div>
   );
 };
@@ -92,12 +89,13 @@ export default function MultiAccountSupport() {
 
       <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center mb-20">
         <h2 className="text-4xl md:text-6xl font-display font-black tracking-tight mb-6">
-          One dashboard. <br/>
-          <span className="text-muted-foreground">Up to 5 active inboxes.</span>
+          Connect them all. <br/>
+          <span className="text-muted-foreground">Command them all.</span>
         </h2>
         
         <p className="text-lg md:text-2xl text-foreground/80 max-w-2xl mx-auto mb-16 leading-relaxed font-medium">
-          Run all your outreach from one local command center. Connect up to 5 accounts, hit send, and let Email Pilots fire off your daily emails straight from your desktop.
+          Login to 1 account? Cute. Login to 5? Now we're talking. 
+          Email Pilots creates a localized command center that runs massive concurrent campaigns across every inbox you own.
         </p>
 
         <Counter />
@@ -150,6 +148,31 @@ export default function MultiAccountSupport() {
         </motion.div>
       </div>
 
+      <div className="container mx-auto px-4 mt-20 relative z-10">
+         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-card border border-border p-6 rounded-2xl shadow-sm text-center">
+               <div className="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Server className="w-6 h-6" />
+               </div>
+               <h3 className="font-bold text-lg mb-2">Massive Concurrency</h3>
+               <p className="text-sm text-muted-foreground">Each account runs in its own localized isolated thread. Blast thousands of emails without bottlenecking.</p>
+            </div>
+            <div className="bg-card border border-border p-6 rounded-2xl shadow-sm text-center">
+               <div className="w-12 h-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <ShieldCheck className="w-6 h-6" />
+               </div>
+               <h3 className="font-bold text-lg mb-2">IP Reputation Shield</h3>
+               <p className="text-sm text-muted-foreground">Automatically rotate between connected accounts to maintain perfect domain and IP health scores.</p>
+            </div>
+            <div className="bg-card border border-border p-6 rounded-2xl shadow-sm text-center">
+               <div className="w-12 h-12 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Zap className="w-6 h-6" />
+               </div>
+               <h3 className="font-bold text-lg mb-2">Unified Analytics</h3>
+               <p className="text-sm text-muted-foreground">See replies, bounces, and opens from all 5+ accounts in one single, beautiful command dashboard.</p>
+            </div>
+         </div>
+      </div>
     </section>
   );
 }

@@ -1,0 +1,160 @@
+- generic [ref=e3]:
+  - banner [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]: Email Pilots
+      - navigation [ref=e11]:
+        - link "Personas" [ref=e12] [cursor=pointer]:
+          - /url: "#personas"
+        - link "How It Works" [ref=e13] [cursor=pointer]:
+          - /url: "#how-it-works"
+        - link "Features" [ref=e14] [cursor=pointer]:
+          - /url: "#features"
+        - link "Pricing" [ref=e15] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "FAQ" [ref=e16] [cursor=pointer]:
+          - /url: "#faq"
+      - button "Start Free Trial" [ref=e17] [cursor=pointer]
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - heading "Personalized Email Outreach from Your Own Inbox." [level=1] [ref=e20]:
+        - text: Personalized Email Outreach
+        - text: from Your Own Inbox.
+      - paragraph [ref=e22]: Connect Gmail or Outlook, schedule campaigns, attach files, and send personalized emails automatically.
+      - generic [ref=e23]:
+        - button "Start Sending Now" [ref=e24] [cursor=pointer]
+        - button "Watch Demo" [ref=e25] [cursor=pointer]
+    - generic [ref=e26]:
+      - heading "⚠️ The Problem with Doing it Manually" [level=2] [ref=e27]:
+        - generic [ref=e28]: ⚠️
+        - text: The Problem with Doing it Manually
+      - paragraph [ref=e29]: Manually sending 100 resumes or recruitment pitches takes hours. But if you put everyone in BCC, your emails go straight to the spam folder. Email Pilots acts like your personal assistant, sending out perfectly personalized emails one by one, while you grab a coffee.
+    - generic [ref=e30]:
+      - heading "3 Simple Steps to Send" [level=2] [ref=e32]
+      - generic [ref=e33]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: "1"
+            - generic [ref=e38]: Connect Your Email
+          - paragraph [ref=e40]: Works safely with your existing Gmail, Outlook, or work account. No complex setup required.
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]: "2"
+            - generic [ref=e45]: Upload Your List
+          - paragraph [ref=e47]: Just drop in your Excel or CSV spreadsheet containing your contacts' names and email addresses.
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]: "3"
+            - generic [ref=e52]: Type and Send
+          - paragraph [ref=e54]: Write your message, click send, and our software will automatically space out the emails so you don't look like a robot.
+    - generic [ref=e55]:
+      - heading "Who is Email Pilots For //" [level=2] [ref=e57]
+      - generic [ref=e58]:
+        - heading "Job Seekers." [level=3] [ref=e59]:
+          - text: Job
+          - text: Seekers.
+        - paragraph [ref=e62]: Reach out to 50 hiring managers a week with a personalized intro. Stop waiting for job boards to reply and take control of your career search.
+      - generic [ref=e63]:
+        - heading "Recruiters." [level=3] [ref=e64]
+        - paragraph [ref=e67]: Contact great candidates without paying thousands for LinkedIn Recruiter. Send highly personalized follow-ups completely automatically.
+      - generic [ref=e68]:
+        - heading "Free lancers." [level=3] [ref=e69]:
+          - text: Free
+          - text: lancers.
+        - paragraph [ref=e72]: Pitch your services to local businesses on autopilot. Keep your calendar booked without spending hours copying and pasting.
+      - generic [ref=e73]:
+        - heading "Community Builders." [level=3] [ref=e74]:
+          - text: Community
+          - text: Builders.
+        - paragraph [ref=e77]: Manage your club, sports team, or neighborhood group. Send personalized updates to everyone without starting a messy group thread or relying on BCC.
+    - generic [ref=e78]:
+      - heading "How It Works //" [level=2] [ref=e80]
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e83]: "01"
+          - heading "The List" [level=3] [ref=e84]
+          - paragraph [ref=e85]: Drop in your spreadsheet. No clunky CRMs or weird formatting rules. Just paste your list and go.
+        - generic [ref=e86]:
+          - generic [ref=e87]: "02"
+          - heading "The Pitch" [level=3] [ref=e88]
+          - paragraph [ref=e89]: "Draft your pitch. Use simple {{Name}} or {{Company}} tags to instantly personalize hundreds of emails without sounding like a robot."
+        - generic [ref=e90]:
+          - generic [ref=e91]: "03"
+          - heading "Autopilot" [level=3] [ref=e92]
+          - paragraph [ref=e93]: Hit send and grab a coffee. We send your emails right from your own account so they land in the primary inbox, not the spam folder.
+    - generic [ref=e95]:
+      - generic:
+        - heading "Powerful Capabilities" [level=2]
+        - heading "Anatomy of a perfect pitch." [level=3]
+        - paragraph: Scroll to deconstruct how Email Pilots handles the heavy lifting, giving you everything you need to send beautifully crafted campaigns.
+      - generic [ref=e113]:
+        - generic [ref=e114]: 📧
+        - heading "Gmail & Outlook" [level=3] [ref=e115]
+        - paragraph [ref=e116]: Seamlessly connect your existing accounts. No complex SMTP setups. Works safely directly with your primary inbox.
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - generic [ref=e119]: ✨
+          - generic [ref=e120]: 📎
+        - heading "Hyper-Personalized" [level=3] [ref=e121]
+        - paragraph [ref=e122]: Dynamically insert names and custom fields so every email feels uniquely crafted. Plus, easily attach tailored PDFs or pitch decks.
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - generic [ref=e125]: ⏰
+          - generic [ref=e126]: 🚦
+        - heading "Scheduling & Pacing" [level=3] [ref=e127]
+        - paragraph [ref=e128]: Write now, send later. Built-in automated pacing and daily limits keep your accounts perfectly safe and ensure your emails always land in the primary inbox.
+      - generic [ref=e129]:
+        - generic [ref=e130]: 🔒
+        - heading "Local-First Privacy" [level=3] [ref=e131]
+        - paragraph [ref=e132]: Your contact lists and email content never leave your device. Complete data security without any cloud compromises or tracking.
+    - generic [ref=e133]:
+      - heading "Pricing //" [level=2] [ref=e135]
+      - generic [ref=e136]:
+        - generic [ref=e137]:
+          - generic [ref=e138]:
+            - generic [ref=e139]: Weekly Pass
+            - generic [ref=e140]: Perfect for side-projects & short campaigns
+          - generic [ref=e141]:
+            - paragraph [ref=e142]: €1.99 / week
+            - list [ref=e143]:
+              - listitem [ref=e144]: Send as many emails as you want
+              - listitem [ref=e146]: Works with any spreadsheet
+              - listitem [ref=e148]: Runs safely on your laptop
+            - button "Start Sending" [ref=e150] [cursor=pointer]
+        - generic [ref=e151]:
+          - generic [ref=e152]: First Class
+          - generic [ref=e153]:
+            - generic [ref=e154]: Lifetime Pass
+            - generic [ref=e155]: For serious recruiters and freelancers
+          - generic [ref=e156]:
+            - generic [ref=e157]:
+              - paragraph [ref=e158]: €110
+              - generic [ref=e159]:
+                - generic [ref=e160]: €190
+                - generic [ref=e161]: Lifetime
+            - list [ref=e162]:
+              - listitem [ref=e163]: Everything in the Weekly Pass
+              - listitem [ref=e165]: Write better, longer templates
+              - listitem [ref=e167]: Connect all your email accounts
+              - listitem [ref=e169]: VIP support directly from us
+            - button "Buy Once, Use Forever" [ref=e171] [cursor=pointer]
+    - generic [ref=e172]:
+      - heading "Frequently Asked Questions" [level=2] [ref=e173]
+      - generic [ref=e174]:
+        - button "Is my data stored on your servers? +" [ref=e176] [cursor=pointer]:
+          - heading "Is my data stored on your servers?" [level=3] [ref=e177]
+          - generic [ref=e178]: +
+        - button "Does this work with Gmail? +" [ref=e180] [cursor=pointer]:
+          - heading "Does this work with Gmail?" [level=3] [ref=e181]
+          - generic [ref=e182]: +
+        - button "Does this work with Outlook? +" [ref=e184] [cursor=pointer]:
+          - heading "Does this work with Outlook?" [level=3] [ref=e185]
+          - generic [ref=e186]: +
+        - button "Can I attach PDFs? +" [ref=e188] [cursor=pointer]:
+          - heading "Can I attach PDFs?" [level=3] [ref=e189]
+          - generic [ref=e190]: +
+        - button "Can I schedule emails? +" [ref=e192] [cursor=pointer]:
+          - heading "Can I schedule emails?" [level=3] [ref=e193]
+          - generic [ref=e194]: +
+        - button "Can I personalize emails? +" [ref=e196] [cursor=pointer]:
+          - heading "Can I personalize emails?" [level=3] [ref=e197]
+          - generic [ref=e198]: +

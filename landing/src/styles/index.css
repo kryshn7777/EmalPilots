@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0d1b3f;
+  --color-navy: #0a1430;
+  --color-navy-700: #10224f;
+  --color-navy-900: #070d22;
+  --color-blue: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-glow: #5b8cff;
+  --color-paper: #f7f9fc;
+  --color-paper-line: #e6ecf5;
+  --color-slate-ink: #41527a;
+  --color-slate-mute: #76859f;
+  --color-success: #34d399;
+  --color-warn: #f59e0b;
+  --color-danger: #ef4444;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --shadow-glow: 0 10px 40px -8px rgba(59, 130, 246, 0.5);
+  --shadow-lift: 0 24px 60px -24px rgba(13, 27, 63, 0.22);
+}
+
+:root { color-scheme: light; }
+
+* { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+html { scroll-behavior: auto; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: #fff;
+  color: var(--color-ink);
+  overflow-x: hidden;
+}
+
+/* Display face for headings — geometric, a touch more characterful than body. */
+h1, h2, h3, .font-display { font-family: var(--font-display); }
+
+/* Keep anchor targets clear of the fixed header. */
+section[id] { scroll-margin-top: 84px; }
+
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+::selection { background: var(--color-blue); color: #fff; }
+
+/* Faint engineering grid — reference-style blueprint texture. */
+@utility grid-paper {
+  background-image:
+    linear-gradient(rgba(13, 27, 63, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 27, 63, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Translucent surfaces so the flight sky ghosts through the light body.
+   No backdrop-filter on purpose: blurring a full section over an animating
+   canvas re-rasterizes every frame and tanks mobile FPS. Translucency alone
+   lets the faint planes read through while text stays crisp. */
+@utility frost {
+  background-color: rgba(255, 255, 255, 0.72);
+}
+@utility frost-paper {
+  background-color: rgba(247, 249, 252, 0.7);
+}
+
+/* --- Micro animations (ported from the reference) --- */
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-9px); }
+}
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.6; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+@keyframes dash-move {
+  to { background-position: 220px 0; }
+}
+
+.animate-float-y { animation: float-y 5s ease-in-out infinite; }
+.animate-pulse-ring { animation: pulse-ring 1.8s ease-out infinite; }
+
+/* Animated dashed flight-path divider. */
+.flight-divider {
+  height: 2px;
+  background-image: repeating-linear-gradient(90deg, var(--color-blue) 0 10px, transparent 10px 22px);
+  background-size: 220px 2px;
+  animation: dash-move 7s linear infinite;
+  opacity: 0.35;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+/* --- Cinematic "Gate to Gate" utilities --- */
+
+/* Blueprint-day surface: translucent paper so the flight sky ghosts through. */
+@utility blueprint-panel {
+  background-color: rgba(247, 249, 252, 0.78);
+  border: 1px solid var(--color-paper-line);
+}
+
+/* Night surface for mid-page dramatic beats; semi-opaque so planes still read. */
+@utility night-panel {
+  background:
+    radial-gradient(120% 80% at 50% -10%, rgba(91, 140, 255, 0.18), transparent 60%),
+    linear-gradient(180deg, rgba(7, 13, 34, 0.94), rgba(10, 20, 48, 0.97));
+}
+
+/* Boarding-pass perforation: a dashed tear line. */
+@utility perforation {
+  background-image: repeating-linear-gradient(180deg, var(--color-paper-line) 0 7px, transparent 7px 14px);
+}
+
+/* Boarding-pass barcode bars. */
+@utility barcode {
+  background-image: repeating-linear-gradient(90deg, var(--color-ink) 0 2px, transparent 2px 3px, var(--color-ink) 3px 4px, transparent 4px 7px);
+}
+
+/* Blueprint annotation leader line. */
+@utility annot-leader {
+  background: linear-gradient(90deg, var(--color-blue), transparent);
+}

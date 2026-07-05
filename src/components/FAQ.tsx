@@ -26,6 +26,26 @@ const faqs = [
   {
     question: "Can I cancel my subscription anytime?",
     answer: "Absolutely. You can cancel your weekly subscription directly from your dashboard at any time. No hidden fees or contracts that lock you in."
+  },
+  {
+    question: "Is this a bulk or spam tool?",
+    answer: "No. Email Pilots is for personal, permission-based email you have a genuine reason to send — to your own contacts, from your own mailbox. It defaults to a personal 1:1 style, supports one-click unsubscribe, and keeps a do-not-contact list. It is not built for buying lists or blasting strangers."
+  },
+  {
+    question: "Will it keep my mailbox in good standing?",
+    answer: "That’s the whole point of the sending limits, gradual ramp-up, and natural pacing: to send the way a careful person would, stay within healthy volumes, and keep your messages welcome."
+  },
+  {
+    question: "Where does my data live?",
+    answer: "Entirely on your computer. There is no cloud backend — your contact list and credentials never leave your machine, and passwords are encrypted with your operating system’s keychain."
+  },
+  {
+    question: "Which email providers work?",
+    answer: "Anything that uses standard email protocols — Gmail, Outlook / Microsoft 365, and custom domains. Reply tracking uses a standard read-only inbox check."
+  },
+  {
+    question: "How does billing work?",
+    answer: "$2.9/week, everything included, cancel anytime. It starts with a 7-day trial."
   }
 ]
 
