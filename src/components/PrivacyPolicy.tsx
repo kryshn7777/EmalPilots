@@ -4,7 +4,7 @@ import { ReactLenis } from 'lenis/react'
 
 export function PrivacyPolicy() {
   return (
-    <ReactLenis root>
+    <ReactLenis root autoRaf={false}>
       <div className="relative min-h-screen w-full bg-white font-sans text-ink">
         <div className="relative z-10">
           <Header />

@@ -10,6 +10,9 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
+  server: {
+    open: true,
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
