@@ -144,10 +144,8 @@ function App() {
             <div className="relative z-20"><WhoItsFor /></div>
           </div>
 
-          <div className="relative z-20"><Waitlist /></div>
+          <div className="relative z-20"><Pricing /></div>
           <div className="relative z-20"><BusinessSuite /></div>
-
-          {/* <div className="relative z-20"><Pricing /></div> */}
 
           <div className="relative z-10">
             {/* Fog background for FAQ, fading out at the bottom to show the footer/rockets */}

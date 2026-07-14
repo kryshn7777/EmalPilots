@@ -1,0 +1,130 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - generic [ref=f1e6]:
+      - link "Email Pilots Logo" [ref=f1e7] [cursor=pointer]:
+        - /url: /#top
+        - img "Email Pilots Logo" [ref=f1e8]
+      - navigation [ref=f1e9]:
+        - link "How it works" [ref=f1e10] [cursor=pointer]:
+          - /url: /#how
+        - link "Features" [ref=f1e11] [cursor=pointer]:
+          - /url: /#features
+        - link "Who it's for" [ref=f1e12] [cursor=pointer]:
+          - /url: /#who
+        - link "Waitlist" [ref=f1e13] [cursor=pointer]:
+          - /url: /#waitlist
+        - link "FAQ" [ref=f1e14] [cursor=pointer]:
+          - /url: /#faq
+      - link "Join Waitlist" [ref=f1e16] [cursor=pointer]:
+        - /url: /#waitlist
+        - generic [ref=f1e17]: Join Waitlist
+        - img [ref=f1e18]
+  - main [ref=f1e20]:
+    - generic [ref=f1e21]:
+      - heading "Privacy Policy" [level=1] [ref=f1e22]
+      - generic [ref=f1e23]:
+        - paragraph [ref=f1e24]:
+          - strong [ref=f1e25]: "Effective Date:"
+          - text: 14 June 2026
+        - paragraph [ref=f1e26]: This Privacy Policy explains how Email Pilots ("we," "us," or "our"), operating as a sole proprietorship in India, collects, uses, discloses, and safeguards your information when you visit our website or use the Email Pilots desktop application (collectively, the "Service"). Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the Service.
+        - generic [ref=f1e27]:
+          - heading "1. The Email Pilots Desktop Application" [level=2] [ref=f1e28]
+          - paragraph [ref=f1e29]:
+            - text: We fundamentally believe that your data belongs to you. The Email Pilots desktop application is architected to operate
+            - strong [ref=f1e30]: 100% locally on your machine
+            - text: .
+          - list [ref=f1e31]:
+            - listitem [ref=f1e32]:
+              - strong [ref=f1e33]: "No Data Harvesting or Telemetry:"
+              - text: The application contains zero network telemetry, crash reporting, or tracking scripts. It makes no HTTP requests to our servers or any third-party analytics providers.
+            - listitem [ref=f1e34]:
+              - strong [ref=f1e35]: "Local Data Storage:"
+              - text: All configuration and operational data, including your recipient lists, sending limits, suppressed emails, and email templates, are stored securely and solely on your local hard drive.
+            - listitem [ref=f1e36]:
+              - strong [ref=f1e37]: "Direct SMTP Connections:"
+              - text: The application connects directly from your computer to your chosen SMTP provider (e.g., Gmail, Outlook, or custom SMTP). Your emails, attachments, and recipient data never pass through, touch, or get processed by our servers.
+            - listitem [ref=f1e38]:
+              - strong [ref=f1e39]: "Secure Credentials:"
+              - text: Your SMTP credentials (e.g., App Passwords) are stored entirely locally on your machine. We have absolutely no access to your credentials or your email accounts.
+        - generic [ref=f1e40]:
+          - heading "2. Information We Collect on Our Website" [level=2] [ref=f1e41]
+          - paragraph [ref=f1e42]: While our desktop application is fully local and private, we do collect certain information when you interact with our website.
+          - heading "A. Personal Data" [level=3] [ref=f1e43]
+          - paragraph [ref=f1e44]: "When you purchase a subscription or contact us, we may collect personally identifiable information, such as:"
+          - list [ref=f1e45]:
+            - listitem [ref=f1e46]: Name
+            - listitem [ref=f1e47]: Email address
+            - listitem [ref=f1e48]: Billing address
+          - heading "B. Payment Information" [level=3] [ref=f1e49]
+          - paragraph [ref=f1e50]:
+            - text: All subscription payments are processed securely through our Merchant of Record,
+            - strong [ref=f1e51]: LemonSqueezy
+            - text: . When you make a purchase, LemonSqueezy collects and processes your payment details (such as credit card numbers). We do not process, store, or have direct access to your full payment card information. Please review
+            - link "LemonSqueezy’s Privacy Policy" [ref=f1e52] [cursor=pointer]:
+              - /url: https://www.lemonsqueezy.com/privacy
+            - text: for details on how they handle your data.
+          - heading "C. Usage Data and Analytics" [level=3] [ref=f1e53]
+          - paragraph [ref=f1e54]:
+            - text: We use
+            - strong [ref=f1e55]: Google Analytics
+            - text: to monitor and analyze web traffic on our website. Google Analytics may collect data such as your IP address, browser type, operating system, referring URLs, and pages viewed. This data is used to improve our website's user experience. You can opt out of Google Analytics tracking by using browser extensions or adjusting your cookie preferences.
+        - generic [ref=f1e56]:
+          - heading "3. How We Use Your Information" [level=2] [ref=f1e57]
+          - paragraph [ref=f1e58]: "We use the information collected via our website and payment processor to:"
+          - list [ref=f1e59]:
+            - listitem [ref=f1e60]: Provide, operate, and maintain our Service.
+            - listitem [ref=f1e61]: Process your subscription payments and renewals (via LemonSqueezy).
+            - listitem [ref=f1e62]: Respond to your customer service requests and support needs.
+            - listitem [ref=f1e63]: Monitor website usage and analyze trends to improve our marketing and web presence.
+            - listitem [ref=f1e64]: Prevent fraudulent transactions and monitor against theft.
+        - generic [ref=f1e65]:
+          - heading "4. Sharing Your Information" [level=2] [ref=f1e66]
+          - paragraph [ref=f1e67]: "We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following situations:"
+          - list [ref=f1e68]:
+            - listitem [ref=f1e69]:
+              - strong [ref=f1e70]: "With Service Providers:"
+              - text: We share necessary data with LemonSqueezy to facilitate payment processing.
+            - listitem [ref=f1e71]:
+              - strong [ref=f1e72]: "For Analytics:"
+              - text: We share anonymized website usage data with Google Analytics.
+            - listitem [ref=f1e73]:
+              - strong [ref=f1e74]: "By Law:"
+              - text: We may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., a court or government agency in India).
+        - generic [ref=f1e75]:
+          - heading "5. Data Security" [level=2] [ref=f1e76]
+          - paragraph [ref=f1e77]: We use administrative, technical, and physical security measures to help protect your personal information. However, please be aware that no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse.
+          - paragraph [ref=f1e78]: For the desktop application, you are entirely responsible for the security of the data, recipient lists, and SMTP credentials stored on your own physical device.
+        - generic [ref=f1e79]:
+          - heading "6. Your Rights" [level=2] [ref=f1e80]
+          - paragraph [ref=f1e81]: Depending on your location, you may have rights regarding your personal data, including the right to access, correct, or delete the personal information we have collected about you via our website or payment processor.
+          - paragraph [ref=f1e82]: To delete the data associated with the desktop app, you simply need to uninstall the application and delete its local configuration directory from your computer.
+        - generic [ref=f1e83]:
+          - heading "7. Governing Law" [level=2] [ref=f1e84]
+          - paragraph [ref=f1e85]: This Privacy Policy and your use of the Service are governed by and construed in accordance with the laws of India.
+        - generic [ref=f1e86]:
+          - heading "8. Changes to This Privacy Policy" [level=2] [ref=f1e87]
+          - paragraph [ref=f1e88]: We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top. You are advised to review this Privacy Policy periodically for any changes.
+        - generic [ref=f1e89]:
+          - heading "9. Contact Us" [level=2] [ref=f1e90]
+          - paragraph [ref=f1e91]: "If you have questions, comments, or concerns about this Privacy Policy or our privacy practices, please contact us at:"
+          - paragraph [ref=f1e92]:
+            - strong [ref=f1e93]: "Email:"
+            - link "emailpilots.sales@gmail.com" [ref=f1e94] [cursor=pointer]:
+              - /url: mailto:emailpilots.sales@gmail.com
+  - contentinfo [ref=f1e95]:
+    - generic [ref=f1e96]:
+      - img "Email Pilots Logo" [ref=f1e98]
+      - generic [ref=f1e99]:
+        - link "How it works" [ref=f1e100] [cursor=pointer]:
+          - /url: /#how
+        - link "Features" [ref=f1e101] [cursor=pointer]:
+          - /url: /#features
+        - link "Waitlist" [ref=f1e102] [cursor=pointer]:
+          - /url: /#waitlist
+        - link "FAQ" [ref=f1e103] [cursor=pointer]:
+          - /url: /#faq
+        - link "Terms of Service" [ref=f1e104] [cursor=pointer]:
+          - /url: /terms
+        - link "Privacy Policy" [ref=f1e105] [cursor=pointer]:
+          - /url: /privacy
+      - generic [ref=f1e106]: © 2026 Email Pilots. All rights reserved.
