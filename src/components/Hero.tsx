@@ -34,16 +34,16 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-70"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
             </span>
-            Runs on your machine · Connects to any inbox
+            Powered by Local AI · Runs on your machine
           </motion.div>
 
           <motion.h1 variants={itemVariants} className="mt-6 font-display text-[2.7rem] font-extrabold leading-[1.02] tracking-[-.02em] text-ink sm:text-6xl lg:text-[4.4rem]">
-            Emails they actually open,{' '}<br className="hidden sm:block" />
+            AI-powered outreach,{' '}<br className="hidden sm:block" />
             sent from <span className="text-blue">your own inbox.</span>
           </motion.h1>
 
           <motion.p variants={itemVariants} className="mt-6 max-w-xl text-[17px] leading-relaxed text-slate-ink sm:text-lg">
-            Email Pilots is your personal sending assistant. Connect Gmail or Outlook, drop in your contact list, and we send every message <span className="font-semibold text-ink">one by one at a natural human pace</span>. The payoff: you land in the primary inbox, not the spam folder.
+            Email Pilots is your personal 100% private AI sending assistant. Personalize emails, let AI handle replies, and send every message <span className="font-semibold text-ink">one by one at a natural human pace</span>. The payoff: you land in the primary inbox, not the spam folder.
           </motion.p>
 
           <motion.div variants={itemVariants} className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">

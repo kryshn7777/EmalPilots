@@ -7,11 +7,7 @@ const features = [
     title: "SSO sign-in",
     description: "One-click Google & Microsoft sign-in (OAuth2)."
   },
-  {
-    icon: <Shield className="h-5 w-5" />,
-    title: "Domain authentication",
-    description: "Guided SPF, DKIM and DMARC setup."
-  },
+
   {
     icon: <BarChart className="h-5 w-5" />,
     title: "Open & click analytics",

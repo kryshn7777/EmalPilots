@@ -201,7 +201,25 @@ export function Deliverability() {
             <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Checks every address before it sends, keeping your bounce rate near zero.</p>
           </motion.div>
           
-          {/* Card 5: Primary Inbox */}
+          {/* Card 5: Domain Authentication */}
+          <motion.div 
+            variants={itemVariants} 
+            initial="rest"
+            whileHover="hover"
+            whileTap="hover"
+            animate="rest"
+            className="rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift flex flex-col items-center sm:items-start text-center sm:text-left"
+          >
+            <div className="mb-4 flex h-10 items-center gap-2">
+              <div className="flex h-7 items-center rounded bg-emerald-50 px-2 font-mono text-[11px] font-bold text-emerald-700">SPF</div>
+              <div className="flex h-7 items-center rounded bg-emerald-50 px-2 font-mono text-[11px] font-bold text-emerald-700">DKIM</div>
+              <div className="flex h-7 items-center rounded bg-emerald-50 px-2 font-mono text-[11px] font-bold text-emerald-700">DMARC</div>
+            </div>
+            <h3 className="font-display text-lg font-bold text-ink">Domain Authentication</h3>
+            <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Guided SPF, DKIM and DMARC setup ensures your emails are verified and trusted by all major inbox providers.</p>
+          </motion.div>
+
+          {/* Card 6: Primary Inbox */}
           <motion.div 
             variants={itemVariants} 
             initial="rest"
@@ -221,7 +239,7 @@ export function Deliverability() {
             <p className="mt-2 text-[14px] leading-relaxed text-slate-ink">Clean, plain text emails bypass promotional filters and land directly in the primary inbox.</p>
           </motion.div>
           
-          <motion.div variants={itemVariants} className="perspective-1000">
+          <motion.div variants={itemVariants} className="perspective-1000 sm:col-span-2 lg:col-span-3">
             <InteractiveBounceCard />
           </motion.div>
         </motion.div>

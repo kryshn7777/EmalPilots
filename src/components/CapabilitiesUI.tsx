@@ -3,40 +3,40 @@ import { motion, AnimatePresence, useInView } from "motion/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { Lock, ShieldCheck, Wand2, Clock, Mail, Server, Globe2, AlertTriangle, CheckCircle2, Send, XCircle } from "lucide-react";
+import { Lock, ShieldCheck, Wand2, Clock, Mail, Server, Globe2, AlertTriangle, CheckCircle2, Send, XCircle, Bot, Sparkles, Inbox, PenTool, Cpu, Zap } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const capabilities = [
   {
     id: 0,
-    title: "100% Local Privacy",
-    description: "Your data never leaves your device. We never store or sell your contact lists. Full stop.",
+    title: "Privacy-First Local AI",
+    description: "Your AI assistant runs 100% on your machine's GPU. No cloud APIs. Zero data ever leaves your device. Full stop.",
     icon: Lock,
   },
   {
     id: 1,
-    title: "Spam Protection",
-    description: "We scan every email for spam triggers like ALL CAPS and broken links before it goes out, so you hit the inbox more often.",
+    title: "AI Spam & Deliverability",
+    description: "Our local AI scans every draft for spammy patterns, analyzing tone and formatting to ensure you land in the primary inbox.",
     icon: ShieldCheck,
   },
   {
     id: 2,
-    title: "Dynamic Personalization",
-    description: "Drop in simple tags like {{Name}} to tailor every message, and auto attach a unique document for each recipient.",
+    title: "AI Personalized Generation",
+    description: "Generate highly contextual emails locally. The AI leverages your past successful styles and individual recipient facts.",
     icon: Wand2,
   },
   {
     id: 3,
-    title: "Intelligent Scheduling",
-    description: "Send when your prospects are actually awake. Randomized delays make every message look hand typed.",
-    icon: Clock,
+    title: "AI Writing Assistant",
+    description: "Use the built-in ✨ AI toolbar to seamlessly improve, rewrite, or fix grammar while composing your emails.",
+    icon: PenTool,
   },
   {
     id: 4,
-    title: "Bounce Prevention",
-    description: "Quit babysitting your lists. We verify addresses up front and instantly stop sending to dead inboxes.",
-    icon: Mail,
+    title: "AI Reply Classification",
+    description: "The AI automatically reads incoming replies, categorizes them, pauses active drips, and auto-suppresses unsubscribes.",
+    icon: Inbox,
   }
 ];
 
@@ -67,19 +67,19 @@ function MockupPrivacy() {
           <div className="flex flex-col items-center gap-2">
             <div className="w-20 h-20 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shadow-[0_0_30px_-5px_rgba(var(--primary),0.3)] relative group">
                <div className="absolute inset-0 bg-primary/20 rounded-2xl animate-ping opacity-20" />
-               <Server className="w-10 h-10" />
+               <Cpu className="w-10 h-10" />
                <div className="absolute -bottom-2 -right-2 bg-background rounded-full p-1 border border-border shadow-lg">
                   <Lock className="w-4 h-4 text-green-500" />
                </div>
             </div>
-            <span className="text-xs text-primary font-mono font-bold mt-1">Your Machine</span>
+            <span className="text-xs text-primary font-mono font-bold mt-1">Local AI Model</span>
           </div>
         </div>
         
         <div className="bg-background/95 border border-border rounded-xl p-4 shadow-xl text-center max-w-[280px]">
           <div className="text-xs text-muted-foreground mb-2 flex items-center justify-center gap-2">
             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            Data is securely locked locally
+            LLM running locally on GPU
           </div>
           <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden">
              <div className="h-full w-full bg-green-500 rounded-full" />
@@ -162,12 +162,12 @@ function MockupSpam({ isVisible }: { isVisible: boolean }) {
         </div>
         <div className="absolute bottom-4 right-4 bg-background border border-border shadow-lg rounded-lg p-3 flex flex-col gap-2">
            <div className="flex justify-between items-center text-xs font-bold gap-4">
-             <span>Spam Score</span>
+             <span>✨ AI Deliverability Advisor</span>
              <AnimatePresence mode="wait">
                {!isFixed ? (
-                 <motion.span key="scoreBad" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="text-red-500 bg-red-500/10 px-2 py-0.5 rounded flex items-center gap-1"><AlertTriangle className="w-3 h-3"/> High Risk</motion.span>
+                 <motion.span key="scoreBad" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="text-red-500 bg-red-500/10 px-2 py-0.5 rounded flex items-center gap-1"><AlertTriangle className="w-3 h-3"/> 3 Issues Found</motion.span>
                ) : (
-                 <motion.span key="scoreGood" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="text-green-600 bg-green-500/10 px-2 py-0.5 rounded flex items-center gap-1"><CheckCircle2 className="w-3 h-3"/> Safe</motion.span>
+                 <motion.span key="scoreGood" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="text-green-600 bg-green-500/10 px-2 py-0.5 rounded flex items-center gap-1"><CheckCircle2 className="w-3 h-3"/> Looks Good</motion.span>
                )}
              </AnimatePresence>
            </div>
@@ -235,22 +235,22 @@ function MockupPersonalization({ isVisible }: { isVisible: boolean }) {
            </AnimatePresence>
         </div>
       </div>
-      <div className="mt-12 bg-card border border-border p-4 rounded-xl shadow-sm flex items-center gap-4 w-full max-w-[280px]">
-         <div className="w-10 h-10 rounded-lg bg-red-500/10 text-red-500 flex items-center justify-center shrink-0">
-           <Wand2 className="w-5 h-5" />
+      <div className="mt-12 bg-primary border border-primary/20 p-4 rounded-xl shadow-sm flex items-center gap-4 w-full max-w-[280px] text-white">
+         <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center shrink-0">
+           <Sparkles className="w-5 h-5" />
          </div>
          <div className="text-sm truncate relative flex-1 h-10 flex flex-col justify-center">
            <AnimatePresence mode="wait">
              <motion.div 
-               key={current.file}
+               key={current.name}
                initial={{ y: 10, opacity: 0 }}
                animate={{ y: 0, opacity: 1 }}
                exit={{ y: -10, opacity: 0 }}
                transition={{ duration: 0.3 }}
                className="absolute w-full"
              >
-               <div className="font-bold truncate">{current.file}</div>
-               <div className="text-muted-foreground text-[10px]">Dynamically generated</div>
+               <div className="font-bold truncate">Drafting for {current.name}...</div>
+               <div className="text-white/70 text-[10px] flex items-center gap-1"><Bot className="w-3 h-3"/> Using recent replies</div>
              </motion.div>
            </AnimatePresence>
          </div>
@@ -259,76 +259,65 @@ function MockupPersonalization({ isVisible }: { isVisible: boolean }) {
   );
 }
 
-function MockupScheduling() {
+function MockupWritingAssistant() {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center p-4 md:p-8 relative">
-       <div className="absolute left-[2.5rem] md:left-1/2 top-1/2 md:-translate-x-1/2 -translate-y-1/2 w-[2px] h-[70%] bg-border/50 rounded-full" />
-       
-       <div className="flex flex-col gap-6 w-full max-w-sm relative z-10">
-         {[
-           { time: "09:02 AM", email: "john@acme.com", delay: "Started" },
-           { time: "09:14 AM", email: "sarah@tech.co", delay: "+12m 4s delay" },
-           { time: "09:21 AM", email: "mike@startup.io", delay: "+7m 18s delay" }
-         ].map((item, i) => (
+       <div className="w-full max-w-sm bg-background border border-border rounded-xl shadow-2xl overflow-hidden font-sans text-sm">
+         <div className="border-b border-border p-2 bg-muted/20 flex gap-2">
+           <button className="flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 text-primary text-xs font-bold rounded-lg border border-primary/20"><Sparkles className="w-3 h-3"/> Improve</button>
+           <button className="flex items-center gap-1.5 px-3 py-1.5 bg-background text-foreground text-xs font-bold rounded-lg border border-border shadow-sm"><PenTool className="w-3 h-3"/> Rewrite</button>
+         </div>
+         <div className="p-4 text-foreground/80 leading-relaxed min-h-[150px]">
+           <p className="mb-4">I was looking at your website and I think we can help you get more leads. Let me know if you want to chat.</p>
            <motion.div 
-             key={i}
-             initial={{ opacity: 0, x: -20 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             viewport={{ once: false, amount: 0.5 }}
-             transition={{ delay: i * 0.3 }}
-             className="flex items-center gap-4"
+             initial={{ opacity: 0, y: 10 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ delay: 0.5 }}
+             className="p-3 bg-primary/5 border border-primary/20 rounded-lg text-foreground relative"
            >
-             <div className="w-16 md:w-20 text-right shrink-0">
-               <div className="text-xs md:text-sm font-bold text-foreground">{item.time}</div>
-               <div className="hidden md:block text-[9px] text-primary font-mono">{item.delay}</div>
-             </div>
-             <div className="relative">
-                <div className="w-4 h-4 rounded-full bg-primary border-4 border-background shadow-sm" />
-             </div>
-             <div className="flex-1 bg-background border border-border p-3 rounded-lg shadow-sm flex items-center gap-3 overflow-hidden">
-               <Send className="w-4 h-4 text-muted-foreground shrink-0" />
-               <span className="text-xs font-mono truncate">{item.email}</span>
+             <div className="text-xs font-bold text-primary mb-2 flex items-center gap-1"><Sparkles className="w-3 h-3"/> AI Suggestion</div>
+             <p className="text-sm">I noticed Acme Corp's recent launch and was impressed. We help companies like yours scale their lead generation by 30%. Would you be open to a brief chat this Thursday?</p>
+             <div className="mt-3 flex gap-2">
+                <button className="px-3 py-1 bg-primary text-white text-xs font-bold rounded">Apply</button>
+                <button className="px-3 py-1 bg-muted text-muted-foreground text-xs font-bold rounded">Dismiss</button>
              </div>
            </motion.div>
-         ))}
+         </div>
        </div>
     </div>
   );
 }
 
-function MockupAutoClean({ isVisible }: { isVisible: boolean }) {
+function MockupReplyClassification({ isVisible }: { isVisible: boolean }) {
   const [step, setStep] = useState(0);
 
   useEffect(() => {
     if (!isVisible) return;
     const interval = setInterval(() => {
       setStep(prev => (prev >= 6 ? 0 : prev + 1));
-    }, 1200);
+    }, 1500);
     return () => clearInterval(interval);
   }, [isVisible]);
 
   const items = [
-    { email: "john@acme.com", status: "Valid", color: "text-green-500", icon: CheckCircle2, strike: false },
-    { email: "sarah@tech.co", status: "Valid", color: "text-green-500", icon: CheckCircle2, strike: false },
-    { email: "mike@old.io", status: "Hard Bounce", color: "text-red-500", icon: XCircle, strike: true },
-    { email: "info@noreply.com", status: "Role", color: "text-yellow-500", icon: AlertTriangle, strike: true }
+    { email: "john@acme.com", subject: "Re: Partnership", tag: "Interested", color: "bg-green-500/10 text-green-600 border-green-500/20", icon: CheckCircle2, action: "Drip paused" },
+    { email: "sarah@tech.co", subject: "Automatic Reply", tag: "OOO", color: "bg-yellow-500/10 text-yellow-600 border-yellow-500/20", icon: Clock, action: "Drip continued" },
+    { email: "mike@old.io", subject: "Stop emailing me", tag: "Unsubscribe", color: "bg-red-500/10 text-red-500 border-red-500/20", icon: XCircle, action: "Auto-suppressed" },
   ];
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center p-4 md:p-8">
-      <div className="w-full max-w-md bg-background border border-border rounded-xl shadow-2xl overflow-hidden font-mono text-xs">
-        <div className="bg-muted/30 px-4 py-2 border-b border-border flex items-center gap-2">
-           <Server className="w-4 h-4 text-muted-foreground" />
-           <span className="text-muted-foreground">verify_list.sh</span>
-           {step > 0 && step < 6 && (
+      <div className="w-full max-w-md bg-background border border-border rounded-xl shadow-2xl overflow-hidden font-sans text-xs">
+        <div className="bg-muted/30 px-4 py-2 border-b border-border flex items-center gap-2 font-mono">
+           <Bot className="w-4 h-4 text-primary" />
+           <span className="text-muted-foreground">ai_reply_classifier.ts</span>
+           {step > 0 && step < 4 && (
              <span className="ml-auto flex gap-1 items-center">
                <span className="w-1.5 h-1.5 bg-primary rounded-full animate-ping"/>
-               <span className="w-1.5 h-1.5 bg-primary rounded-full animate-ping delay-75"/>
-               <span className="w-1.5 h-1.5 bg-primary rounded-full animate-ping delay-150"/>
              </span>
            )}
         </div>
-        <div className="p-4 flex flex-col gap-2 min-h-[180px]">
+        <div className="p-4 flex flex-col gap-3 min-h-[180px]">
           {items.map((item, i) => {
             const isChecking = step === i + 1;
             const isDone = step > i + 1;
@@ -340,38 +329,27 @@ function MockupAutoClean({ isVisible }: { isVisible: boolean }) {
               <motion.div 
                 key={i}
                 initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: isDone && item.strike ? 0.5 : 1, x: 0 }}
-                className={`flex items-center justify-between ${isDone && item.strike ? "text-foreground/50" : "text-foreground/90"}`}
+                animate={{ opacity: 1, x: 0 }}
+                className={`flex flex-col gap-1.5 p-2.5 rounded-lg border ${isDone ? 'border-border bg-muted/10' : 'border-primary/30 bg-primary/5'}`}
               >
-                 <span className={`truncate ${isDone && item.strike ? "line-through" : ""}`}>
-                   Checking <span className="text-foreground font-bold">{item.email}</span>...
-                 </span>
-                 {isChecking && (
-                   <span className="text-primary animate-pulse shrink-0 font-bold">Working...</span>
-                 )}
+                 <div className="flex items-center justify-between">
+                   <span className="font-bold text-foreground text-sm">{item.email}</span>
+                   {isChecking && <span className="text-primary text-[10px] animate-pulse flex items-center gap-1 font-bold"><Bot className="w-3 h-3"/> Analyzing...</span>}
+                   {isDone && (
+                     <span className={`px-1.5 py-0.5 rounded border text-[10px] font-bold ${item.color}`}>
+                       {item.tag}
+                     </span>
+                   )}
+                 </div>
+                 <div className="text-muted-foreground truncate italic">"{item.subject}"</div>
                  {isDone && (
-                   <motion.span 
-                     initial={{ scale: 0 }} 
-                     animate={{ scale: 1 }} 
-                     className={`${item.color} flex items-center gap-1 shrink-0 font-bold`}
-                   >
-                     <item.icon className="w-3 h-3"/> {item.status}
-                   </motion.span>
+                   <div className="text-[10px] text-muted-foreground flex items-center gap-1 mt-1">
+                     <Zap className="w-3 h-3 text-amber-500"/> Action: <span className="font-bold text-foreground">{item.action}</span>
+                   </div>
                  )}
               </motion.div>
             );
           })}
-          
-          {step >= 5 && (
-            <motion.div 
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="mt-4 pt-4 border-t border-border border-dashed text-primary flex items-center gap-2 font-bold"
-            >
-               <ShieldCheck className="w-4 h-4 shrink-0" />
-               Removed 2 risky addresses
-            </motion.div>
-          )}
         </div>
       </div>
     </div>
@@ -391,8 +369,8 @@ export default function CapabilitiesUI() {
     <MockupPrivacy key="0" />,
     <MockupSpam key="1" isVisible={isVisible} />,
     <MockupPersonalization key="2" isVisible={isVisible} />,
-    <MockupScheduling key="3" />,
-    <MockupAutoClean key="4" isVisible={isVisible} />
+    <MockupWritingAssistant key="3" />,
+    <MockupReplyClassification key="4" isVisible={isVisible} />
   ];
 
   useGSAP(() => {
