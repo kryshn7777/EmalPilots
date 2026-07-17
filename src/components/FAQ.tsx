@@ -11,7 +11,7 @@ const FAQ_DATA = [
   },
   {
     q: "Does this work with Gmail, Outlook, and Custom domains?",
-    a: "Yes! You can connect as many Gmail (Google Workspace), Outlook (Microsoft 365), or custom SMTP/IMAP accounts as you'd like without paying any extra fees per user."
+    a: "Yes! You can connect as many Gmail (Google Workspace), Outlook (Microsoft 365), or custom SMTP/IMAP accounts as you'd like."
   },
   {
     q: "How does it avoid the spam folder?",
@@ -21,15 +21,10 @@ const FAQ_DATA = [
     q: "Is my data secure?",
     a: "100%. We never store your contact lists or emails on our servers. The app runs locally on your computer, meaning your data stays completely private."
   },
-  {
-    q: "Can I cancel my subscription anytime?",
-    a: "Absolutely. You can cancel your weekly subscription directly from your dashboard at any time. No hidden fees or contracts that lock you in."
-  },
   { q: 'Is this a bulk or spam tool?', a: 'No. Email Pilots is for personal, permission-based email you have a genuine reason to send — to your own contacts, from your own mailbox. It defaults to a personal 1:1 style, supports one-click unsubscribe, and keeps a do-not-contact list. It is not built for buying lists or blasting strangers.' },
   { q: 'Will it keep my mailbox in good standing?', a: 'That’s the whole point of the sending limits, gradual ramp-up, and natural pacing: to send the way a careful person would, stay within healthy volumes, and keep your messages welcome.' },
   { q: 'Where does my data live?', a: 'Entirely on your computer. There is no cloud backend — your contact list and credentials never leave your machine, and passwords are encrypted with your operating system’s keychain.' },
   { q: 'Which email providers work?', a: 'Anything that uses standard email protocols — Gmail, Outlook / Microsoft 365, and custom domains. Reply tracking uses a standard read-only inbox check.' },
-  { q: 'How does billing work?', a: '$2.9/week, everything included, cancel anytime. It starts with a 7-day trial.' },
 ]
 
 export function FAQ() {

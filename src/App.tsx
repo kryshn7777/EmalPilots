@@ -4,7 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { lazy, Suspense, useEffect, useState } from 'react'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
-import { Comparison } from './components/Comparison'
 import { DontBcc } from './components/DontBcc'
 import { HowItWorks } from './components/HowItWorks'
 import { Deliverability } from './components/Deliverability'
@@ -12,7 +11,6 @@ import { LastMile } from './components/LastMile'
 import CapabilitiesUI from './components/CapabilitiesUI'
 import { WhoItsFor } from './components/WhoItsFor'
 import { Waitlist } from './components/Waitlist'
-import { Pricing } from './components/Pricing'
 import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
 import { BusinessSuite } from './components/BusinessSuite'
@@ -113,7 +111,6 @@ function App() {
               }} 
             />
             <div className="relative z-20"><Hero /></div>
-            <div className="relative z-20"><Comparison /></div>
           </div>
           
           <div className="relative z-10">
@@ -144,7 +141,6 @@ function App() {
             <div className="relative z-20"><WhoItsFor /></div>
           </div>
 
-          <div className="relative z-20"><Pricing /></div>
           <div className="relative z-20"><BusinessSuite /></div>
 
           <div className="relative z-10">

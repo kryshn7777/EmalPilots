@@ -47,8 +47,8 @@ export function Hero() {
           </motion.p>
 
           <motion.div variants={itemVariants} className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <a href="#waitlist" className="group inline-flex items-center justify-center gap-2 rounded-xl bg-blue px-6 py-4 text-[16px] font-semibold text-white shadow-glow transition-all duration-300 hover:bg-blue-600 active:scale-95">
-              Get Early Access Now
+            <a href="https://github.com/kryshn7777/Email-Pilots/releases/download/1.0.0/Email.Pilots.Setup.1.0.0.exe" className="group inline-flex items-center justify-center gap-2 rounded-xl bg-blue px-6 py-4 text-[16px] font-semibold text-white shadow-glow transition-all duration-300 hover:bg-blue-600 active:scale-95">
+              Download for Windows
               <svg viewBox="0 0 24 24" className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
             </a>
             <a href="#how" className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-line bg-white px-6 py-4 text-[16px] font-semibold text-ink transition-all duration-300 hover:border-ink/30 hover:shadow-card active:scale-95">
@@ -58,9 +58,9 @@ export function Hero() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-[13.5px] font-medium text-slate-mute">
-            <span className="inline-flex items-center gap-1.5"><svg viewBox="0 0 24 24" className="h-4 w-4 text-green-600" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m5 13 4 4L19 7"/></svg>Cheaper than your weekly coffee</span>
-            <span className="inline-flex items-center gap-1.5"><svg viewBox="0 0 24 24" className="h-4 w-4 text-green-600" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m5 13 4 4L19 7"/></svg>No card needed to start</span>
-            <span className="inline-flex items-center gap-1.5"><svg viewBox="0 0 24 24" className="h-4 w-4 text-green-600" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m5 13 4 4L19 7"/></svg>Cancel anytime</span>
+            <span className="inline-flex items-center gap-1.5"><svg viewBox="0 0 24 24" className="h-4 w-4 text-green-600" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m5 13 4 4L19 7"/></svg>Windows desktop app</span>
+            <span className="inline-flex items-center gap-1.5"><svg viewBox="0 0 24 24" className="h-4 w-4 text-green-600" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m5 13 4 4L19 7"/></svg>Runs 100% locally</span>
+            <span className="inline-flex items-center gap-1.5"><svg viewBox="0 0 24 24" className="h-4 w-4 text-green-600" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m5 13 4 4L19 7"/></svg>Set up in minutes</span>
           </motion.div>
         </motion.div>
 

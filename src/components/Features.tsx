@@ -18,7 +18,7 @@ export function Features() {
         >
           <span className="text-[13px] font-bold uppercase tracking-[.2em] text-blue">Everything in the box</span>
           <h2 className="mt-3 font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">A full outreach studio. On your laptop.</h2>
-          <p className="mt-4 text-[17px] leading-relaxed text-slate-ink">No extra fees, no upsells, no pricing per user. Every feature below is included from day one.</p>
+          <p className="mt-4 text-[17px] leading-relaxed text-slate-ink">Everything you need for personal outreach, built in from day one.</p>
         </motion.div>
 
         <div className="mt-14 grid gap-5 md:grid-cols-6">
