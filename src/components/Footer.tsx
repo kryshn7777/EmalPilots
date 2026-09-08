@@ -11,8 +11,8 @@ export function Footer() {
           <a href="/#features" className="hover:text-blue transition-colors">Features</a>
           <a href="/#waitlist" className="hover:text-blue transition-colors">Waitlist</a>
           <a href="/#faq" className="hover:text-blue transition-colors">FAQ</a>
-          <a href="/terms" className="hover:text-blue transition-colors">Terms of Service</a>
-          <a href="/privacy" className="hover:text-blue transition-colors">Privacy Policy</a>
+          <a href="/terms/" data-native className="hover:text-blue transition-colors">Terms of Service</a>
+          <a href="/privacy/" data-native className="hover:text-blue transition-colors">Privacy Policy</a>
         </div>
         
         <div className="text-[13px] text-slate-mute">

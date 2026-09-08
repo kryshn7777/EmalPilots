@@ -15,8 +15,6 @@ import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
 import { BusinessSuite } from './components/BusinessSuite'
 import MultiAccountSupport from './components/MultiAccountSupport'
-import { PrivacyPolicy } from './components/PrivacyPolicy'
-import { TermsOfService } from './components/TermsOfService'
 
 const AviationCanvas = lazy(() => import('./components/AviationCanvas'))
 
@@ -63,7 +61,7 @@ function App() {
 
     const handleLinkClick = (e: MouseEvent) => {
       const target = (e.target as HTMLElement).closest('a')
-      if (target && target.href && target.href.startsWith(window.location.origin)) {
+      if (target && target.href && target.href.startsWith(window.location.origin) && !target.hasAttribute('data-native')) {
         const url = new URL(target.href)
         // If it's a different pathname, intercept and use SPA routing
         if (url.pathname !== window.location.pathname) {
@@ -81,9 +79,6 @@ function App() {
       window.removeEventListener('click', handleLinkClick)
     }
   }, [])
-
-  if (currentPath === '/privacy') return <PrivacyPolicy />
-  if (currentPath === '/terms') return <TermsOfService />
 
   return (
     <ReactLenis root autoRaf={false}>

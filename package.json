@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/build-legal.mjs",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --test scripts/build-legal.test.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.61.1",
