@@ -57,6 +57,7 @@ const shell = (title, body) => `<!doctype html>
 <title>${esc(title)} — Email Pilots</title>
 <meta name="robots" content="index,follow">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<script data-goatcounter="https://emailpilots.goatcounter.com/count" async src="/count.js"></script>
 <style>
   body{margin:0;font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#0f172a;background:#fff}
   main{max-width:760px;margin:0 auto;padding:48px 20px 96px}

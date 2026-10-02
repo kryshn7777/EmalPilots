@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective Date:** 8 September 2026
+**Effective Date:** 3 October 2026
 
 This Privacy Policy explains how Email Pilots ("we," "us," or "our"), operating as a sole proprietorship in India, collects, uses, discloses, and safeguards your information when you visit our website or use the Email Pilots desktop application (collectively, the "Service"). Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the Service.
 
@@ -9,7 +9,8 @@ This Privacy Policy explains how Email Pilots ("we," "us," or "our"), operating 
 We fundamentally believe that your data belongs to you. The Email Pilots desktop application is architected to operate **100% locally on your machine**.
 
 * **No Data Harvesting or Telemetry:** The application contains zero network telemetry, crash reporting, or tracking scripts. It makes no HTTP requests to our servers or any third-party analytics providers.
-* **License Validation (First Class only):** The free tier makes no first-party network requests at all. If you purchase First Class and enter a license key, the application periodically sends that license key (and an instance identifier) to Lemon Squeezy — our Merchant of Record — to confirm your subscription is active. Nothing else is transmitted: no email content, no recipient data, no usage data. If you never enter a license key, this check never runs.
+* **License Validation (First Class only):** The free tier makes no first-party network requests at all. If you purchase First Class and enter a license key, the application periodically sends that license key (and your computer's name, as the instance label) to Lemon Squeezy — our Merchant of Record — to confirm your subscription is active. Nothing else is transmitted: no email content, no recipient data, no usage data. If you never enter a license key, this check never runs.
+* **Other network connections:** The application makes a few connections that carry none of your email data. (a) **Update check:** installed copies check GitHub, where releases are published, for a newer version at launch and every few hours, and download it if there is one — a plain read of the public release list, no identifier attached. (b) **Icons:** the interface loads its icon font from Google Fonts. (c) **AI model download:** only if you choose to download an on-device AI model, it is fetched from Hugging Face. (d) **Your mail provider:** sending and reply checks connect to the provider you chose (SMTP/IMAP servers, or Microsoft Graph for Microsoft accounts).
 * **Local Data Storage:** All configuration and operational data—including your recipient lists, sending limits, suppressed emails, and email templates—are stored securely and solely on your local hard drive.
 * **Direct SMTP Connections:** The application connects directly from your computer to your chosen SMTP provider (e.g., Gmail, Outlook, or custom SMTP). Your emails, attachments, and recipient data never pass through, touch, or get processed by our servers.
 * **Secure Credentials:** Your SMTP credentials (App Passwords) and any sign-in tokens (Microsoft or Google OAuth) are stored entirely locally on your machine, encrypted with your operating system's protection. We have absolutely no access to your credentials or your email accounts.
