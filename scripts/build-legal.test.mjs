@@ -43,5 +43,6 @@ test('both legal documents render without leaking raw markdown syntax', async ()
     assert.doesNotMatch(html, /\*\*/, `${f}: unconverted bold markers`);
     assert.doesNotMatch(html, /\]\(http/, `${f}: unconverted link syntax`);
     assert.doesNotMatch(html, /^[*-] /m, `${f}: unconverted bullet`);
+    assert.doesNotMatch(html, /`/, `${f}: code spans are not supported — they print literal backticks`);
   }
 });

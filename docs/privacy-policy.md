@@ -14,7 +14,20 @@ We fundamentally believe that your data belongs to you. The Email Pilots desktop
 * **Local Data Storage:** All configuration and operational data—including your recipient lists, sending limits, suppressed emails, and email templates—are stored securely and solely on your local hard drive.
 * **Direct SMTP Connections:** The application connects directly from your computer to your chosen SMTP provider (e.g., Gmail, Outlook, or custom SMTP). Your emails, attachments, and recipient data never pass through, touch, or get processed by our servers.
 * **Secure Credentials:** Your SMTP credentials (App Passwords) and any sign-in tokens (Microsoft or Google OAuth) are stored entirely locally on your machine, encrypted with your operating system's protection. We have absolutely no access to your credentials or your email accounts.
-* **Google account data ("Sign in with Google"):** If you connect a Gmail mailbox with Sign in with Google, the application requests the Gmail mail scope (`https://mail.google.com/`) so it can send your messages over SMTP and read the headers of messages in your inbox over IMAP to detect replies and delivery-failure notices — the same access a desktop mail program uses. The resulting token is stored encrypted on your device and is used only from your device. No Google user data is transmitted to us or to any other server; the only endpoints it ever reaches are Google's own SMTP and IMAP servers. You can revoke this access at any time from your Google Account's third-party access page. Email Pilots' use and transfer to any other app of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+
+### Google user data ("Sign in with Google")
+
+If you connect a Gmail mailbox with Sign in with Google, the application asks Google for your account's email address (so it knows which mailbox you connected) and for the Gmail mail scope (https://mail.google.com/). That is the access a desktop mail program uses, and the only Gmail permission that allows sending and reading over SMTP and IMAP. The application uses it only for the following, and only on your computer:
+
+* **Sending:** the messages you schedule are sent from your mailbox over SMTP.
+* **Reply and bounce detection:** over IMAP, the application checks the sender, subject and date of new messages in your inbox to recognise replies from people on your recipient list and delivery-failure notices. Messages from anyone else are skipped, and nothing about them is kept.
+* **Reading a message's content, in two cases only:** a delivery-failure notice, to find the address that bounced; and, only if you turn on the optional on-device AI reply sorting, a reply from someone on your list, to sort it (for example, to honour an unsubscribe request).
+
+What the application keeps (who replied and when, the subject line, a reply's category, and addresses that bounced) stays in files on your computer, and the sign-in token is stored there encrypted with your operating system's protection. No Google user data is transmitted to us or to any other server: the only endpoints it ever reaches are Google's own sign-in, SMTP and IMAP servers, so no one at Email Pilots can see it. Google user data is never sold and never used for advertising. Email Pilots does not use Google Workspace APIs data to develop, improve, or train non-personalized AI and/or ML models; the optional AI runs a downloaded model on your computer and does not learn from your mail.
+
+You can revoke access at any time on your Google Account's [third-party connections page](https://myaccount.google.com/connections). Signing out of the application, or removing the account from it, deletes the token from your computer.
+
+Email Pilots' use and transfer to any other app of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
 ## 2. Information We Collect on Our Website
 
